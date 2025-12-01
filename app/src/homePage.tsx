@@ -1,0 +1,494 @@
+import React from 'react'
+import Image from 'next/image'
+import Travel from '@/app/src/img/Travel.jpg'
+import Girl from '@/app/src/img/Girl.png'
+import Nigeria from "@/app/src/img/Nigeria.png"
+import Canada from "@/app/src/img/Canada.png"
+import Secure from "@/app/src/img/Secure.png"
+import Guy from "@/app/src/img/Guy.png"
+import Lady from "@/app/src/img/Lady.png"
+import Four from "@/app/src/img/Four.png"
+import cards from '@/app/src/data/CardData'
+import Good from '@/app/src/img/Good.png'
+import works from "@/app/src/data/WorkData"
+import Vector from "@/app/src/img/Vector.png"
+import selects from '@/app/src/data/SelectData'
+
+
+const HomePage = () => {
+  return (
+  //   <section className="relative lg:bg-white lg:w-full lg:h-[3200px] lg:px-0 lg:flex  flex-col lg:items-center flex
+  //  items-center bg-white-500 px-3
+  //   w-[428px] h-[6000px]">
+      <section className="relative lg:w-full w-full lg:h-[3200px] h-[3500px] bg-transparent flex flex-col px-3 items-center sm:px-2 lg:px-0">
+       <main
+        className="relative lg:w-[1090px] lg:h-[470px] lg:px-0 lg:flex lg:justify-between lg:items-center w-full h-[210px] "
+        style={{
+          backgroundImage: `url(${Travel.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Overlay to fade background image */}
+        <div className="absolute inset-0 bg-white/90 "></div>
+
+        {/* Left panel content */}
+        <main className="relative z-10 lg:w-[592px] lg:h-[322px] lg:flex lg:flex-col lg:p-2 lg:bg-transparent p-4
+        lg:orange-400
+        w-[226px] h-[70.59]">
+          <div className='lg:w-[550px] lg:h-[110px] lg:bg-transparent'>
+            <h2 className='lg:font-semibold lg:text-[35px] lg:leading-[100%] lg:text-[#0079C6] 
+            font-semibold text-[15.27px] text-[#0079C6] leading-5'>
+              Your All-In One Platform for Study, Work and Settlement In Canada
+            </h2>
+          </div>
+          <div className='lg:w-[430px] lg:h-10 lg:bg-transparent lg:mt-3 mt-3'>
+            <h2 className='font-inria lg:font-normal lg:text-[17.27px] lg:text-[#0079C6] lg:leading-[23px] 
+            font-normal text-[12px] leading-[17px]'>
+              Applying for study, work or permanent residency? We help you handle the most important steps -- all in one secure ecosystem.
+            </h2>
+          </div>
+          <div className='lg:w-[200px] lg:bg-transparent lg:mt-14 flex items-center mt-3 '>
+            <div className='lg:w-36 lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center 
+            lg:items-center lg:bg-[#0079C6] w-[74px] h-[23.6px] bg-[#0079C6] flex justify-center items-center rounded-[3px]'>
+              <button className='font-inria lg:font-normal lg:text-[18.16px] lg:leading-[100%] lg:tracking-normal lg:text-white
+               *:font-normal text-[11.02px] leading-4 text-white '>
+                Get Started
+              </button>
+            </div>
+          </div>
+        </main>
+
+        {/* Right panel */}
+        <div className="absolute z-10  lg:-top-[354px] lg:right-10 -top-[192px] -right-3  w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px]">
+  <div className=" w-full h-auto aspect-[3/7]"> 
+    <Image
+      src={Girl}
+      alt="Profile Image"
+      fill
+      className="object-contain"
+    />
+  </div>
+</div>
+      </main>
+
+      <main className='lg:w-[1090px] lg:h-[209px] lg:bg-transparent lg:flex lg:flex-row lg:justify-between lg:items-center mt-11 bg-transparent
+      w-[340px] h-[892px] flex flex-col  justify-between items-center'>
+        {cards.map((card) => (
+          <div key={card.id} className='lg:w-[236px] lg:h-[209px] lg:shadow-lg lg:border lg:border-[#9BD9F280] lg:bg-white 
+          lg:rounded-[5px] lg:flex lg:flex-col lg:justify-between lg:p-5 w-[340px] h-[199px] p-5 shadow-lg border-[#9BD9F280] bg-white
+          rounded-[5px] flex flex-col justify-between'>
+   
+            <div className='lg:w-[48.3px] lg:h-[48.3px] lg:bg-transparent w-[60.27px] h-[60.27px]'>
+
+              <img src={card.image} alt='aeroplane' />
+            </div>
+            <div className='lg:w-[200px] lg:h-8 lg:bg-transparent lg:flex lg:items-center w-[270px] h-4'>
+              <h2 className='lg:font-semibold lg:text-[13px] text-[#0079C6] lg:leading-[15px] '>
+                {card.heading}
+              </h2>
+
+            </div>
+            <div className='lg:w-[195px] lg:h-[41px] lg:bg-transparent lg:mt-0 mt-2 w-[278.08px] h-[53.83px] '>
+              <h2 className='lg:font-normal lg:text-[10.5px] lg:text-[#000000] lg:leading-3.5 font-normal text-[11px] leading-[15px]'>
+                {card.text}
+              </h2>
+            </div>
+            <div className='lg:w-[94px] lg:h-[15px] lg:bg-transparent bg-transparent lg:flex lg:justify-between items-center lg:items-center lg:mt-0 mt-1 
+            w-[63px] h-[19px] flex justify-between'>
+              <div className='lg:w-[55px] lg:h-[15px] w-[60px] h-[19px] bg-transparent'>
+                <h3 className='font-light text-[#0079C6] text-[11px] '>{card.subtext}</h3>
+              </div>
+              <div className='lg:w-[46px] lg:h-[9px]  w-[11.2px] h-[11.2px] bg-transparent flex justify-center items-center'>
+                <img src={card.symbol} alt='aeroplane' className='' />
+              </div>
+            </div>
+          </div>
+        ))}
+      </main>
+
+      <main className='lg:w-[1090px] lg:h-[880px] lg:bg-transparent lg:flex lg:flex-col 
+      lg:justify-between lg:mt-8 mt-8 bg-transparent lg:p-0 w-[340px] h-[1600px] flex flex-col '>
+        <div className='lg:w-[1090px] lg:h-[430px] lg:flex lg:justify-between lg:flex-row lg:p-6 lg:items-center rounded-[3px] w-full h-[415px] p-5 flex flex-col justify-between
+        lg:bg-[#0079C6] bg-[#0079C6]'>
+          <div className='lg:w-[559px] lg:h-80 lg:bg-transparent  lg:flex lg:flex-col lg:justify-between bg-transparent h-[470px]'>
+            <div className='lg:w-[181px] lg:h-8 lg:bg-transparent w-[140px] h-8 bg-transparent'>
+              <h2 className='lg:font-semibold lg:text-[22px] lg:leading-[31.69px] lg:items-center lg:text-white font-medium
+              text-[18px] leading-[31.69px] items-center text-white'>Why Choose Us?</h2>
+            </div>
+            <div className="lg:w-[559px] lg:bg-transparent">
+              {selects.map((select) => (
+                <div
+                  key={select.id}
+                  className="lg:w-[559px] lg:h-16 lg:bg-transparent lg:text-white lg:flex lg:items-start lg:gap-3 lg:py-0 lg:px-2
+                  lg:mt-0 mt-3 w-full h-full bg-transparent text-white flex items-start gap-2 py-0 px-2"
+                >
+                  <img
+                    src={select.image}
+                    className="lg:w-3.5 lg:h-3.5 lg:mt-1 w-3 h-3 mt-1.5 filter invert brightness-0"
+                    alt="aeroplane"
+                  />
+                  <div className="lg:flex lg:flex-col lg:leading-tight flex flex-col">
+                    <h2 className="lg:font-semibold lg:text-[16px] font-medium text-[15px]">{select.heading}</h2>
+                    <h3 className="lg:text-[14px] lg:font-normal text-[13px] font-normal">{select.text}</h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className='lg:w-[385px] lg:block hidden lg:h-[334px] lg:border lg:rounded-sm lg:border-[#0079C6] lg:flex lg:flex-col lg:items-center
+              lg:bg-[#FFFFFF]'>
+            <div className='lg:w-[315px] lg:h-[213px] lg:bg-transparent  lg:flex lg:flex-col lg:justify-between lg:mt-10 lg:text-[#000000]'>
+              <div className='lg:w-[314px] lg:h-[66.5px] lg:rounded-sm lg:flex lg:flex-col lg:justify-between lg:bg-transparent'>
+                <div className='lg:w-[314px] lg:h-[13.82px] lg:font-light lg:text-[15.36px] lg:leading-[100%] lg:bg-transparent lg:flex lg:items-center lg:justify-between'>
+                  <h2>You Send</h2>
+                  <h2>Amount</h2>
+                </div>
+                <div>
+                  <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
+             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative' />
+                  <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[869.5px] lg:right-40'>
+                    
+                    <Image
+                      src={Nigeria}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className=""
+                    />
+                    <h2 className='lg:font-semibold lg:text-[19.46px] lg:leading-[100%]'>NGN</h2>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div className='lg:w-[314px] lg:h-[66.5px] lg:rounded-sm lg:mt-10 lg:flex lg:flex-col lg:justify-between lg:bg-transparent'>
+                <div className='lg:w-[314px] lg:h-[13.82px] lg:font-light lg:text-[15.36px] lg:leading-[100%] lg:bg-transparent lg:flex lg:items-center lg:justify-between'>
+                  <h2>Recipient Gets</h2>
+                  <h2>Amount</h2>
+                </div>
+                <div>
+                  <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
+             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative' />
+                  {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
+                    <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] lg:right-40'>
+                    <Image
+                      src={Canada}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className=""
+                    />
+                    <h2 className='lg:font-semibold lg:text-[19.46px] lg:leading-[100%]'>CAD</h2>
+                  </div>
+                </div>
+              </div>
+              <div className='lg:w-[315.5px] lg:h-[17.4px] lg:bg-transparent lg:flex lg:items-end justify-end'>
+                <h2 className='lg:font-normal lg:text-[15.36px] lg:mr-2 lg:leading-[100%]'>1 CAD=1,250.00NGN</h2>
+              </div>
+
+            </div>
+            <div className='lg:w-[170px] lg:h-[48.1px] lg:mt-4 lg:mr-8.5 lg:flex lg:justify-center lg:items-center
+               lg:rounded-[3px] lg:self-end lg:bg-[#0079C6]'>
+              <h2 className='lg:font-medium lg:text-[22.74px] lg:leading-[100%]  lg:text-white '>Get Started</h2>
+            </div>
+          </div>
+        </div>
+        { /* small screen starts */ } 
+        <div className='lg:w-[385px] lg:hidden block lg:h-[334px] lg:border lg:rounded-sm lg:border-[#0079C6] lg:flex lg:flex-col lg:items-center
+              lg:bg-[#FFFFFF] lg:mt-0 mt-8 w-[340px] h-[290.5px] shadow-lg rounded-sm border-[#0079C6] flex flex-col items-center
+              bg-transparent'>
+            <div className='lg:w-[315px] lg:h-[213px] lg:bg-transparent  lg:flex lg:flex-col lg:justify-between lg:mt-10 lg:text-[#000000]
+          w-[278px] h-[187.9px] flex flex-col justify-between mt-10 text-[#000000] bg-white'>
+              <div className='lg:w-[314px] lg:h-[66.5px] lg:rounded-sm lg:flex lg:flex-col lg:justify-between lg:bg-transparent
+              w-[275px] h-[53.4px] rounded-sm flex flex-col justify-between bg-transparent'>
+                <div className='lg:w-[314px] lg:h-[13.82px] lg:font-light lg:text-[15.36px] lg:leading-[100%] lg:bg-transparent lg:flex
+                 lg:items-center lg:justify-between lg:py-0 py-2 w-[275px] h-[12.1px] font-light text-[13.55px] leading-[100%] bg-transparent flex
+                 items-center justify-between'>
+                  <h2 className=''>You Send</h2>
+                  <h2>Amount</h2>
+                </div>
+                <div>
+                  <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
+             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative w-[275px] h-[41.2px] bg-transparent rounded-sm
+             border-[#0079C6] border-[1.33px] relative' />
+                  <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[869.5px] lg:right-40
+                  w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1608px] right-19'>
+                    <Image
+                      src={Nigeria}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className=""
+                    />
+                    <h2 className='lg:font-semibold lg:text-[19.46px] lg:leading-[100%]'>NGN</h2>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div className='lg:w-[314px] lg:h-[66.5px] lg:rounded-sm lg:mt-10 lg:flex lg:flex-col lg:justify-between lg:bg-transparent
+               w-[275px] h-[53.4px] rounded-sm flex flex-col justify-between bg-transparent'>
+                <div className='lg:w-[314px] lg:h-[13.82px] lg:font-light lg:text-[15.36px] lg:leading-[100%] lg:bg-transparent lg:flex lg:items-center 
+                lg:justify-between  lg:py-0 py-2.5 w-[275px] h-[12.1px] font-light text-[13.55px] leading-[100%] bg-transparent flex
+                 items-center justify-between'>
+                  <h2>Recipient Gets</h2>
+                  <h2>Amount</h2>
+                </div>
+                <div>
+                  <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
+             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative  w-[275px] h-[41.2px] bg-transparent rounded-sm
+             border-[#0079C6] border-[1.33px] relative' />
+                  {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
+                    <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] lg:right-40
+                     w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1715px] right-19'>
+                    <Image
+                      src={Canada}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className=""
+                    />
+                    <h2 className='lg:font-semibold lg:text-[19.46px] lg:leading-[100%]'>CAD</h2>
+                  </div>
+                </div>
+              </div>
+              <div className='lg:w-[315.5px] lg:h-[17.4px] lg:bg-transparent lg:flex lg:items-end lg:justify-end
+              w-[133px] h-[15.35px] -mt-8 mr-1 flex items-center
+               rounded-[3px] self-end bg-transparent'>
+                <h2 className='lg:font-normal lg:text-[15.36px] lg:mr-2 lg:leading-[100%]
+                font-normal text-[13.55px] leading-[100%] text-[#000000]'>1 CAD=1,250.00NGN</h2>
+              </div>
+
+            </div>
+            <div className='lg:w-[170px] lg:h-[48.1px] lg:mt-4 lg:mr-8.5 lg:flex lg:justify-center lg:items-center
+               lg:rounded-[3px] lg:self-end lg:bg-[#0079C6] lg:p-0 p-3 w-[100px] h-8 mt-4 mr-8.5 flex justify-center items-center
+               rounded-[3px] self-end bg-[#0079C6]  '>
+              <h2 className='lg:font-medium lg:text-[22.74px] lg:leading-[100%] text-white
+              font-medium text-[14px] leading-[100%]'>Get Started</h2>
+            </div>
+          </div>
+          { /* small screen ends */ } 
+
+        <div className='lg:w-[1090px] lg:h-[400px] lg:mt-10  lg:bg-transparent lg:flex lg:flex-row lg:justify-between lg:items-center 
+        w-full h-[840px] mt-8 bg-transparent flex flex-col justify-between items-center'>
+   <div className='lg:w-[310px] lg:h-[297px] lg:bg-transparent lg:flex lg:flex-col lg:justify-between
+   w-[310px] h-[540.9px] bg-transparent flex flex-col justify-between'>
+   <div className='lg:w-[310px] lg:h-[145px] lg:bg-transparent lg:flex lg:justify-between
+   w-full h-[145.6px] bg-transparent flex justify-between'>
+ <Image
+            src={Lady}
+            width={152}
+            height={145}
+            alt="Profile Image"
+            className="object-contain"
+          />
+            <Image
+            src={Four}
+            width={152}
+            height={145}
+            alt="Profile Image"
+            className="object-contain"
+          />
+    </div>
+ <div className='lg:w-[310px] lg:h-[145px] lg:bg-transparent lg:flex lg:justify-between
+ w-full h-[200px] bg-transparent flex justify-between'>
+          <Image
+            src={Secure}
+            width={152}
+            height={145}
+            alt="Profile Image"
+            className="object-contain"
+          />
+            <Image
+            src={Guy}
+            width={152}
+            height={203}
+            alt="Profile Image"
+            className="object-contain"
+            />  
+            </div>
+</div>
+{/* How does it work starts */}
+ <div className='lg:w-[700px] lg:h-[400px] lg:bg-transparent lg:flex  lg:mt-0 lg:p-3 lg:flex-col lg:justify-between mt-8 w-full h-[700px] bg-transparent'>
+            <div className='lg:w-[181px] lg:h-8 lg:bg-transparent w-[154px] h-[31px] bg-transparent text-[#0079C6]'>
+              <h2 className='lg:font-semibold lg:text-[22px] lg:leading-[31.69px] lg:items-center lg:text-[#0079C6]
+              font-semibold text-[22px] leading-[31.69px] items-center text-[#0079C6]'>How It Works</h2>
+            </div>
+
+            <div className='lg:w-[680px] lg:h-16 lg:bg-transparent lg:-mt-3 mt-2'>
+              <h2 className='lg:font-semibold lg:text-[14px] lg:leading-[20.69px] lg:items-center lg:text-[#0079C6]
+              font-normal text-[14px] leading-[20.69px] items-center text-[#0079C6]'>
+                Paying your tuition or GIC from Nigeria to Canada doesn’t have to be complicated.Our platform was built to make international 
+                education payments fast, secure, and fully transparent — with a process so simple that anyone can 
+                complete it in minutes
+              </h2>
+            </div>
+
+ <div className="lg:w-[640px] lg:h-[250px] lg:text-[#0079C6] lg:bg-transparent lg:mb-0 lg:mt-0 mt-4 w-full h-full bg-transparent ">
+  <div className='lg:w-[465px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between flex w-full lg:mb-0 mb-2 gap-3 bg-transparent justify-between '>
+     <Image
+                      src={Vector}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill text-[#0079C6] lg:flex lg:items-center w-5 h-5 mt-1"
+                    />
+                    <h2 className='lg:font-normal lg:text-[14px] text-[14px] text-[#0079C6]'><span className='lg:font-semibold lg:text-[15px]
+                    font-semibold text-[14px]'>Register & Complete KYC</span>— Create an account and verify your identity.</h2>
+  </div>
+ 
+ <div className='lg:w-[288px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between items-center
+ flex w-full gap-3 bg-transparent text-[#0079C6] lg:mb-0 mb-2'>
+     <Image
+                      src={Vector}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center lg:text-[#0079C6]
+                      w-5 h-5 mt-2"
+                    />
+                    <h2 className='lg:font-normal lg:text-[14px]'><span className='lg:font-semibold lg:text-[15px]
+                    font-semibold text-[14px]'>
+                      Choose Payment Type</span>— Tuition or GIC.</h2>
+  </div> 
+  <div className='lg:w-[630px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between items-center
+  flex w-full gap-3 bg-transparent text-[#0079C6] lg:mb-0 mb-2'>
+     <Image
+                      src={Vector}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-5 h-5 -mt-10"
+                    />
+                    <h2 className='lg:font-normal lg:text-[14px]'><span className='lg:font-semibold lg:text-[15px>'>
+                      Enter Payment Details </span>— Select institution/bank, input amount in CAD, and view NGN equivalent.
+                      </h2>
+                      
+  </div>
+  <div className='lg:w-[492px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between items-center
+  flex w-full gap-3 bg-transparent text-[#0079C6] lg:mb-0 mb-2'>
+     <Image
+                      src={Vector}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-5 h-5 -mt-5.5"
+                    />
+                    <h2 className='lg:font-normal lg:text-[14px]'><span className='lg:font-semibold lg:text-[15px>'>
+                      Lock Your Rate & Pay Locally</span>— Accept the rate and transfer funds in Naira.</h2>            
+  </div>
+  <div className='lg:w-[507px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between items-center
+  flex w-full gap-3 bg-transparent text-[#0079C6] lg:mb-0 mb-2'>
+     <Image
+                      src={Vector}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-5 h-5 -mt-5.5"
+                    />
+                    <h2 className='lg:font-normal lg:text-[14px]'><span className='lg:font-semibold lg:text-[15px>'>
+                       Track Your Payment </span>— Get notified once the school or bank confirms receipt.</h2>            
+  </div>
+ 
+          </div>
+</div>
+{/* How does it ends */}
+</div>
+</main>
+
+{/* Contact Section Starts */ }
+<main className='lg:w-full lg:h-[339px] lg:bg-[#0079C63D] lg:flex lg:flex-col lg:items-center lg:justify-between lg:mt-20
+lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] w-screen h-[800px] mt-0 flex flex-col justify-between items-center'>
+  {/* <div className='lg:w-[1020px] lg:h-[180px] lg:bg-yellow-400 lg:flex lg:justify-between'> */}
+    <div className='lg:w-[1120px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg:p-0 py-6
+     h-full bg-transparent'>
+<div className='lg:w-[228px] lg:h-[88px] lg:bg-transparent lg:mb-0 mb-8 bg-transparent w-[280px] h-[90px] flex flex-col justify-between'>
+ <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
+  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px]'>
+    About Us
+    </h2>
+    </div>
+     <div className='lg:w-[228px] lg:h-[63px] lg:bg-transparent lg:mt-2'>
+      <h2 className='lg:font-normal lg:text-[13px] lg:leading-5 font-normal text-[14px] leading-5'>We simplify cross-border tuition and GIC payments for international students and parents in Nigeria.</h2>
+    </div> 
+ </div>
+
+ <div className='lg:w-[134px] lg:h-[174px]  lg:bg-transparent mb-8 bg-transparent w-[280px] h-[150px] flex flex-col justify-between'>
+ <div className='lg:w-[100px] lg:h-5 lg:bg-transparent'>
+  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px]'>
+    Quick Links
+    </h2>
+    </div>
+    <div className='lg:font-normal lg:text-[13px] lg:mt-1.5 lf:flex lg:flex-col'>
+     <ul className="lg:list-disc lg:ml-5 lg:space-y-1 font-normal text-[14px] leading-5">
+    <li>Home</li>
+    <li>How It Works</li>
+    <li>Why Choose Us</li>
+    <li>FAQs</li>
+    <li>Blog / Resources</li>
+    <li>Contact Us</li>
+  </ul>
+    </div>
+</div>
+
+ <div className='lg:w-[210px] lg:h-[174px]  lg:bg-transparent-400 mb-8 bg-transparentw-[280px] h-[120px] '>
+ <div className='lg:w-[120px] lg:h-5 lg:bg-transparent'>
+  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px]'>
+    Support & Contact
+    </h2>
+    <h2 className='lg:font-normal lg:text-[13px] lg:mb-4'>
+    Need Help?
+    </h2>
+    </div>
+    <div className='lg:font-normal lg:text-[13px] lg:mt-5 lg:flex lg:flex-col'>
+    <h2>📧 operations@cowristech.com</h2>
+    <h2>📞 +234 000 000 0000</h2>
+    <h2>⏰ Mon–Fri, 9am–6pm (WAT)</h2>
+    </div>
+</div>
+
+ <div className='lg:w-[170px] lg:h-[125px]  lg:bg-transparent mb-8 bg-transparent w-[280px] h-[110px] flex flex-col justify-between'>
+ <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
+  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px]'>
+    Legal
+    </h2>
+    </div>
+    <div className='lg:font-normal lg:text-[13px] lg:mt-1.5 lg:flex lg:flex-col font-normal text-[14px] leading-5'>
+     <ul className="lg:list-disc lg:ml-5 lg:space-y-1">
+    <li>Terms & Conditions</li>
+    <li>Privacy Policy</li>
+    <li>Compliance & Security</li>
+    <li>Refund Policy</li>
+  </ul>
+    </div>
+</div>
+<div className='lg:w-[228px] lg:h-[136px] lg:bg-transparent mb-8 bg-transparent h-[120px] '>
+ <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
+  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px]'>
+    Social
+    </h2>
+    </div>
+    <div className='lg:font-normal lg:text-[13px] lg:mt-1.5 lg:flex lg:flex-col'>
+    <h2>Stay Connected, Follow us for updates Facebook </h2>
+    <h2>Instagram</h2>
+    <h2>LinkedIn</h2>
+    <h2>X (Twitter)</h2>
+    </div>
+</div>
+  </div> 
+  <div className='w-full lg:h-10 lg:bg-transparent lg:mb-[60px]'>
+ <div className="lg:h-px bg-[#0079C63D] w-full"></div>
+  <h2 className='lg:self-start lg:mt-2 lg:ml-10'>2025  CowrisWaka</h2>
+  </div>
+ 
+</main>
+{/* Contact Section Endss */ }
+</section>
+  )
+}
+
+export default HomePage
