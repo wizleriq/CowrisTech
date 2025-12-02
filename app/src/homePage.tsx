@@ -11,6 +11,7 @@ import Four from "@/app/src/img/Four.png"
 import cards from '@/app/src/data/CardData'
 import Good from '@/app/src/img/Good.png'
 import works from "@/app/src/data/WorkData"
+import C from "@/app/src/img/C.png"
 import Vector from "@/app/src/img/Vector.png"
 import selects from '@/app/src/data/SelectData'
 
@@ -84,23 +85,23 @@ const HomePage = () => {
 
               <img src={card.image} alt='aeroplane' />
             </div>
-            <div className='lg:w-[200px] lg:h-8 lg:bg-transparent lg:flex lg:items-center w-[270px] h-4'>
+            <div className='lg:w-[200px] lg:h-8 lg:bg-transparent lg:flex lg:items-center lg:-mt-4 w-[270px] h-4'>
               <h2 className='lg:font-semibold lg:text-[13px] text-[#0079C6] lg:leading-[15px] '>
                 {card.heading}
               </h2>
 
             </div>
-            <div className='lg:w-[195px] lg:h-[41px] lg:bg-transparent lg:mt-0 mt-2 w-[278.08px] h-[53.83px] '>
+            <div className='lg:w-[200px] lg:h-[41px] lg:bg-transparent lg:-mt-3 mt-2 w-[278.08px] h-[53.83px] '>
               <h2 className='lg:font-normal lg:text-[10.5px] lg:text-[#000000] lg:leading-3.5 font-normal text-[11px] leading-[15px]'>
                 {card.text}
               </h2>
             </div>
-            <div className='lg:w-[94px] lg:h-[15px] lg:bg-transparent bg-transparent lg:flex lg:justify-between items-center lg:items-center lg:mt-0 mt-1 
-            w-[63px] h-[19px] flex justify-between'>
+            <div className='lg:w-20 lg:h-[15px] bg-transparent lg:flex lg:justify-between items-center 
+            lg:items-center lg:mt-0 mt-10 w-[63px] h-[19px] flex justify-between'>
               <div className='lg:w-[55px] lg:h-[15px] w-[60px] h-[19px] bg-transparent'>
                 <h3 className='font-light text-[#0079C6] text-[11px] '>{card.subtext}</h3>
               </div>
-              <div className='lg:w-[46px] lg:h-[9px]  w-[11.2px] h-[11.2px] bg-transparent flex justify-center items-center'>
+              <div className='lg:w-[30px] lg:h-[9px]  w-[11.2px] h-[11.2px] bg-transparent flex justify-center items-center'>
                 <img src={card.symbol} alt='aeroplane' className='' />
               </div>
             </div>
@@ -331,11 +332,11 @@ const HomePage = () => {
  <div className="lg:w-[640px] lg:h-[250px] lg:text-[#0079C6] lg:bg-transparent lg:mb-0 lg:mt-0 mt-4 w-full h-full bg-transparent ">
   <div className='lg:w-[465px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between flex w-full lg:mb-0 mb-2 gap-3 bg-transparent justify-between '>
      <Image
-                      src={Vector}
+                      src={Good}
                       width={27.9}
                       height={27.9}
                       alt="Profile Image"
-                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill text-[#0079C6] lg:flex lg:items-center w-5 h-5 mt-1"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-5 h-5 mt-1"
                     />
                     <h2 className='lg:font-normal lg:text-[14px] text-[14px] text-[#0079C6]'><span className='lg:font-semibold lg:text-[15px]
                     font-semibold text-[14px]'>Register & Complete KYC</span>— Create an account and verify your identity.</h2>
@@ -348,7 +349,7 @@ const HomePage = () => {
                       width={27.9}
                       height={27.9}
                       alt="Profile Image"
-                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center lg:text-[#0079C6]
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:mt-0 lg:items-center lg:text-[#0079C6]
                       w-5 h-5 mt-2"
                     />
                     <h2 className='lg:font-normal lg:text-[14px]'><span className='lg:font-semibold lg:text-[15px]
@@ -362,7 +363,7 @@ const HomePage = () => {
                       width={27.9}
                       height={27.9}
                       alt="Profile Image"
-                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-5 h-5 -mt-10"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center lg:-mt-5 w-5 h-5 -mt-10"
                     />
                     <h2 className='lg:font-normal lg:text-[14px]'><span className='lg:font-semibold lg:text-[15px>'>
                       Enter Payment Details </span>— Select institution/bank, input amount in CAD, and view NGN equivalent.
@@ -482,7 +483,17 @@ lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] w-screen h-[800px] mt-0 flex flex-co
   </div> 
   <div className='w-full lg:h-10 lg:bg-transparent lg:mb-[60px]'>
  <div className="lg:h-px bg-[#0079C63D] w-full"></div>
-  <h2 className='lg:self-start lg:mt-2 lg:ml-10'>2025  CowrisWaka</h2>
+ <div className='lg:w-[151px] h-9 bg-transparent flex justify-between items-center'>
+ <Image
+                      src={C}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-[18.5px] h-[18.5px] mt-0"
+                    />
+  <h2 className='lg:flex lg:items-center'>2025  CowrisWaka</h2>
+ </div>
+ 
   </div>
  
 </main>
