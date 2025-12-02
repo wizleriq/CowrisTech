@@ -21,7 +21,7 @@ const HomePage = () => {
   //   <section className="relative lg:bg-white lg:w-full lg:h-[3200px] lg:px-0 lg:flex  flex-col lg:items-center flex
   //  items-center bg-white-500 px-3
   //   w-[428px] h-[6000px]">
-      <section className="relative lg:w-full w-full lg:h-[3200px] h-[3500px] bg-transparent flex flex-col px-3 items-center sm:px-2 lg:px-0">
+      <section className="relative lg:w-full w-full lg:h-[3200px] h-[3600px] bg-transparent flex flex-col px-3 items-center sm:px-2 lg:px-0">
        <main
         className="relative lg:w-[1090px] lg:h-[470px] lg:px-0 lg:flex lg:justify-between lg:items-center w-full h-[210px] "
         style={{
@@ -97,7 +97,7 @@ const HomePage = () => {
               </h2>
             </div>
             <div className='lg:w-20 lg:h-[15px] bg-transparent lg:flex lg:justify-between items-center 
-            lg:items-center lg:mt-0 mt-10 w-[63px] h-[19px] flex justify-between'>
+            lg:items-center lg:mt-0 mt-1 w-[63px] h-[19px] flex justify-between'>
               <div className='lg:w-[55px] lg:h-[15px] w-[60px] h-[19px] bg-transparent'>
                 <h3 className='font-light text-[#0079C6] text-[11px] '>{card.subtext}</h3>
               </div>
@@ -216,7 +216,7 @@ const HomePage = () => {
              lg:border-[#0079C6] lg:border-[1.33px]  lg:relative w-[275px] h-[41.2px] bg-transparent rounded-sm
              border-[#0079C6] border-[1.33px] relative' />
                   <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[869.5px] lg:right-40
-                  w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1608px] right-19'>
+                  w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1669.5px] right-15'>
                     <Image
                       src={Nigeria}
                       width={27.9}
@@ -224,7 +224,7 @@ const HomePage = () => {
                       alt="Profile Image"
                       className=""
                     />
-                    <h2 className='lg:font-semibold lg:text-[19.46px] lg:leading-[100%]'>NGN</h2>
+                    <h2 className='lg:font-semibold lg:text-[19.46px] lg:leading-[100%] font-semibold'>NGN</h2>
 
                   </div>
 
@@ -245,7 +245,7 @@ const HomePage = () => {
              border-[#0079C6] border-[1.33px] relative' />
                   {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
                     <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] lg:right-40
-                     w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1715px] right-19'>
+                     w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1775px] right-15'>
                     <Image
                       src={Canada}
                       width={27.9}
@@ -253,7 +253,7 @@ const HomePage = () => {
                       alt="Profile Image"
                       className=""
                     />
-                    <h2 className='lg:font-semibold lg:text-[19.46px] lg:leading-[100%]'>CAD</h2>
+                    <h2 className='lg:font-semibold lg:text-[19.46px] lg:leading-[100%] font-semibold'>CAD</h2>
                   </div>
                 </div>
               </div>
@@ -276,7 +276,7 @@ const HomePage = () => {
 
         <div className='lg:w-[1090px] lg:h-[400px] lg:mt-10  lg:bg-transparent lg:flex lg:flex-row lg:justify-between lg:items-center 
         w-full h-[840px] mt-8 bg-transparent flex flex-col justify-between items-center'>
-   <div className='lg:w-[310px] lg:h-[297px] lg:bg-transparent lg:flex lg:flex-col lg:justify-between
+   {/* <div className='lg:w-[310px] lg:h-[297px] lg:bg-transparent lg:flex lg:flex-col lg:justify-between
    w-[310px] h-[540.9px] bg-transparent flex flex-col justify-between'>
    <div className='lg:w-[310px] lg:h-[145px] lg:bg-transparent lg:flex lg:justify-between
    w-full h-[145.6px] bg-transparent flex justify-between'>
@@ -312,7 +312,45 @@ const HomePage = () => {
             className="object-contain"
             />  
             </div>
+</div> */}
+
+<div className="lg:w-[310px] lg:h-[297px] bg-transparent flex flex-col gap-4">
+  {/* Top row */}
+  <div className="lg:w-[310px] lg:h-[145px] w-full bg-transparent flex justify-between">
+    <Image
+      src={Lady}
+      width={152}
+      height={145}
+      alt="Profile Image"
+      className="object-contain"
+    />
+    <Image
+      src={Four}
+      width={152}
+      height={145}
+      alt="Profile Image"
+      className="object-contain"
+    />
+  </div>
+
+  {/* Bottom row */}
+  <div className="lg:w-[310px] lg:h-[145px] w-full bg-transparent flex justify-between">
+    <Image
+      src={Secure}
+      width={152}
+      height={145}
+      alt="Profile Image"
+      className="object-contain"
+    />
+    <Image
+      src={Guy}
+      width={152}
+      height={145}
+      alt="Profile Image"
+    />
+  </div>
 </div>
+
 {/* How does it work starts */}
  <div className='lg:w-[700px] lg:h-[400px] lg:bg-transparent lg:flex  lg:mt-0 lg:p-3 lg:flex-col lg:justify-between mt-8 w-full h-[700px] bg-transparent'>
             <div className='lg:w-[181px] lg:h-8 lg:bg-transparent w-[154px] h-[31px] bg-transparent text-[#0079C6]'>
@@ -332,7 +370,7 @@ const HomePage = () => {
  <div className="lg:w-[640px] lg:h-[250px] lg:text-[#0079C6] lg:bg-transparent lg:mb-0 lg:mt-0 mt-4 w-full h-full bg-transparent ">
   <div className='lg:w-[465px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between flex w-full lg:mb-0 mb-2 gap-3 bg-transparent justify-between '>
      <Image
-                      src={Good}
+                      src={Vector}
                       width={27.9}
                       height={27.9}
                       alt="Profile Image"
@@ -403,7 +441,7 @@ const HomePage = () => {
 
 {/* Contact Section Starts */ }
 <main className='lg:w-full lg:h-[339px] lg:bg-[#0079C63D] lg:flex lg:flex-col lg:items-center lg:justify-between lg:mt-20
-lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] w-screen h-[800px] mt-0 flex flex-col justify-between items-center'>
+lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] w-screen h-[840px] mt-0 flex flex-col justify-between items-center'>
   {/* <div className='lg:w-[1020px] lg:h-[180px] lg:bg-yellow-400 lg:flex lg:justify-between'> */}
     <div className='lg:w-[1120px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg:p-0 py-6
      h-full bg-transparent'>
@@ -480,8 +518,24 @@ lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] w-screen h-[800px] mt-0 flex flex-co
     <h2>X (Twitter)</h2>
     </div>
 </div>
+{/* Small Screen */ }
+<div className='w-full lg:h-10  lg:bg-transparent lg:mb-[60px] lg:hidden block'>
+ <div className="lg:h-px h-px bg-[#0079C63D]  w-full"></div>
+ <div className='lg:w-[151px] w-[156px] lg:p-0 px-0 py-4 bg-transparent flex justify-between items-center'>
+ <Image
+                      src={C}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-[18.5px] h-[18.5px] mt-0"
+                    />
+  <h2 className='lg:flex lg:items-center'>2025  CowrisWaka</h2>
+ </div>
+ 
+  </div>
+  {/* Small Screen Ends */ }
   </div> 
-  <div className='w-full lg:h-10 lg:bg-transparent lg:mb-[60px]'>
+  <div className='w-full lg:h-10 lg:bg-transparent lg:mb-[60px] lg:block hidden'>
  <div className="lg:h-px bg-[#0079C63D] w-full"></div>
  <div className='lg:w-[151px] h-9 bg-transparent flex justify-between items-center'>
  <Image
