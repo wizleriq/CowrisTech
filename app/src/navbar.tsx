@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <section className='relative lg:w-[1090px] lg:h-[93px] lg:bg-transparent lg:px-3.5 flex lg:items-center lg:mt-3.5 lg:justify-between
-      bg-transparent w-full h-12 px-6 py-2 justify-between items-center'
+      bg-white w-full h-12 px-6 py-2 justify-between items-center'
     >
       {/* LOGO */}
       <div className='lg:w-32 lg:h-[29px] lg:bg-transparent lg:flex justify-center items-center lg:text-[#0079C6] 

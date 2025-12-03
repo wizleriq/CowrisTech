@@ -3,10 +3,20 @@ import Man from "@/app/src/img/Man.png"
 import Money from "@/app/src/img/Money.png"
 import Cap from "@/app/src/img/Cap.png"
 import Aeroplane from "@/app/src/img/Aeroplane.png"
+import Funds from "@/app/src/img/Funds.png"
 
 const cards: Card[] = [
     {
         id: 1,
+        image: Money.src,
+        heading: "Track your immigration application",
+        text: "Create and manage your visa application Upload required documents securely Communicate with your consultant",
+        subtext: "Start Now",
+        symbol: Aeroplane.src
+
+    },
+     {
+        id: 11,
         image: Money.src,
         heading: "Track your immigration application",
         text: "Create and manage your visa application Upload required documents securely Communicate with your consultant",
