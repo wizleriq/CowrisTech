@@ -8,22 +8,22 @@ import Funds from "@/app/src/img/Funds.png"
 const cards: Card[] = [
     {
         id: 1,
-        image: Money.src,
+        image: Funds.src,
         heading: "Track your immigration application",
         text: "Create and manage your visa application Upload required documents securely Communicate with your consultant",
         subtext: "Start Now",
         symbol: Aeroplane.src
 
     },
-     {
-        id: 11,
-        image: Money.src,
-        heading: "Track your immigration application",
-        text: "Create and manage your visa application Upload required documents securely Communicate with your consultant",
-        subtext: "Start Now",
-        symbol: Aeroplane.src
+    //  {
+    //     id: 11,
+    //     image: Funds.src,
+    //     heading: "Track your immigration application",
+    //     text: "Create and manage your visa application Upload required documents securely Communicate with your consultant",
+    //     subtext: "Start Now",
+    //     symbol: Aeroplane.src
 
-    },
+    // },
      {
         id: 2,
         image: Money.src,

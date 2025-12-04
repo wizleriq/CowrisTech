@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Travel from '@/app/src/img/Travel.jpg'
-import Girl from '@/app/src/img/Girl.png'
+import  Youngman from '@/app/src/img/Youngman.png'
+import  Girl from '@/app/src/img/Girl.png'
 import Nigeria from "@/app/src/img/Nigeria.png"
 import Canada from "@/app/src/img/Canada.png"
 import Secure from "@/app/src/img/Secure.png"
@@ -21,7 +22,7 @@ const HomePage = () => {
   //   <section className="relative lg:bg-white lg:w-full lg:h-[3200px] lg:px-0 lg:flex  flex-col lg:items-center flex
   //  items-center bg-white-500 px-3
   //   w-[428px] h-[6000px]">
-      <section className="relative lg:w-full w-full lg:h-[3200px] h-[3600px] lg:bg-white bg-[#F4FBFF] flex flex-col px-3 items-center sm:px-2 lg:px-0">
+      <section className="relative lg:w-full w-full lg:h-[3200px]  h-[3568px] lg:bg-white bg-[#F4FBFF] flex flex-col px-3 items-center sm:px-2 lg:px-0">
        <main
         className="relative lg:w-[1090px] lg:h-[470px] lg:px-0 lg:flex lg:justify-between lg:items-center w-full h-[178px] "
         style={{
@@ -32,7 +33,8 @@ const HomePage = () => {
         }}
       >
         {/* Overlay to fade background image */}
-        <div className="absolute inset-0 bg-white/90 "></div>
+        <div className=" lg:block hidden absolute inset-0 bg-white/90 "></div>
+        <div className="lg:hidden block absolute inset-0 bg-[#F4FBFF]/90"></div>
 
         {/* Left panel content */}
         <main className="relative z-10 lg:w-[592px] lg:h-[322px] lg:flex lg:flex-col lg:p-2 lg:bg-transparent  lg:pt-0 pt-1.5 px-4
@@ -64,7 +66,26 @@ const HomePage = () => {
         {/* Right panel */}
         {/* <div className="absolute z-10  lg:-top-[354px] lg:right-10  -top-[82px] -right-3  w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px]">
   <div className=" w-full h-[260.82px] aspect-[3/7]">  */}
-  <div className="absolute z-10  lg:-top-[354px] lg:right-10 -top-[82px] -right-3  w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px]">
+  <div className="absolute z-10  lg:block hidden
+  lg:top-[-30px] 
+  lg:right-10 
+  lg:h-[500px] 
+  lg:bg-transaparent
+  -top-[110px] 
+  -right-3  
+  w-[170px] sm:w-[200px] md:w-[280px] lg:w-[520px]"
+>
+  <div className="relative w-full lg:h-full h-[260.82px]">
+    <Image
+      src={Youngman}
+      alt="Profile Image"
+      fill
+      className="object-cover "   /* or object-contain */
+    />
+  </div>
+</div>
+
+  <div className="absolute z-10 lg:hidden block lg:top-[60px] lg:h-[900px] lg:right-10 lg:bg-amber-600 -top-[83.5px] -right-3  w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px]">
   <div className=" w-full lg:h-full h-[260.82px] aspect-[3/7]"> 
     <Image
       src={Girl}
@@ -76,7 +97,7 @@ const HomePage = () => {
 </div>
       </main>
 
-      <main className='lg:w-[1090px] lg:h-[209px] lg:bg-transparent lg:flex lg:flex-row lg:justify-between lg:items-center mt-11 bg-transparent
+      <main className='lg:w-[1090px] lg:h-[209px] lg:bg-transparent lg:flex lg:flex-row lg:justify-between lg:items-center lg:mt-11 mt-4 bg-transparent
       w-[340px] h-[892px] flex flex-col  justify-between items-center'>
         {cards.map((card) => (
           
@@ -86,19 +107,27 @@ const HomePage = () => {
           // ${card.id === 11 ? "block lg:hidden" : ""}
           // ${card.id === 1 ? "hidden lg:block" : ""}
           // `}>
-          <div
+//           <div
+//   key={card.id}
+//   className={`
+//     // ${card.id === 11 ? "block lg:hidden" : ""}
+//     // ${card.id === 1 ? "hidden lg:block" : ""}
+//     lg:w-[236px] lg:h-[209px] lg:shadow-lg lg:border lg:border-[#9BD9F280] lg:bg-white 
+//     lg:rounded-[5px] lg:flex lg:flex-col lg:justify-between lg:p-5
+//     w-[340px] h-[199px] p-5 border-[#9BD9F280] bg-white rounded-[5px]
+//     flex flex-col justify-between
+//   `}
+// >
+<div
   key={card.id}
-  className={`
-    ${card.id === 11 ? "block lg:hidden" : ""}
-    ${card.id === 1 ? "hidden lg:block" : ""}
-    lg:w-[236px] lg:h-[209px] lg:shadow-lg lg:border lg:border-[#9BD9F280] lg:bg-white 
+  className="
+    lg:w-[236px] lg:h-[209px] lg:shadow-lg border border-[#9BD9F280] lg:bg-white 
     lg:rounded-[5px] lg:flex lg:flex-col lg:justify-between lg:p-5
     w-[340px] h-[199px] p-5 border-[#9BD9F280] bg-white rounded-[5px]
     flex flex-col justify-between
-  `}
->
-   
-            <div className='lg:w-[48.3px] lg:h-[48.3px] lg:bg-transparent w-[60.27px] h-[60.27px]'>
+  "
+>           
+<div className='lg:w-[48.3px] lg:h-[48.3px] lg:bg-transparent w-[60.27px] h-[60.27px]'>
               <img src={card.image} alt='aeroplane' />
             </div>
             <div className='lg:w-[200px] lg:h-8 lg:bg-transparent lg:flex lg:items-center lg:-mt-4 mt-3.5 w-[270px] h-4'>
@@ -164,8 +193,8 @@ const HomePage = () => {
                 </div>
                 <div>
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
-             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative' />
-                  <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[869.5px] lg:right-40'>
+             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative focus:outline-none' />
+                  <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:transparent lg:absolute lg:top-[869px] lg:right-40'>
                     
                     <Image
                       src={Nigeria}
@@ -188,7 +217,7 @@ const HomePage = () => {
                 </div>
                 <div>
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
-             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative' />
+             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative focus:outline-none' />
                   {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
                     <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] lg:right-40'>
                     <Image
@@ -229,9 +258,9 @@ const HomePage = () => {
                 <div>
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
              lg:border-[#0079C6] lg:border-[1.33px]  lg:relative w-[275px] h-[41.2px] bg-transparent rounded-sm
-             border-[#0079C6] border-[1.33px] relative' />
+             border-[#0079C6] border-[1.33px] relative focus:outline-none' />
                   <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[869.5px] lg:right-40
-                  w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1652.5px] right-15'>
+                  w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1620.5px] right-17'>
                     <Image
                       src={Nigeria}
                       width={27.9}
@@ -256,11 +285,11 @@ const HomePage = () => {
                 </div>
                 <div>
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
-             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative  w-[275px] h-[41.2px] bg-transparent rounded-sm
-             border-[#0079C6] border-[1.33px] relative' />
+             lg:border-[#0079C6] lg:border-[1.33px]  lg:relative w-[275px] h-[41.2px] bg-transparent rounded-sm
+             border-[#0079C6] border-[1.33px] relative focus:outline-none' />
                   {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
                     <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] lg:right-40
-                     w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1760px] right-15'>
+                     w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent offset absolute top-[1726px] right-17'>
                     <Image
                       src={Canada}
                       width={27.9}
