@@ -1,68 +1,237 @@
 "use client"
-import React, { useState } from 'react'
-import { Menu } from 'lucide-react'
+import React, { useState } from "react"
+import { Menu, X } from "lucide-react"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const toggle = () => {
-    console.log("Menu clicked. Before toggle:", isOpen);
-    setIsOpen(!isOpen)
-  }
+  const toggle = () => setIsOpen(prev => !prev)
+  const closeMenu = () => setIsOpen(false)
 
   return (
-    <section className='relative lg:w-[1090px] lg:h-[93px] lg:bg-transparent lg:px-3.5 flex lg:items-center lg:mt-3.5 lg:justify-between
-      bg-white w-full h-12 px-6 py-2 justify-between items-center'
+    <section
+      className="
+        relative z-50
+        lg:w-[1090px] lg:h-[93px] lg:bg-transparent lg:px-3.5 flex lg:items-center lg:mt-3.5 lg:justify-between
+        bg-white w-full h-12 px-6 py-2 justify-between items-center
+      "
     >
       {/* LOGO */}
-      <div className='lg:w-32 lg:h-[29px] lg:bg-transparent lg:flex justify-center items-center lg:text-[#0079C6] 
-        text-[#0079C6] w-full '
+      <div
+        className="
+          lg:w-32 lg:h-[29px] lg:bg-transparent lg:flex justify-center items-center lg:text-[#0079C6] 
+          text-[#0079C6] w-full
+        "
       >
-        <h2 className='font-inria lg:font-semibold lg-text-[24px] lg:leading-[100%] text-[20px]'>
+        <h2 className="font-inria lg:font-semibold lg-text-[24px] lg:leading-[100%] text-[20px]">
           CowrisJapa
         </h2>
       </div>
-      {/* MOBILE MENU BUTTON */}
+
+      {/* MOBILE: MENU BUTTON */}
       <div className="flex items-center gap-2 lg:hidden">
-        <Menu 
-        size={25}
-        className="transition-all duration-300 cursor-pointer"
-        onClick={toggle}
-        />
-         {isOpen && (
-          <div className="absolute top-1 left-0 w-full bg-green-500 shadow-lg rounded p-2 z-20">
-      <ul>
-        <li className="py-2 px-4 my-1 hover:bg-[#DCF4FD]"><a href="/">Home</a></li>
-        <li className="py-2 px-4 my-1 hover:bg-[#DCF4FD]"><a href="#hire">Our Service</a></li>
-        <li className="py-2 px-4 my-1 hover:bg-[#DCF4FD]"><a href="#faqs">FAQs</a></li>
-        <li className="py-2 px-4 my-1 hover:bg-[#DCF4FD]"><a href="#contact">Contact Us</a></li>
-      </ul>
-    </div>
-  )}
-</div>
-      {/* DESKTOP NAV */}
-      <main className='lg:w-[500px] lg:h-[21px] lg:bg-transparent lg:flex justify-between items-center lg:text-[#0079C6] hidden'>
-        <h2 className='font-inria lg:font-semibold lg:text-[17.27px]'>Consultants</h2>
-        <h2 className='font-inria lg:font-semibold lg:text-[17.27px]'>Students</h2>
-        <h2 className='font-inria lg:font-semibold lg:text-[17.27px]'>Pay Tution</h2>
-        <h2 className='font-inria lg:font-semibold lg:text-[17.27px]'>GIC Program</h2>
+        <button
+          type="button"
+          onClick={toggle}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          className="p-1 rounded focus:outline-none focus:ring-2 focus:ring-[#0079C6]"
+        >
+          {isOpen ? (
+            <X size={25} className="transition-all duration-300 cursor-pointer" />
+          ) : (
+            <Menu size={25} className="transition-all duration-300 cursor-pointer" />
+          )}
+        </button>
+      </div>
+
+      {/* DESKTOP NAV LINKS */}
+      <main className="lg:w-[500px] lg:h-[21px] lg:bg-transparent lg:flex justify-between items-center lg:text-[#0079C6] hidden">
+        {["Consultants", "Students", "Pay Tution", "GIC Program"].map(item => (
+          <h2
+            key={item}
+            className="
+              font-inria lg:font-semibold lg:text-[17.27px]
+              transition-all duration-200
+              hover:text-[#005b94] hover:underline underline-offset-4
+            "
+          >
+            {item}
+          </h2>
+        ))}
       </main>
 
-      <main className='lg:w-[235px] lg:h-9 lg:bg-transparent lg:flex justify-between items-center hidden'>
-        <div className='lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-white'>
-          <h2 className='font-inria lg:font-normal lg:text-[18.16px] text-[#0079C6]'>Login</h2>
+      {/* DESKTOP AUTH BUTTONS */}
+      <main className="lg:w-[235px] lg:h-9 lg:bg-transparent lg:flex justify-between items-center hidden">
+        <div
+          className="
+            lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-white
+            transition-all duration-200 hover:bg-[#E6F4FF] hover:shadow-sm
+          "
+        >
+          <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-[#0079C6]">Login</h2>
         </div>
 
-        <div className='lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-[#0079C6]'>
-          <h2 className='font-inria lg:font-normal lg:text-[18.16px] text-white'>Register</h2>
+        <div
+          className="
+            lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-[#0079C6]
+            transition-all duration-200 hover:bg-[#0062a0] hover:shadow-sm
+          "
+        >
+          <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-white">Register</h2>
         </div>
       </main>
 
+      {/* MOBILE: SLIDE-IN MENU + OVERLAY */}
+      <div
+        className={`
+          lg:hidden fixed inset-0 z-40
+          transition-opacity duration-300
+          ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
+        `}
+        onClick={closeMenu}
+      >
+        {/* Dim background */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Sliding panel */}
+        <nav
+          className={`
+            absolute top-0 right-0 h-full w-64 bg-white shadow-lg rounded-l
+            p-4 pt-6
+            transition-transform duration-300
+            ${isOpen ? "translate-x-0" : "translate-x-full"}
+          `}
+          onClick={e => e.stopPropagation()}
+        >
+          {/* Close icon inside panel */}
+          <div className="flex justify-end mb-4">
+            <button
+              type="button"
+              onClick={closeMenu}
+              aria-label="Close menu"
+              className="p-1 rounded focus:outline-none focus:ring-2 focus:ring-[#0079C6]"
+            >
+              <X size={24} />
+            </button>
+          </div>
+
+          <ul className="space-y-2">
+            {[
+              { label: "Home", href: "/" },
+              { label: "Our Service", href: "#hire" },
+              { label: "FAQs", href: "#faqs" },
+              { label: "Contact Us", href: "#contact" },
+            ].map(link => (
+              <li
+                key={link.label}
+                className="
+                  group
+                  py-2 px-3 rounded-md
+                  transition-all duration-150
+                  hover:bg-[#0079C6]
+                  active:bg-[#005b94]
+                  active:scale-[0.98]
+                  select-none
+                "
+              >
+                <a
+                  href={link.href}
+                  onClick={closeMenu}
+                  className="
+                    block
+                    text-[15px]
+                    text-[#0079C6]
+                    transform
+                    transition-all duration-150
+                    group-hover:text-white
+                    group-hover:translate-x-1
+                    group-active:text-white
+                  "
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </section>
   )
 }
 
 export default Navbar
+
+
+
+
+
+
+
+// "use client"
+// import React, { useState } from 'react'
+// import { Menu } from 'lucide-react'
+
+// const Navbar = () => {
+//   const [isOpen, setIsOpen] = useState(false)
+
+//   const toggle = () => {
+//     console.log("Menu clicked. Before toggle:", isOpen);
+//     setIsOpen(!isOpen)
+//   }
+
+//   return (
+//     <section className='relative lg:w-[1090px] lg:h-[93px] lg:bg-transparent lg:px-3.5 flex lg:items-center lg:mt-3.5 lg:justify-between
+//       bg-white w-full h-12 px-6 py-2 justify-between items-center'
+//     >
+//       {/* LOGO */}
+//       <div className='lg:w-32 lg:h-[29px] lg:bg-transparent lg:flex justify-center items-center lg:text-[#0079C6] 
+//         text-[#0079C6] w-full '
+//       >
+//         <h2 className='font-inria lg:font-semibold lg-text-[24px] lg:leading-[100%] text-[20px]'>
+//           CowrisJapa
+//         </h2>
+//       </div>
+//       {/* MOBILE MENU BUTTON */}
+//       <div className="flex items-center gap-2 lg:hidden">
+//         <Menu 
+//         size={25}
+//         className="transition-all duration-300 cursor-pointer"
+//         onClick={toggle}
+//         />
+//          {isOpen && (
+//           <div className="absolute top-1 left-0 w-full bg-green-500 shadow-lg rounded p-2 z-20">
+//       <ul>
+//         <li className="py-2 px-4 my-1 hover:bg-[#DCF4FD]"><a href="/">Home</a></li>
+//         <li className="py-2 px-4 my-1 hover:bg-[#DCF4FD]"><a href="#hire">Our Service</a></li>
+//         <li className="py-2 px-4 my-1 hover:bg-[#DCF4FD]"><a href="#faqs">FAQs</a></li>
+//         <li className="py-2 px-4 my-1 hover:bg-[#DCF4FD]"><a href="#contact">Contact Us</a></li>
+//       </ul>
+//     </div>
+//   )}
+// </div>
+//       {/* DESKTOP NAV */}
+//       <main className='lg:w-[500px] lg:h-[21px] lg:bg-transparent lg:flex justify-between items-center lg:text-[#0079C6] hidden'>
+//         <h2 className='font-inria lg:font-semibold lg:text-[17.27px]'>Consultants</h2>
+//         <h2 className='font-inria lg:font-semibold lg:text-[17.27px]'>Students</h2>
+//         <h2 className='font-inria lg:font-semibold lg:text-[17.27px]'>Pay Tution</h2>
+//         <h2 className='font-inria lg:font-semibold lg:text-[17.27px]'>GIC Program</h2>
+//       </main>
+
+//       <main className='lg:w-[235px] lg:h-9 lg:bg-transparent lg:flex justify-between items-center hidden'>
+//         <div className='lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-white'>
+//           <h2 className='font-inria lg:font-normal lg:text-[18.16px] text-[#0079C6]'>Login</h2>
+//         </div>
+
+//         <div className='lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-[#0079C6]'>
+//           <h2 className='font-inria lg:font-normal lg:text-[18.16px] text-white'>Register</h2>
+//         </div>
+//       </main>
+
+//     </section>
+//   )
+// }
+
+// export default Navbar
 
 
 
