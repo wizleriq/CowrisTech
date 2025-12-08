@@ -52,7 +52,7 @@ const HomePage = () => {
               Applying for study, work or permanent residency? We help you handle the most important steps -- all in one secure ecosystem.
             </h2>
           </div>
-          <div className='lg:w-[200px] lg:bg-transparent lg:mt-14 flex items-center mt-3 '>
+          <div className='lg:w-[200px] lg:bg-transparent lg:mt-14 flex items-center mt-2 '>
             <div className='lg:w-36 lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center 
             lg:items-center lg:bg-[#0079C6] w-[74px] h-[23.6px] bg-[#0079C6] flex justify-center items-center rounded-[3px]'>
               <button className='font-inria lg:font-normal lg:text-[18.16px] lg:leading-[100%] lg:tracking-normal lg:text-white
@@ -85,7 +85,7 @@ const HomePage = () => {
   </div>
 </div>
 
-  <div className="absolute z-10 lg:hidden block lg:top-[60px] lg:h-[900px] lg:right-10 lg:bg-amber-600 -top-[83.5px] -right-3  w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px]">
+  <div className="absolute z-10 lg:hidden block lg:top-[60px] lg:h-[900px] lg:right-10 lg:bg-amber-600 -top-[86.5px] -right-3  w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px]">
   <div className=" w-full lg:h-full h-[260.82px] aspect-[3/7]"> 
     <Image
       src={Girl}
