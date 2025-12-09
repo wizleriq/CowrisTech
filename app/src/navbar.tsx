@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { Menu, X } from "lucide-react"
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
+const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => setIsOpen(prev => !prev)
   const closeMenu = () => setIsOpen(false)
@@ -96,8 +96,8 @@ const Navbar = () => {
         {/* Sliding panel */}
         <nav
           className={`
-            absolute top-0 right-0 h-full w-64 bg-white shadow-lg rounded-l
-            p-4 pt-6
+            absolute top-0 right-0 h-100 w-full bg-white shadow-lg
+            p-4 pt-6 mt-12
             transition-transform duration-300
             ${isOpen ? "translate-x-0" : "translate-x-full"}
           `}
@@ -111,16 +111,17 @@ const Navbar = () => {
               aria-label="Close menu"
               className="p-1 rounded focus:outline-none focus:ring-2 focus:ring-[#0079C6]"
             >
-              <X size={24} />
+              {/* <X size={24} /> */}
             </button>
           </div>
 
-          <ul className="space-y-2">
+          <ul className="space-y-2 font-semibold text-[17.27px] -mt-5 leading-[100%] text-[#C0C3CD]">
             {[
               { label: "Home", href: "/" },
-              { label: "Our Service", href: "#hire" },
-              { label: "FAQs", href: "#faqs" },
-              { label: "Contact Us", href: "#contact" },
+              { label: "Consultants", href: "#hire" },
+              { label: "Students", href: "#faqs" },
+              { label: "Pay Tution", href: "#contact" },
+              { label: "GIC Programs", href: "#contact" },
             ].map(link => (
               <li
                 key={link.label}
@@ -153,6 +154,20 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <div className="flex flex-col justify-between items-center mx-auto  bg-ed-500 w-84 h-24 mt-5">
+            {/* width: 335;
+height: 25.796106338500977;
+top: 254.82px;
+left: 30px;
+angle: 0 deg;
+opacity: 1;
+border-radius: 2.42px;
+border-width: 0.61px; */}
+
+            <button className="w-[335px] h-[35.79px] bg-transparent rounded-sm font-semibold text-[#0079C6]  border border-[#0079C6] ">Login</button>
+          <button className="w-[335px] h-[35.79px] font-semibol bg-[#0079C6] text-white rounded-sm">Register</button>
+          </div>
+          
         </nav>
       </div>
     </section>

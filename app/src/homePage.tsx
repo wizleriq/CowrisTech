@@ -38,8 +38,7 @@ const HomePage = () => {
 
         {/* Left panel content */}
         <main className="relative z-10 lg:w-[592px] lg:h-[322px] lg:flex lg:flex-col lg:p-2 lg:bg-transparent  lg:pt-0 pt-1.5 px-4
-        lg:orange-400
-        w-[250px] h-[70.59]">
+        lg:orange-400 w-[250px] h-[70.59]">
           <div className='lg:w-[550px] lg:h-[110px] lg:bg-transparent'>
             <h2 className='lg:font-semibold lg:text-[35px] lg:leading-11 lg:text-[#0079C6] 
             font-semibold text-[15.27px] text-[#0079C6] leading-5'>
@@ -121,7 +120,7 @@ const HomePage = () => {
 <div
   key={card.id}
   className="
-    lg:w-[236px] lg:h-[209px] lg:shadow-lg border border-[#9BD9F280] lg:bg-white 
+    lg:w-[236px] lg:h-[209px] lg:shadow-lg border lg:bg-white 
     lg:rounded-[5px] lg:flex lg:flex-col lg:justify-between lg:p-5
     w-[340px] h-[199px] p-5 border-[#9BD9F280] bg-white rounded-[5px]
     flex flex-col justify-between
@@ -244,7 +243,7 @@ const HomePage = () => {
         </div>
         { /* small screen starts */ } 
         <div className='lg:w-[385px] lg:hidden block lg:h-[334px] lg:border lg:rounded-sm lg:border-[#0079C6] lg:flex lg:flex-col lg:items-center
-            bg-[#FFFFFF] lg:mt-0 lg:pb-0 pb-4 bg-[#F4FBFF] mt-8 w-[340px] h-[290.5px] rounded-sm border-[#0079C6] flex flex-col items-center'>
+            bg-[#FFFFFF] lg:mt-0 lg:pb-0 pb-4  mt-8 w-[340px] h-[290.5px] rounded-sm border shadow-md border-[#9BD9F280] flex flex-col items-center'>
             <div className='lg:w-[315px] lg:h-[213px] lg:bg-transparent  lg:flex lg:flex-col lg:justify-between lg:mt-10 lg:text-[#000000]
           w-[278px] h-[187.9px] flex flex-col justify-between mt-10 text-[#000000] bg-white'>
               <div className='lg:w-[314px] lg:h-[66.5px] lg:rounded-sm lg:flex lg:flex-col lg:justify-between lg:bg-transparent
@@ -595,7 +594,7 @@ lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] w-screen h-[840px] mt-4 flex flex-co
   </div>
  
 </main>
-{/* Contact Section Endss */ }
+{/* Contact Section Ends */ }
 </section>
   )
 }
