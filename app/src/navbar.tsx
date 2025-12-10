@@ -27,7 +27,6 @@ const [isOpen, setIsOpen] = useState(false)
           CowrisJapa
         </h2>
       </div>
-
       {/* MOBILE: MENU BUTTON */}
       <div className="flex items-center gap-2 lg:hidden">
         <button
@@ -70,7 +69,7 @@ const [isOpen, setIsOpen] = useState(false)
         >
           <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-[#0079C6]">Login</h2>
         </div>
-
+      
         <div
           className="
             lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-[#0079C6]
@@ -97,7 +96,7 @@ const [isOpen, setIsOpen] = useState(false)
         <nav
           className={`
             absolute top-0 right-0 h-100 w-full bg-white shadow-lg
-            p-4 pt-6 mt-12
+            p-4 pt-6 mt-0
             transition-transform duration-300
             ${isOpen ? "translate-x-0" : "translate-x-full"}
           `}
@@ -111,7 +110,7 @@ const [isOpen, setIsOpen] = useState(false)
               aria-label="Close menu"
               className="p-1 rounded focus:outline-none focus:ring-2 focus:ring-[#0079C6]"
             >
-              {/* <X size={24} /> */}
+              <X size={24} />
             </button>
           </div>
 
