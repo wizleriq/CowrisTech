@@ -22,7 +22,7 @@ const HomePage = () => {
   //   <section className="relative lg:bg-white lg:w-full lg:h-[3200px] lg:px-0 lg:flex  flex-col lg:items-center flex
   //  items-center bg-white-500 px-3
   //   w-[428px] h-[6000px]">
-      <section className="relative lg:w-full w-full lg:h-[3200px]  h-[3568px] lg:bg-white bg-[#F4FBFF] flex flex-col px-3 items-center sm:px-2 lg:px-0">
+      <section className="relative w-full max-w-full lg:h-[3200px]  h-[3568px] lg:bg-white bg-[#F4FBFF] flex flex-col px-3 items-center sm:px-2 lg:px-0">
        <main
         className="relative lg:w-[1090px] lg:h-[470px] lg:px-0 lg:flex lg:justify-between lg:items-center w-full h-[178px] "
         style={{
@@ -96,7 +96,7 @@ const HomePage = () => {
 </div>
       </main>
 
-      <main className='lg:w-[1090px] lg:h-[209px] lg:bg-transparent lg:flex lg:flex-row lg:justify-between lg:items-center lg:mt-11 mt-4 bg-transparent
+      <main className='w-full max-w-full lg:h-[209px] lg:bg-transparent lg:flex lg:flex-row lg:justify-between lg:items-center lg:mt-11 mt-4 bg-transparent
       w-[340px] h-[892px] flex flex-col  justify-between items-center'>
         {cards.map((card) => (
           
@@ -153,7 +153,7 @@ const HomePage = () => {
         ))}
       </main>
 
-      <main className='lg:w-[1090px] lg:h-[880px] lg:bg-transparent lg:flex lg:flex-col 
+      <main className='w-full max-w-full lg:h-[880px] lg:bg-transparent lg:flex lg:flex-col 
       lg:justify-between lg:mt-8 mt-8 bg-transparent lg:p-0 w-[340px] h-[1600px] flex flex-col '>
         <div className='lg:w-[1090px] lg:h-[430px] lg:flex lg:justify-between lg:flex-row lg:p-6 lg:items-center rounded-[3px] w-full h-[415px] p-5 flex flex-col justify-between
         lg:bg-[#0079C6] bg-[#0079C6]'>
@@ -483,7 +483,7 @@ const HomePage = () => {
 </main>
 
 {/* Contact Section Starts */ }
-<main className='lg:w-full lg:h-[339px] lg:bg-[#0079C63D] lg:flex lg:flex-col lg:items-center lg:justify-between lg:mt-20
+<main className='w-full max-w-full lg:h-[339px] lg:bg-[#0079C63D] lg:flex lg:flex-col lg:items-center lg:justify-between lg:mt-20
 lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] w-screen h-[840px] mt-4 flex flex-col justify-between items-center'>
   {/* <div className='lg:w-[1020px] lg:h-[180px] lg:bg-yellow-400 lg:flex lg:justify-between'> */}
     <div className='lg:w-[1120px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg:p-0 py-6
