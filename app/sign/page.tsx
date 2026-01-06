@@ -3,7 +3,7 @@ import React from 'react'
 const Page = () => {
   return (
     <section className="w-full max-w-full mx-auto   lg:h-[585px] 
-      xl:h-[915px] lg:bg-green-500  lg:flex 
+      max-h-[915px] lg:bg-green-500  lg:flex 
     lg:flex-row lg:justify-center lg:items-center">
 
          {/* <section className="
