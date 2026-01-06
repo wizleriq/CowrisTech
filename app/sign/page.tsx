@@ -2,11 +2,13 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <section className="w-full max-w-full mx-auto lg:h-[585px] lg:bg-green-500 lg:flex lg:flex-row lg:justify-center lg:items-center">
+    <section className="w-full max-w-full mx-auto lg:h-[800px] lg:bg-green-500 lg:flex lg:flex-row lg:justify-center lg:items-center">
       
       {/* Left box */}
       <div className="lg:w-full max-w-full lg:h-[585px] lg:bg-[#b4e5f3] lg:p-16">
-        {/* Content for left box */}
+        <div>
+
+        </div>
       </div>
 
       {/* Right box */}
