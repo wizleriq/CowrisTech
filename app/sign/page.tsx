@@ -5,12 +5,12 @@ const Page = () => {
     <section className="w-full max-w-full mx-auto lg:h-[585px] lg:bg-green-500 lg:flex lg:flex-row lg:justify-center lg:items-center">
       
       {/* Left box */}
-      <div className="lg:w-full max-w-full lg:h-[585px] lg:bg-[#b4e5f3] lg:p-16">
+      <div className="lg:w-full max-w-full max-h-full lg:bg-[#b4e5f3] lg:p-16">
         {/* Content for left box */}
       </div>
 
       {/* Right box */}
-      <div className="lg:w-full max-w-full lg:h-[585px] lg:bg-[#F8FAFC] lg:flex lg:justify-center lg:items-center">
+      <div className="lg:w-full max-w-full max-h-full  lg:bg-[#F8FAFC] lg:flex lg:justify-center lg:items-center">
         {/* Content for right box */}
       </div>
 
