@@ -2,8 +2,21 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <section className="w-full max-w-full mx-auto max-h-[906px] lg:bg-green-500 lg:flex lg:flex-row lg:justify-center lg:items-center">
-      
+    <section className="w-full max-w-full mx-auto   lg:h-[585px] 
+      xl:h-[915px] lg:bg-green-500  lg:flex 
+    lg:flex-row lg:justify-center lg:items-center">
+
+         {/* <section className="
+      w-full 
+      max-w-[1440px] 
+      mx-auto 
+      lg:h-[585px] 
+      xl:h-[915px]
+      lg:flex 
+      lg:justify-center 
+      lg:items-center
+    "></section>
+       */}
       {/* Left box */}
       <div className="lg:w-full max-w-full lg:h-[585px] lg:bg-[#b4e5f3] lg:p-16">
         <div>
