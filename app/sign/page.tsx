@@ -2,7 +2,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <section className="w-full max-w-full mx-auto lg:h-[585px] lg:bg-green-500 lg:flex lg:flex-row lg:justify-center lg:items-center">
+    <section className="w-full max-w-full mx-auto max-h-full lg:bg-green-500 lg:flex lg:flex-row lg:justify-center lg:items-center">
       
       {/* Left box */}
       <div className="lg:w-full max-w-full max-h-full lg:bg-[#b4e5f3] lg:p-16">
