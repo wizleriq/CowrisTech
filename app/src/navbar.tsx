@@ -1,6 +1,10 @@
 "use client"
 import React, { useState } from "react"
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
+
+// import Navbar from "./src/navbar";
+// import HomePage from "./src/homePage";
 
 const Navbar = () => {
 const [isOpen, setIsOpen] = useState(false)
@@ -61,6 +65,7 @@ const [isOpen, setIsOpen] = useState(false)
 
       {/* DESKTOP AUTH BUTTONS */}
       <main className="lg:w-[235px] lg:h-9 lg:bg-transparent lg:flex justify-between items-center hidden">
+        <Link href="/sign">
         <div
           className="
             lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-white
@@ -69,6 +74,7 @@ const [isOpen, setIsOpen] = useState(false)
         >
           <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-[#0079C6]">Login</h2>
         </div>
+        </Link>
       
         <div
           className="
@@ -163,7 +169,8 @@ opacity: 1;
 border-radius: 2.42px;
 border-width: 0.61px; */}
 
-            <button className="w-[335px] h-[35.79px] bg-transparent rounded-sm font-semibold text-[#0079C6]  border border-[#0079C6] ">Login</button>
+            <Link href="/signup"><button className="w-[335px] h-[35.79px] bg-transparent rounded-sm font-semibold text-[#0079C6]  border border-[#0079C6] ">Login</button>
+            </Link>
           <button className="w-[335px] h-[35.79px] font-semibol bg-[#0079C6] text-white rounded-sm">Register</button>
           </div>
           
