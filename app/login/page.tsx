@@ -24,29 +24,8 @@ opacity: 1; */}
           {/* Create Account Starts */}
           <div className='lg:w-[276px] lg:h-14 bg-green-400 flex-col justify-center items-center  lg:flex lg:-mt-13'>
               <h2 className='lg:text-[28.66px] lg:font-medium lg:leading-[100%] lg:text-center'>Sign In</h2>
-        
-          
             <h2 className='lg:text-[12px] lg:font-medium lg:leading-[100%] text-center mt-2'>Welcome back! Please enter your details</h2>
-          {/* font-family: Geist;
-font-weight: 400;
-font-style: Regular;
-font-size: 16.21px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 0%; */}
-
           </div>
- 
-
- {/* <div className="lg:w-[276px] lg:h-14 bg-green-400 flex flex-col items-center justify-center">
-  <h2 className="lg:text-[28.66px] lg:font-medium lg:leading-[100%] text-center">
-    Create an account
-  </h2>
-
-  <h2 className="lg:text-[12px] lg:font-medium lg:leading-[100%] text-center mt-2">
-    Welcome back! Please enter your details
-  </h2>
-</div> */}
 
           {/* Student and Consultant Ends */}
 
