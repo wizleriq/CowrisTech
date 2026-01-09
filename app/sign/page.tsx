@@ -13,7 +13,7 @@ const Page = () => {
         <div className="lg:w-full max-w-full lg:h-[1000px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center ">
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
-         <div className="lg:w-[471px] max-w-full lg:h-[890px] lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
+         <div className="lg:w-full max-w-full lg:h-[890px] lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
             {/* width: 471;
 height: 556.93115234375;
 top: 106px;
@@ -329,7 +329,7 @@ opacity: 1; */}
        <Image
       src={Study}
       alt="Profile Image"
-      className="object-filllg lg:w-[442px] lg:h-[539px] lg:justify-between lg:items-center"   /* or object-contain */
+      className="object-fill lg:w-[442px] lg:h-[539px] lg:justify-between lg:items-center"   /* or object-contain */
     />
       </div>
       </div>
