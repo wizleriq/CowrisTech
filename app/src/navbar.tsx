@@ -75,7 +75,8 @@ const [isOpen, setIsOpen] = useState(false)
           <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-[#0079C6]">Login</h2>
         </div>
         </Link>
-      
+
+        <Link href="/login">
         <div
           className="
             lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-[#0079C6]
@@ -84,6 +85,7 @@ const [isOpen, setIsOpen] = useState(false)
         >
           <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-white">Register</h2>
         </div>
+        </Link>
       </main>
 
       {/* MOBILE: SLIDE-IN MENU + OVERLAY */}
