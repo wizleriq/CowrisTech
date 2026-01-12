@@ -65,7 +65,7 @@ const [isOpen, setIsOpen] = useState(false)
 
       {/* DESKTOP AUTH BUTTONS */}
       <main className="lg:w-[235px] lg:h-9 lg:bg-transparent lg:flex justify-between items-center hidden">
-        <Link href="/sign">
+        <Link href="/login">
         <div
           className="
             lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-white
@@ -76,7 +76,7 @@ const [isOpen, setIsOpen] = useState(false)
         </div>
         </Link>
 
-        <Link href="/login">
+        <Link href="/sign">
         <div
           className="
             lg:w-[110px] lg:h-9 lg:border lg:rounded-[3px] lg:border-[#0079C6] lg:flex lg:justify-center lg:items-center lg:bg-[#0079C6]
