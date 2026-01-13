@@ -164,7 +164,7 @@ const [isOpen, setIsOpen] = useState(false)
           <div className="flex flex-col justify-between items-center mx-auto  bg-ed-500 w-84 h-24 mt-5">
             <Link href="/login"><button className="w-[335px] h-[35.79px] bg-transparent rounded-sm font-semibold text-[#0079C6]  border border-[#0079C6] ">Login</button>
             </Link>
-          <Link href="/"><button className="w-[335px] h-[35.79px] font-semibol bg-[#0079C6] text-white rounded-sm">Register</button></Link>
+          <Link href="/sign"><button className="w-[335px] h-[35.79px] font-semibol bg-[#0079C6] text-white rounded-sm">Register</button></Link>
           </div>
         </nav>
       </div>
