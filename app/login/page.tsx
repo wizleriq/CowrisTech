@@ -14,16 +14,16 @@ const Page = () => {
   </div>
     <section className="w-full max-w-full mx-auto
       lg:h-[900px] lg:bg-green-500 lg:flex lg:flex-col lg:justify-center lg:items-center
-     h-[800px] bg-white lg:px-0 px-4 items-center sm:px-2">
+     h-[600px] flex justify-center bg-white lg:px-0 px-4 items-center sm:px-2">
       {/* Left box */}
-      <div className='lg:w-full max-w-full lg:flex bg-red-300 lg:h-[900px]  h-[300px]'>
+      <div className='lg:w-full max-w-full lg:flex lg:h-[900px] h-[500px]'>
         <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:px-0 lg:flex lg:items-center lg:justify-center ">
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
          <div className="lg:w-[471px] max-w-full lg:h-[500px] lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
           {/* Create Account Starts */}
           <div className='lg:w-[276px] lg:h-14 flex-col justify-center items-center lg:flex lg:-mt-13
-          w-full h-12 flex bg-green-300'>
+          w-full h-12 flex'>
               <h2 className='lg:text-[28.66px] lg:font-medium lg:leading-[100%] lg:text-center lg:mt-0 lg:mb-0 -mb-1 mt-2  font-medium text-[20px] leading-[100%]'>Sign In</h2>
             <h2 className='lg:text-[14px] lg:font-medium lg:leading-[100%] text-center mt-2 text-[#565656]'>Welcome back! Please enter your details</h2>
           </div>
@@ -120,21 +120,23 @@ const Page = () => {
   {/* Small Screen Ends */}
   
   <div className="lg:w-[384px] lg:h-10 lg:px-0 text-sm flex justify-between items-center bg-transparent
-  w-[300px] h-[37px] mt-3 mx-auto">
-     <div className="lg:w-[170.1px] lg:h-[31px] lg:px-4 lg:text-sm lg:rounded-md lg:bg-transaparent lg:border
-     lg:flex lg:justify-between lg:items-center lg:border-[#AAB2CC] lg:outline-none">
-    <div className="relative lg:w-[13px] lg:flex lg:justify-between lg:items-center lg:bg-transparent lg:h-[9.4px]">
+  w-full h-[37px] mt-3 mx-auto bg-transparent">
+     <div className="lg:w-[170.1px] lg:h-[31px] lg:px-4 text-sm rounded-md bg-transaparent border
+     flex justify-between items-center border-[#AAB2CC] w-[150px] h-[31px] lg:outline-none bg-transparent px-3
+     ">
+     <div className="relative w-[13px] h-[9.4px] flex justify-between items-center bg-transparent ">
          <Image
       src={Goggle}
       alt="Profile Image"
       fill
-      className="object-fill lg:w-[13px] lg:h-[9.4px] lg:justify-between lg:items-center"   /* or object-contain */
+     className="object-fill w-[13px] h-[9.4px] justify-between items-center" 
     />
     </div>
-     <h2 className='lg:text-[12.97px]'>Sign in with Google</h2>
+     <h2 className='lg:text-[12.97px] text-[11.64px]'>Sign in with Google</h2>
     </div>
-   <div className="lg:w-[170.1px] lg:h-[31px] lg:px-4 lg:text-sm lg:rounded-md lg:bg-transaparent lg:border
-     lg:flex lg:justify-between lg:items-center lg:border-[#AAB2CC] lg:outline-none">
+   <div className="lg:w-[170.1px] lg:h-[31px] lg:px-4 text-sm rounded-md bg-transaparent border
+     flex justify-between items-center border-[#AAB2CC] w-[150px] h-[31px] lg:outline-none bg-transparent px-3
+     ">
           <div className="relative w-[13px] h-[9.4px] flex justify-between items-center bg-transparent ">
          <Image
       src={Apple}
@@ -143,16 +145,20 @@ const Page = () => {
      className="object-fill w-[13px] h-[9.4px] justify-between items-center" 
     />
     </div>
-     <h2>Sign in with Apple</h2>
+    <h2 className='lg:text-[12.97px] text-[11.64px]'>Sign in with Apple</h2>
     </div>
   </div>
 
    <Link href="/sign">
-  <div className='lg-mx-auto lg:bg-transparent lg:w-[384px] lg:flex lg:items-center lg:justify-center lg:h-6'>
-    <h2 className=''>Already have an account? <span className='text-[#0079C6]'>Sign Up</span></h2>
+  <div className='mx-auto lg:bg-transparent w-full lg:mt-0 mt-4  flex items-center justify-center h-6'>
+    <h2 className='text-[12.6px]'>Already have an account? <span className='text-[#0079C6]'>Sign Up</span></h2>
   </div>
   </Link>
-</form>        
+
+   <div className='lg:hidden mx-auto w-full lg:mt-0 mt-4  flex items-center justify-center h-6'>
+    <h2 className='text-[12.6px]'>Experiencing an issue? Contact support<span className='text-[#0079C6]'>Sign Up</span></h2>
+  </div>
+</form>     
         </div>
         <div>
         </div>

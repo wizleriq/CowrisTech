@@ -202,12 +202,12 @@ const Page = () => {
 
      <div className="lg:w-[137.1px] lg:h-[31px] lg:px-8 text-sm rounded-md bg-transaparent border
      flex justify-between items-center w-[87px] h-[29px] px-2.5 border-[#AAB2CC] outline-none">
-      <div className="relative lg:w-[13px] lg:flex lg:justify-between lg:items-center lg:bg-transparent lg:h-[9.4px]">
+      <div className="relative w-[13px] h-[9.4px] flex justify-between items-center bg-transparent ">
          <Image
       src={Goggle}
       alt="Profile Image"
       fill
-      className="object-fill lg:w-[13px] lg:h-[9.4px] lg:justify-between lg:items-center"   /* or object-contain */
+     className="object-fill w-[13px] h-[9.4px] justify-between items-center" 
     />
     </div>
      <h2> Google</h2>

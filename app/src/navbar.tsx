@@ -162,20 +162,10 @@ const [isOpen, setIsOpen] = useState(false)
             ))}
           </ul>
           <div className="flex flex-col justify-between items-center mx-auto  bg-ed-500 w-84 h-24 mt-5">
-            {/* width: 335;
-height: 25.796106338500977;
-top: 254.82px;
-left: 30px;
-angle: 0 deg;
-opacity: 1;
-border-radius: 2.42px;
-border-width: 0.61px; */}
-
-            <Link href="/signup"><button className="w-[335px] h-[35.79px] bg-transparent rounded-sm font-semibold text-[#0079C6]  border border-[#0079C6] ">Login</button>
+            <Link href="/login"><button className="w-[335px] h-[35.79px] bg-transparent rounded-sm font-semibold text-[#0079C6]  border border-[#0079C6] ">Login</button>
             </Link>
-          <button className="w-[335px] h-[35.79px] font-semibol bg-[#0079C6] text-white rounded-sm">Register</button>
+          <Link href="/"><button className="w-[335px] h-[35.79px] font-semibol bg-[#0079C6] text-white rounded-sm">Register</button></Link>
           </div>
-          
         </nav>
       </div>
     </section>
