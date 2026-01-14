@@ -75,7 +75,7 @@ w-[45px] h-[50px]'>
               <Link href="/verifyphone">
      <button
       type="submit"
-      className=" text-white bg-[#565656] lg:w-[400px] lg:h-[40px]  lg:mt-0 mt-6 border border-[#0079C6] 
+      className=" text-white bg-[#565656] lg:w-[400px] lg:h-[40px]  lg:mt-0 mt-6 border lg:border-[#0079C6] 
       lg:rounded-md lg:text-[20.12px] font-medium w-full h-[38px] rounded-md text-[20.12px]"
     >
         <h2 className='text-[#ffffff] text-[18px]'>Submit Code</h2>

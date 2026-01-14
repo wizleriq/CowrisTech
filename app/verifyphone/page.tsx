@@ -12,8 +12,7 @@ const Page = () => {
   </div>
     <section className="lg:w-full max-w-full mx-auto
       lg:h-[900px] lg:bg-green-500 lg:flex lg:flex-col lg:justify-center lg:items-center
-       w-[393px] h-[720px] flex flex-col justify-center bg-white lg:px-0 px-4 items-center sm:px-2">
-         
+       w-[393px] h-[720px] flex flex-col justify-center bg-white lg:px-0 px-4 items-center sm:px-2"> 
          <div className="lg:hidden w-[167PX] max-w-full h-[121px]  flex justify-center 
        items-center mx-auto">
          <div className="lg:w-[442px] lg:h-[539px] max-w-full lg:bg-[#F6FDFF] lg:rounded-md">

@@ -2,18 +2,23 @@ import React from 'react'
 import Password from '@/app/src/img/Password.png'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Nav from '../nav/page'
 const Page = () => {
   return (
-    <section className="w-full max-w-full mx-auto
-      lg:h-[900px] lg:bg-green-500 lg:flex lg:flex-col lg:justify-center lg:items-center">
+    <>
+      <div className="lg:hidden">
+  <Nav />
+  </div>
+    <section className="lg:w-full max-w-full mx-auto
+      lg:h-[900px] lg:bg-transparent lg:flex lg:flex-col lg:justify-center lg:items-center 
+      w-[393px] h-[720px] flex flex-col  lg:px-0 px-4 sm:px-2">
       {/* Left box */}
-      <div className='lg:w-full max-w-full lg:flex bg-red-300 lg:h-[900px]'>
+      <div className='lg:w-full max-w-full lg:flex lg:h-[900px] h-[400px] lg:pt-0 pt-2.5'>
          <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#ffffff] lg:px-0 lg:flex lg:items-center lg:justify-center ">
         {/* <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center "> */}
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
-        <div className="lg:w-[520px] max-w-full lg:h-[400px] lg:bg-[#ffffff] shadow-md lg:p-16 flex flex-col justify-center items-center">
+        <div className="lg:w-[520px] max-w-full lg:h-[400px] lg:bg-[#ffffff] lg:shadow-md lg:p-16 flex flex-col justify-center items-center">
   
   {/* Create Account Starts */}
   <div className="lg:w-[300px] flex flex-col justify-center items-center text-center mb-6 self-start">
@@ -30,10 +35,11 @@ const Page = () => {
 
     {/* Password */}
     <div className="flex flex-col lg:w-[384.26px] text-left">
-      <label className="mb-2">Password</label>
+      <label className="lg:mb-2 mb-1 lg:mt-0 mt-3">Password</label>
       <input
         type="password"
-        className="lg:h-[40px] lg:px-3 lg:text-sm lg:rounded-md lg:border lg:border-[#AAB2CC] lg:outline-none"
+        className="lg:h-[40px] lg:px-3 lg:text-sm lg:rounded-md lg:border lg:border-[#AAB2CC] lg:outline-none
+        lg:w-[384px] w-[340px] h-[37px] rounded-md  px-1.5 text-sm border border-[#AAB2CC]"
         placeholder="Enter Password"
         required
       />
@@ -41,10 +47,11 @@ const Page = () => {
 
     {/* Confirm Password */}
     <div className="flex flex-col lg:w-[384.26px] text-left">
-      <label className="mb-2">Confirm Password</label>
+      <label className="lg:mb-2 mb-1 lg:mt-0 mt-3">Confirm Password</label>
       <input
         type="password"
-        className="lg:h-[40px] lg:px-3 lg:text-sm lg:rounded-md lg:border lg:border-[#AAB2CC] lg:outline-none"
+        className="lg:w-[384px] lg:h-[40px] lg:px-3 lg:text-sm rounded-md lg:border lg:border-[#AAB2CC] lg:outline-none
+        w-[340px] h-[37px] border px-1.5 border-[#AAB2CC]"
         placeholder="Confirm Password"
         required
       />
@@ -55,9 +62,10 @@ const Page = () => {
       <Link href="/login">
         <button
           type="submit"
-          className="lg:w-[384px] lg:h-[40px] border border-[#0079C6] lg:rounded-md"
+          className="lg:w-[384px] lg:h-[40px] lg:bg-transparent border lg:border-[#0079C6] rounded-md
+          lg:mb-5 lg:mt-3 mb-1 mt-8 w-[340px] h-[37px] bg-[#C0C3CD] border-transparent"
         >
-          <h2 className="text-[#0079C6] text-[18px] font-medium">
+          <h2 className="lg:text-[#0079C6] text-[18px] text-white font-medium">
             Set new password
           </h2>
         </button>
@@ -73,7 +81,7 @@ const Page = () => {
       </div>
 
       {/* Right box */}
-      <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:flex lg:justify-center lg:items-center">
+      <div className="hidden lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:flex lg:justify-center lg:items-center">
          <div className="lg:w-[442px] lg:h-[539px] max-w-full lg:bg-[#F6FDFF] lg:rounded-md">
        <Image
       src={Password}
@@ -86,6 +94,7 @@ const Page = () => {
       
 
     </section>
+    </>
   )
 }
 

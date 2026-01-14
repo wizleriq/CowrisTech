@@ -15,9 +15,9 @@ const page = () => {
         </h2>
       </div>
 
-      <div className='w-[71px] h-[25px] p-2 bg-[#0079C6] rounded-sm flex justify-center items-center text-center'> 
+      {/* <div className='w-[71px] h-[25px] p-2 bg-[#0079C6] rounded-sm flex justify-center items-center text-center'> 
        <h1 className='justify-center items-center text-center text-white'>Login</h1>
-      </div>
+      </div> */}
 
     </section>
   )

@@ -17,11 +17,11 @@ const Page = () => {
       lg:h-[1000px] lg:bg-green-500 lg:flex lg:mt-0 mt-2 lg:flex-col lg:justify-center lg:items-center
       w-full h-[800px] bg-white lg:px-0 px-4 items-center sm:px-2">
       {/* Left box */}
-      <div className='lg:w-full max-w-full lg:flex lg:bg-red-300 lg:h-[1000px] h-[300px] '>
+      <div className='lg:w-full max-w-full lg:flex lg:bg-red-300 lg:h-[1000px] h-[400px] '>
         <div className="lg:w-full max-w-full lg:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center ">
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
-         <div className="lg:w-full max-w-full lg:h-[890px] h-[200px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
+         <div className="lg:w-full max-w-full lg:h-[890px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
           {/* Create Account Starts */}
           <div className='lg:w-[276px] lg:h-14 lg:bg-transparent flex flex-col lg:justify-between item-center lg:flex lg:-mt-13
           w-[279px] h-[43px] justify-left justify-between'>
