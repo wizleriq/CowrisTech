@@ -33,7 +33,7 @@ const Page = () => {
            <div className='lg:flex lg:flex-col lg:justify-between lg:w-[400px] lg:h-[229px] lg:mt-5 mt-4'>
             <div className='lg:w-[400px] lg:h-[145px] flex-col lg:flex justify-between'>               
                 <p className='lg:mb-0 mb-2'>Verification Code</p>
-            <div className='flex flex-row justify-between lg:w-[400px] lg:h-[50px] w-full h-[50px]'>
+            {/* <div className='flex flex-row justify-between lg:w-[400px] lg:h-[50px] w-full h-[50px]'>
 <div className='lg:w-[63px] lg:h-[50px] border shadow-md border-[#C0C3CD] rounded-sm
 w-[45px] h-[50px]'>
 </div>
@@ -57,7 +57,26 @@ w-[45px] h-[50px]'>
 w-[45px] h-[50px]'>
 
 </div>
-            </div>
+            </div> */}
+            <div className="flex flex-row justify-between lg:w-[400px] w-full">
+  {Array(6).fill("").map((_, index) => (
+    <input
+      key={index}
+      type="text"
+      maxLength={1}
+      className="
+        lg:w-[63px] lg:h-[50px]
+        w-[45px] h-[50px]
+        border border-[#C0C3CD]
+        shadow-md rounded-sm
+        text-center text-lg
+        focus:outline-none
+      "
+    />
+    // focus:outline-none focus:ring-2 focus:ring-green-500
+  ))}
+</div>
+
              <div className='flex lg:flex-col lg:justify-between  lg:w-[400px] lg:h-[50px]  w-[268px] h-[48px]
      mx-auto mt-4 text-center'>
               <h2>Didn’t receive the code? Check your spam folder or <span className='text-[#0079C6]'>tap to resend</span></h2> 

@@ -42,7 +42,8 @@ const Page = () => {
   <label className="relative lg:w-[158px] lg:h-[38px]  h-[38px] bg-transparent">
     <input type="radio" name="role" className="hidden peer" />
 
-    <div className="w-full h-full bg-white border border-[#DDE2E4] rounded-md flex items-center px-4 cursor-pointer peer-checked:border-[#0079C6]">
+   <Link href="/student">
+   <div className="w-full h-full bg-white border border-[#DDE2E4] rounded-md flex items-center px-4 cursor-pointer peer-checked:border-[#0079C6]">
       Student
 
       {/* Circle */}
@@ -50,6 +51,7 @@ const Page = () => {
         <span className="w-2 h-2 rounded-full bg-green-600 hidden peer-checked:block"></span>
       </span>
     </div>
+    </Link> 
   </label>
 
   {/* Consultant */}
