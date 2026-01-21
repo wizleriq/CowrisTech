@@ -62,35 +62,27 @@ const router = useRouter();
 
   {/* Consultant */}
  {/* <Link href="/sign"> */}
- <label className="relative lg:w-[158px] lg:h-[38px] w-[148px] h-[38px] cursor-pointer flex items-center">
-  {/* Hidden checkbox */}
-  <input type="checkbox" className="peer hidden" />
+ <label className="relative lg:w-[158px] lg:h-[38px] cursor-pointer flex items-center">
+  <input
+    type="checkbox"
+    className="peer hidden"
+    onChange={() => router.push("/sign")}
+  />
 
-  {/* Card */}
-  <div
-    className="w-full h-full bg-white border border-[#DDE2E4] rounded-md
+  <div className="w-full h-full bg-white border rounded-md  border-[#DDE2E4]
       flex items-center px-4 justify-between
-      peer-checked:border-[#0079C6]"
-  >
+      peer-checked:border-[#0079C6]">
+
     <span>Consultant</span>
   </div>
 
-  {/* Custom round checkbox (SIBLING ✅) */}
   <span
     className="absolute right-4 w-4 h-4 rounded-full border border-gray-400
-      transition-all duration-200
-      peer-checked:border-[#0079C6]
-      peer-checked:bg-[#0079C6]"
+      peer-checked:bg-[#0079C6]
+      peer-checked:border-[#0079C6]"
   />
-  {/* <input
-  type="checkbox"
-  className="appearance-none w-4 h-4 rounded-full border border-gray-400
-    checked:bg-[#0079C6] checked:border-[#0079C6]
-    transition"
-/> */}
-
 </label>
-{/* </Link> */}
+
 
 
 

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Goggle from '@/app/src/img/Google.png'
 import Apple from '@/app/src/img/Apple.png'
@@ -5,8 +6,10 @@ import Study from '@/app/src/img/Study.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import Nav from '../nav/page'
+import { useRouter } from "next/navigation";
 
 const Page = () => {
+const router = useRouter();
   return (
      <>
       <div className="lg:hidden">
@@ -18,7 +21,8 @@ const Page = () => {
       w-full h-[800px] bg-white lg:px-0 px-4 items-center sm:px-2">
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex lg:bg-red-300 lg:h-[1000px] h-[400px] '>
-        <div className="lg:w-full max-w-full lg:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center ">
+        <div className="lg:w-full max-w-full lg:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex flex-col lg:items-center lg:justify-center ">
+          <h2 className='lg:font-medium lg:text-[40px] lg:leading-[100%] text-[#0079C6] my-4'>AbroadEx</h2>
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
          <div className="lg:w-full max-w-full lg:h-[890px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
@@ -39,20 +43,26 @@ const Page = () => {
   {/* Student */}
 
 
-  <label className="relative lg:w-[158px] lg:h-[38px]  h-[38px] bg-transparent">
-    <input type="radio" name="role" className="hidden peer" />
+  <label className="relative lg:w-[158px] lg:h-[38px] cursor-pointer flex items-center">
+  <input
+    type="checkbox"
+    className="peer hidden"
+    onChange={() => router.push("/student")}
+  />
 
-   <Link href="/student">
-   <div className="w-full h-full bg-white border border-[#DDE2E4] rounded-md flex items-center px-4 cursor-pointer peer-checked:border-[#0079C6]">
-      Student
+  <div className="w-full h-full bg-white border rounded-md  border-[#DDE2E4]
+      flex items-center px-4 justify-between
+      peer-checked:border-[#0079C6]">
 
-      {/* Circle */}
-      <span className="w-4 h-4 rounded-full border border-gray-400 flex items-center justify-center lg:ml-12 ml-7 peer-checked:border-[#0079C6]">
-        <span className="w-2 h-2 rounded-full bg-green-600 hidden peer-checked:block"></span>
-      </span>
-    </div>
-    </Link> 
-  </label>
+    <span>Student</span>
+  </div>
+
+  <span
+    className="absolute right-4 w-4 h-4 rounded-full border border-gray-400
+      peer-checked:bg-[#0079C6]
+      peer-checked:border-[#0079C6]"
+  />
+</label>
 
   {/* Consultant */}
   <label className="relative lg:w-[158px] lg:h-[38px] w-[148px] h-[38px] bg-transparent">
