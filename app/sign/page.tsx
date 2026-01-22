@@ -52,7 +52,7 @@ const router = useRouter();
 
   <div className="w-full h-full bg-white border rounded-md  border-[#DDE2E4]
       flex items-center px-4 justify-between
-      peer-checked:border-[#0079C6]">
+      peer-checked:border-[#0079C6] peer-checked:text-[#0079C6]">
 
     <span>Student</span>
   </div>
@@ -68,7 +68,8 @@ const router = useRouter();
   <label className="relative lg:w-[158px] lg:h-[38px] w-[148px] h-[38px] bg-transparent">
     <input type="radio" name="role" className="hidden peer" />
 
-    <div className="w-full h-full bg-white border border-[#DDE2E4] rounded-md flex items-center px-4 cursor-pointer peer-checked:border-[#0079C6]">
+    <div className="w-full h-full bg-white border border-[#DDE2E4] rounded-md flex items-center px-4 cursor-pointer peer-checked:border-[#0079C6]
+    ">
       Consultant
         {/* Circle */}
       <span className="w-4 h-4 rounded-full border border-gray-400 flex items-center justify-center lg:ml-7 ml-4 peer-checked:border-[#0079C6]">

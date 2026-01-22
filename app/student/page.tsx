@@ -44,10 +44,11 @@ const router = useRouter();
   {/* Student */}
 
 
-  <label className="relative lg:w-[158px] lg:h-[38px]  h-[38px] bg-transparent">
+  <label className="relative lg:w-[158px] lg:h-[38px] w-[148px] h-[38px] bg-transparent">
     <input type="radio" name="role" className="hidden peer" />
 
-    <div className="w-full h-full bg-white border border-[#DDE2E4] rounded-md flex items-center px-4 cursor-pointer peer-checked:border-[#0079C6]">
+    <div className="w-full h-full bg-white border border-[#DDE2E4] rounded-md flex items-center px-4 cursor-pointer peer-checked:border-[#0079C6]
+    ">
       Student
 
       {/* Circle */}
@@ -62,7 +63,7 @@ const router = useRouter();
 
   {/* Consultant */}
  {/* <Link href="/sign"> */}
- <label className="relative lg:w-[158px] lg:h-[38px] cursor-pointer flex items-center">
+ <label className="relative lg:w-[158px] lg:h-[38px] w-[148px] h-[38px] bg-transparent cursor-pointer flex items-center">
   <input
     type="checkbox"
     className="peer hidden"
@@ -71,7 +72,7 @@ const router = useRouter();
 
   <div className="w-full h-full bg-white border rounded-md  border-[#DDE2E4]
       flex items-center px-4 justify-between
-      peer-checked:border-[#0079C6]">
+      peer-checked:border-[#0079C6] peer-checked:text-[#0079C6]">
 
     <span>Consultant</span>
   </div>
