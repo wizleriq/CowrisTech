@@ -16,7 +16,7 @@ const [isOpen, setIsOpen] = useState(false)
     <section
       className="
         relative z-50
-        lg:w-[1090px] lg:h-[93px] lg:bg-transparent lg:px-3.5 flex lg:items-center lg:mt-3.5 lg:justify-between
+        lg:w-[980px] lg:bg-transparent xl:bg-transparent lg:h-[93px]  lg:px-1 xl:px-3.5 flex lg:items-center lg:mt-3.5 lg:justify-between
         bg-white w-full h-12 px-6 py-2 justify-between items-center xl:w-[1265px] 2xl:w-[1550px] 
       "
     >
@@ -27,7 +27,7 @@ const [isOpen, setIsOpen] = useState(false)
           text-[#0079C6] w-full
         "
       >
-        <h2 className="font-inria lg:font-semibold lg-text-[24px] lg:leading-[100%] text-[20px]">
+        <h2 className="font-inria lg:font-semibold lg-text-[24px] lg:leading-[100%] text-[20px] 2xl:text-[24px]">
           CowrisJapa
         </h2>
       </div>
@@ -48,12 +48,12 @@ const [isOpen, setIsOpen] = useState(false)
       </div>
 
       {/* DESKTOP NAV LINKS */}
-      <main className="lg:w-[500px] lg:h-[21px] lg:bg-transparent lg:flex justify-between items-center lg:text-[#0079C6] hidden">
+      <main className="xl:w-[550px] lg:w-[450px] lg:h-[21px] lg:bg-transparent lg:flex justify-between 2xl:text-[21px] items-center lg:text-[#0079C6] hidden">
         {["Consultants", "Students", "Pay Tution", "GIC Program"].map(item => (
           <h2
             key={item}
             className="
-              font-inria lg:font-semibold lg:text-[17.27px]
+              font-inria lg:font-semibold lg:text-[17.27px] 2xl:text-[21px]
               transition-all duration-200
               hover:text-[#005b94] hover:underline underline-offset-4
             "
@@ -64,7 +64,7 @@ const [isOpen, setIsOpen] = useState(false)
       </main>
 
       {/* DESKTOP AUTH BUTTONS */}
-      <main className="lg:w-[235px] lg:h-9 lg:bg-transparent lg:flex justify-between items-center hidden">
+      <main className="lg:w-[235px] lg:h-9 lg:bg-transparent lg:flex justify-between items-center hidden ">
         <Link href="/login">
         <div
           className="
@@ -72,7 +72,7 @@ const [isOpen, setIsOpen] = useState(false)
             transition-all duration-200 hover:bg-[#E6F4FF] hover:shadow-sm
           "
         >
-          <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-[#0079C6]">Login</h2>
+          <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-[#0079C6] 2xl:text-[21px]">Login</h2>
         </div>
         </Link>
 
@@ -83,7 +83,7 @@ const [isOpen, setIsOpen] = useState(false)
             transition-all duration-200 hover:bg-[#0062a0] hover:shadow-sm
           "
         >
-          <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-white">Register</h2>
+          <h2 className="font-inria lg:font-normal lg:text-[18.16px] text-white 2xl:text-[21px]">Register</h2>
         </div>
         </Link>
       </main>
