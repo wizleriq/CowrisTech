@@ -22,7 +22,7 @@ const router = useRouter();
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex lg:bg-red-300 lg:h-[1000px] h-[400px] '>
         <div className="lg:w-full max-w-full lg:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex flex-col lg:items-center lg:justify-center ">
-          <h2 className='lg:font-medium lg:text-[40px] lg:leading-[100%] text-[#0079C6] my-4'>AbroadEx</h2>
+          <h2 className='lg:flex hidden lg:font-medium lg:text-[40px] lg:leading-[100%] text-[#0079C6] my-4'>AbroadEx</h2>
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
          <div className="lg:w-full max-w-full lg:h-[890px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
@@ -43,7 +43,7 @@ const router = useRouter();
   {/* Student */}
 
 
-  <label className="relative lg:w-[158px] lg:h-[38px] cursor-pointer flex items-center">
+  <label className="relative lg:w-[158px] lg:h-[38px] w-[148px] h-[38px] bg-transparent cursor-pointer flex items-center">
   <input
     type="checkbox"
     className="peer hidden"

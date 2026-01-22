@@ -17,7 +17,7 @@ const [isOpen, setIsOpen] = useState(false)
       className="
         relative z-50
         lg:w-[1090px] lg:h-[93px] lg:bg-transparent lg:px-3.5 flex lg:items-center lg:mt-3.5 lg:justify-between
-        bg-white w-full h-12 px-6 py-2 justify-between items-center
+        bg-white w-full h-12 px-6 py-2 justify-between items-center xl:w-[1265px] 2xl:w-[1550px] 
       "
     >
       {/* LOGO */}

@@ -624,11 +624,11 @@ import selects from '@/app/src/data/SelectData'
 const HomePage = () => {
   return (
     <section className="relative w-full h-[3568px] lg:mx-auto lg:h-[3200px] flex flex-col items-center px-3 sm:px-2 lg:bg-transparent bg-[#F4FBFF]
-    xl:w-[1300px] 2xl:w-[1500px]">
+   xl:w-[1260px] 2xl:w-[1500px] ">
 
       {/* Hero Section */}
       <main
-        className="relative w-full h-[178px] lg:w-[1090px] lg:h-[470px] xl:w-[1300px] xl:h-[550px] 2xl:w-[1500px] 2xl:h-[650px] flex lg:justify-between lg:items-center"
+        className="relative w-full h-[178px] lg:w-[1090px] lg:h-[470px] xl:w-[1230px] xl:h-[470px] 2xl:w-[1500px] 2xl:h-[470px] flex lg:justify-between lg:items-center"
         style={{
           backgroundImage: `url(${Travel.src})`,
           backgroundSize: "cover",
@@ -685,7 +685,8 @@ const HomePage = () => {
       </main>
 
       {/* Cards Section */}
-      <main className='flex flex-col justify-between items-center mt-4 w-[340px] h-[892px] lg:w-[1090px] lg:h-[209px] lg:flex-row lg:justify-between lg:items-center lg:mt-11'>
+      <main className='flex flex-col justify-between items-center mt-4 w-[340px] h-[892px] lg:w-[1090px] lg:h-[209px] lg:flex-row lg:justify-between lg:items-center lg:mt-11
+      xl:w-[1208px]  2xl:w-[1300px]'>
         {cards.map((card) => (
           <div key={card.id} className="w-[340px] h-[199px] p-5 border border-[#9BD9F280] rounded-[5px] flex flex-col justify-between bg-white lg:w-[236px] lg:h-[209px] lg:shadow-lg lg:border lg:rounded-[5px] lg:flex-col lg:justify-between lg:p-5">
             <div className='w-[60.27px] h-[60.27px] lg:w-[48.3px] lg:h-[48.3px]'>
@@ -710,9 +711,9 @@ const HomePage = () => {
       </main>
 
            <main className='lg:w-[1090px] lg:h-[980px] lg:flex lg:flex-col 
-      lg:justify-between lg:mt-8 mt-8 lg:bg-transparent bg-transparent lg:p-0 w-[340px] h-[1600px] flex flex-col xl:w-[1300px] xl:h-[800px] 2xl:w-[1500px] 2xl:h-[800px]  '>
+      lg:justify-between lg:mt-8 mt-8 lg:bg-transparent bg-transparent lg:p-0 w-[340px] h-[1600px] flex flex-col  xl:w-[1208px]  xl:h-[800px] 2xl:w-[1500px] 2xl:h-[800px]  '>
         <div className='lg:w-[1090px] lg:h-[430px] lg:flex lg:justify-between lg:flex-row lg:p-6 lg:items-center rounded-[3px] w-full h-[415px] p-5 flex flex-col justify-between
-        lg:bg-[#0079C6] bg-[#0079C6] xl:w-[1300px] xl:h-[550px] 2xl:w-[1500px] 2xl:h-[650px] '>
+        lg:bg-[#0079C6] bg-[#0079C6] xl:w-[1208px]  xl:h-[550px] 2xl:w-[1500px] 2xl:h-[650px] '>
           <div className='lg:w-[559px] lg:h-80 lg:bg-transparent  lg:flex lg:flex-col lg:justify-between bg-transparent h-[470px]'>
             <div className='lg:w-[181px] lg:h-8 lg:bg-transparent w-[140px] h-8 bg-transparent'>
               <h2 className='lg:font-semibold lg:text-[22px] lg:leading-[31.69px] lg:items-center lg:text-white font-medium
@@ -732,7 +733,8 @@ const HomePage = () => {
                   />
                   <div className="lg:flex lg:flex-col lg:leading-tight flex flex-col">
                     <h2 className="lg:font-semibold lg:text-[16px] font-medium text-[15px]">{select.heading}</h2>
-                    <h3 className="lg:text-[14px] lg:font-normal text-[13px] font-normal">{select.text}</h3>
+                    <h3 className="lg:text-[14px] lg:font-normal text-[13px] font-normal lg;leading-[100%] 
+                    xl:leading-[15px] 2xl:leading-5">{select.text}</h3>
                   </div>
                 </div>
               ))}
@@ -749,7 +751,8 @@ const HomePage = () => {
                 <div>
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
              lg:border-[#0079C6] lg:border-[1.33px]  lg:relative focus:outline-none' />
-                  <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:transparent lg:absolute lg:top-[869px] lg:right-40'>
+                  <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:transparent lg:absolute lg:top-[869px] 
+                  lg:right-40 xl:right-22 2xl:right-16'>
                     
                     <Image
                       src={Nigeria}
@@ -774,7 +777,8 @@ const HomePage = () => {
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
              lg:border-[#0079C6] lg:border-[1.33px]  lg:relative focus:outline-none' />
                   {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
-                    <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] lg:right-40'>
+                    <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] 
+                    lg:right-40 xl:right-22 2xl:right-16 xl:top-[976.5px] 2xl:top-[976.5px]  '>
                     <Image
                       src={Canada}
                       width={27.9}
@@ -798,8 +802,8 @@ const HomePage = () => {
           </div>
         </div>
         { /* small screen starts */ } 
-        <div className='lg:w-[385px] lg:hidden block lg:h-[334px] lg:border lg:rounded-sm lg:border-[#0079C6] lg:flex lg:flex-col lg:items-center
-            bg-[#FFFFFF] lg:mt-0 lg:pb-0 pb-4  mt-8 w-[340px] h-[290.5px] rounded-sm border shadow-md border-[#9BD9F280] flex flex-col items-center'>
+        <div className='lg:w-[385px] lg:hidden flex lg:h-[334px] lg:border lg:rounded-sm lg:border-[#0079C6] lg:flex-col lg:items-center
+            bg-[#FFFFFF] lg:mt-0 lg:pb-0 pb-4  mt-8 w-[340px] h-[290.5px] rounded-sm border shadow-md border-[#9BD9F280] flex-col items-center'>
             <div className='lg:w-[315px] lg:h-[213px] lg:bg-transparent  lg:flex lg:flex-col lg:justify-between lg:mt-10 lg:text-[#000000]
           w-[278px] h-[187.9px] flex flex-col justify-between mt-10 text-[#000000] bg-white'>
               <div className='lg:w-[314px] lg:h-[66.5px] lg:rounded-sm lg:flex lg:flex-col lg:justify-between lg:bg-transparent
@@ -873,47 +877,9 @@ const HomePage = () => {
           </div>
           { /* small screen ends */ } 
 
-        <div className='lg:w-[1090px] lg:h-[400px] lg:mt-10  lg:bg-transparent lg:flex lg:flex-row lg:justify-between lg:items-center 
-        w-full h-[840px] mt-8 bg-transparent flex flex-col justify-between items-center'>
-   {/* <div className='lg:w-[310px] lg:h-[297px] lg:bg-transparent lg:flex lg:flex-col lg:justify-between
-   w-[310px] h-[540.9px] bg-transparent flex flex-col justify-between'>
-   <div className='lg:w-[310px] lg:h-[145px] lg:bg-transparent lg:flex lg:justify-between
-   w-full h-[145.6px] bg-transparent flex justify-between'>
- <Image
-            src={Lady}
-            width={152}
-            height={145}
-            alt="Profile Image"
-            className="object-contain"
-          />
-            <Image
-            src={Four}
-            width={152}
-            height={145}
-            alt="Profile Image"
-            className="object-contain"
-          />
-    </div>
- <div className='lg:w-[310px] lg:h-[145px] lg:bg-transparent lg:flex lg:justify-between
- w-full h-[200px] bg-transparent flex justify-between'>
-          <Image
-            src={Secure}
-            width={152}
-            height={145}
-            alt="Profile Image"
-            className="object-contain"
-          />
-            <Image
-            src={Guy}
-            width={152}
-            height={203}
-            alt="Profile Image"
-            className="object-contain"
-            />  
-            </div>
-</div> */}
-
-<div className="lg:w-[310px] lg:h-[297px] bg-transparent flex flex-col gap-4">
+        <div className='lg:w-[1090px] lg:h-[490px] lg:mt-10  lg:flex lg:flex-row lg:justify-start lg:items-center lg:gap-10
+        w-full h-[840px] mt-8  bg-transparent flex flex-col justify-between items-center xl:w-[1208px]  2xl:w-[1500px]'>
+<div className="lg:w-[310px] lg:h-[297px] bg-transparent flex flex-col gap-4 ">
   {/* Top row */}
   <div className="lg:w-[310px] lg:h-[145px] w-full bg-transparent flex justify-between">
     <Image
@@ -951,7 +917,9 @@ const HomePage = () => {
 </div>
 
 {/* How does it work starts */}
- <div className='lg:w-[700px] lg:h-[390px] lg:bg-transparent lg:flex  lg:mt-15 lg:p-3 lg:flex-col lg:justify-between mt-8 w-full h-[700px] bg-transparent'>
+ <div className='lg:w-[700px] lg:h-[390px] lg:bg-transparent lg:flex  lg:mt-15 lg:p-3 lg:flex-col lg:justify-between mt-8 w-full h-[700px] bg-transparent
+ 
+ '>
             <div className='lg:w-[181px] lg:h-8 lg:bg-transparent w-[154px] h-[31px] bg-transparent text-[#0079C6]'>
               <h2 className='lg:font-semibold lg:text-[22px] lg:leading-[31.69px] lg:items-center lg:text-[#0079C6]
               font-semibold text-[22px] leading-[31.69px] items-center text-[#0079C6]'>How It Works</h2>
@@ -1040,9 +1008,8 @@ const HomePage = () => {
 
 {/* Contact Section Starts */ }
 <main className='lg:w-full lg:h-[339px] lg:bg-[#0079C63D] lg:mt-0 lg:flex lg:flex-col lg:items-center lg:justify-between
-lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D]  lg:mt-7 w-screen h-[840px] mt-4 flex flex-col justify-between items-center xl:w-[1300px] xl:h-[400px] 2xl:w-[1500px] 2xl:h-[400px] '>
-  {/* <div className='lg:w-[1020px] lg:h-[180px] lg:bg-yellow-400 lg:flex lg:justify-between'> */}
-    <div className='lg:w-[1120px]  xl:w-[1300px] 2xl:w-[1500px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg:p-6  h-full bg-transparent'>
+lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D]  lg:mt-20 w-screen h-[840px] mt-4 flex flex-col justify-between items-center xl:w-[1265px] xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px] '>
+    <div className='lg:w-[1120px]  xl:w-[1260px] 2xl:w-[1500px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg:p-6  h-full bg-transparent'>
 <div className='lg:w-[228px] lg:h-[88px] lg:bg-transparent lg:mb-0 mb-8 bg-transparent w-[280px] h-[90px] flex flex-col justify-between'>
  <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
   <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px]'>
@@ -1133,7 +1100,7 @@ lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D]  lg:mt-7 w-screen h-[840px] mt-4 fle
   </div>
   {/* Small Screen Ends */ }
   </div> 
-  <div className='w-full lg:h-10 lg:w-[1120px] xl:w-[1300px] 2xl:w-[1500px] lg:bg-transparent lg:mb-[60px] hidden lg:flex lg:flex-col lg:justify-between lg:p-0'>
+  <div className='w-full lg:h-10 lg:w-[1230px] xl:w-[1230px] 2xl:w-[1500px] lg:bg-transparent lg:mb-[60px] hidden lg:flex lg:flex-col lg:justify-between lg:p-0'>
  <div className="lg:h-px bg-[#0079C63D] w-full"></div>
  <div className='lg:w-[151px] h-9 bg-transparent flex justify-between items-center'>
  <Image

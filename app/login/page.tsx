@@ -18,7 +18,7 @@ const Page = () => {
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex lg:h-[900px] h-[500px]'>
         <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:px-0 lg:flex flex-col lg:items-center lg:justify-center ">
-          <h2 className='lg:font-medium lg:text-[40px] lg:leading-[100%] text-[#0079C6] my-4'>AbroadEx</h2>
+          <h2 className='hidden lg:font-medium lg:text-[40px] lg:leading-[100%] text-[#0079C6] my-4'>AbroadEx</h2>
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
          <div className="lg:w-[471px] max-w-full lg:h-[500px] lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
