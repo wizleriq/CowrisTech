@@ -13,15 +13,16 @@ const Page = () => {
   <Nav />
   </div>
     <section className="w-full max-w-full mx-auto
-      lg:h-[900px] lg:bg-green-500 lg:flex lg:flex-col lg:justify-center lg:items-center
+      lg:h-[900px] xl:h-[900px] lg:bg-red-400 xl:bg-green-500 lg:flex lg:flex-col lg:justify-center lg:items-center
      h-[600px] flex justify-center bg-white lg:px-0 px-4 items-center sm:px-2">
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex lg:h-[900px] h-[500px]'>
-        <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:px-0 lg:flex flex-col lg:items-center lg:justify-center ">
+        <div className="lg:w-full max-w-full lg:h-[1366px]  xl:h-[900px] lg:bg-[#F6FDFF] lg:px-0 lg:flex flex-col lg:items-center lg:justify-center ">
           <h2 className='hidden lg:font-medium lg:text-[40px] lg:leading-[100%] text-[#0079C6] my-4'>AbroadEx</h2>
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
-         <div className="lg:w-[471px] max-w-full lg:h-[500px] lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
+         <div className="lg:w-[520px]  xl:w-[471px] max-w-full lg:h-[500px] xl:h-[500px] lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
+          {/* lg:w-[700px] xl:w-full max-w-full lg:h-[900px] xl:h-[890px] */}
           {/* Create Account Starts */}
           <div className='lg:w-[276px] lg:h-14 flex-col justify-center items-center lg:flex lg:-mt-13
           w-full h-12 flex'>
@@ -166,7 +167,7 @@ const Page = () => {
       </div>
 
       {/* Right box */}
-      <div className="hidden lg:w-full max-w-full lg:h-[900px] lg:bg-[#ffffff] lg:flex lg:justify-center lg:items-center">
+      <div className="hidden lg:hidden lg:w-full max-w-full lg:h-[900px] lg:bg-[#ffffff] xl:flex lg:justify-center lg:items-center">
          <div className="lg:w-[442px] lg:h-[539px] max-w-full lg:bg-[#ffffff] lg:rounded-md">
        <Image
       src={Study}

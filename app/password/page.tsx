@@ -12,15 +12,15 @@ const Page = () => {
   <Nav />
   </div>
     <section className="lg:w-full max-w-full mx-auto
-      lg:h-[900px] lg:bg-transparent lg:flex lg:flex-col lg:justify-center lg:items-center 
+      lg:h-[900px] xl:h-[900px] lg:bg-transparent lg:flex lg:flex-col lg:justify-center lg:items-center 
       w-[393px] h-[720px] flex flex-col  lg:px-0 px-4 sm:px-2">
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex lg:h-[900px] h-[500px]'>
-         <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#ffffff] lg:px-0 lg:flex lg:items-center lg:justify-center ">
+         <div className="lg:w-full max-w-full lg:h-[1366px]  xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff] lg:px-0 lg:flex lg:items-center lg:justify-center ">
         {/* <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center "> */}
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
-         <div className="lg:w-[520ppx] max-w-full lg:h-[500px] lg:bg-[#ffffff] lg:shadow-md lg:p-16 flex-col lg:flex justify-center lg:items-center">
+         <div className="lg:w-[520px] max-w-full lg:h-[500px] lg:bg-[#ffffff] lg:shadow-md lg:p-16 flex-col lg:flex justify-center lg:items-center">
           {/* Create Account Starts */}
           {/* <div className='lg:w-[276px] lg:h-14 bg-transparent flex-col justify-center items-start self-start lg:flex lg:-mt-13'> */}
            <div className='lg:w-[276px] lg:h-14 flex-col justify-center items-center lg:flex lg:-mt-13
@@ -80,7 +80,7 @@ const Page = () => {
       </div>
 
       {/* Right box */}
-      <div className="hidden lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:flex lg:justify-center lg:items-center">
+      <div className="hidden lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] xl:flex lg:justify-center lg:items-center">
          <div className="lg:w-[442px] lg:h-[539px] max-w-full lg:bg-[#F6FDFF] lg:rounded-md">
        <Image
       src={Password}

@@ -72,7 +72,7 @@ const HomePage = () => {
       </main>
 
       {/* Cards Section */}
-      <main className='flex flex-col justify-between items-center mt-4 w-[340px] h-[892px]  lg:h-[209px] lg:flex-row lg:justify-between lg:items-center lg:mt-11
+      <main className='flex flex-col justify-between items-center mt-4 w-[340px] h-[892px]  lg:h-[220px] xl:h-[240px] lg:flex-row lg:justify-between lg:items-center lg:mt-11
       lg:w-[970px]  xl:w-[1208px] 2xl:w-[1500px]'>
         {cards.map((card) => (
           <div key={card.id} className="2xl:w-[340px] 2xl:h-[235px] w-[340px] h-[199px] p-5 border border-[#9BD9F280] rounded-[5px] flex flex-col justify-between bg-white lg:w-[236px] lg:h-[209px] lg:shadow-lg lg:border lg:rounded-[5px] lg:flex-col lg:justify-between lg:p-5">
@@ -97,20 +97,19 @@ const HomePage = () => {
         ))}
       </main>
 
-           <main className='lg:h-[980px] lg:flex lg:flex-col 
-      lg:justify-between lg:mt-8 mt-8 lg:bg-transparent bg-transparent lg:p-0 w-[340px] h-[1600px] flex flex-col lg:w-[960px] xl:w-[1208px]  xl:h-[800px] 2xl:w-[1500px] 2xl:h-[800px]  '>
+           <main className='lg:h-[890px] lg:flex lg:flex-col lg:justify-between lg:mt-8 mt-8 lg:bg-transparent bg-transparent lg:p-0 w-[340px] h-[1600px] flex flex-col lg:w-[960px] xl:w-[1208px]  xl:h-[800px] 2xl:w-[1500px] 2xl:h-[800px]  '>
         <div className='lg:w-[970px] lg:h-[430px] lg:flex lg:justify-between lg:flex-row lg:p-6 lg:items-center rounded-[3px] w-full h-[415px] p-5 flex flex-col justify-between
         lg:bg-[#0079C6] bg-[#0079C6] xl:w-[1208px]  xl:h-[550px] 2xl:w-[1500px] 2xl:h-[650px] '>
-          <div className='lg:w-[559px] lg:h-80 lg:bg-transparent  lg:flex lg:flex-col lg:justify-between bg-transparent h-[470px]'>
+          <div className='lg:w-[520px] lg:h-80 lg:bg-transparent lg:flex lg:flex-col lg:justify-between bg-transparent h-[470px]'>
             <div className='lg:w-[181px] lg:h-8 lg:bg-transparent w-[140px] h-8 bg-transparent'>
               <h2 className='lg:font-semibold lg:text-[22px] lg:leading-[31.69px] lg:items-center lg:text-white font-medium
               text-[18px] leading-[31.69px] items-center text-white 2xl:text-[21px]' >Why Choose Us?</h2>
             </div>
-            <div className="lg:w-[559px] lg:bg-transparent">
+            <div className="lg:w-[520px] lg:bg-transparent">
               {selects.map((select) => (
                 <div
                   key={select.id}
-                  className="lg:w-[559px] lg:h-16 lg:bg-transparent lg:text-white lg:flex lg:items-start lg:gap-3 lg:py-0 lg:px-2
+                  className="lg:w-[520px] lg:h-16 lg:bg-transparent lg:text-white lg:flex lg:items-start lg:gap-3 lg:py-0 lg:px-2
                   lg:mt-0 mt-3 w-full h-full bg-transparent text-white flex items-start gap-2 py-0 px-2 2xl:mb-1.5"
                 >
                   <img
@@ -139,8 +138,8 @@ const HomePage = () => {
                 <div>
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
              lg:border-[#0079C6] lg:border-[1.33px]  lg:relative focus:outline-none' />
-                  <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:transparent lg:absolute lg:top-[869px] 
-                  lg:right-40 xl:right-22 2xl:right-16'>
+                  <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:transparent lg:absolute xl:top-[900.5px] 
+                 lg:top-[905px] lg:right-15 xl:right-22 2xl:right-16 2xl:top-[902px] '>
                     
                     <Image
                       src={Nigeria}
@@ -165,8 +164,8 @@ const HomePage = () => {
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
              lg:border-[#0079C6] lg:border-[1.33px]  lg:relative focus:outline-none' />
                   {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
-                    <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] 
-                    lg:right-40 xl:right-22 2xl:right-16 xl:top-[976.5px] 2xl:top-[976.5px]  '>
+                    <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute  
+                  xl:right-22 2xl:right-16 xl:top-[1006.5px] 2xl:top-[1006.5px] lg:top-[1012px] lg:right-15'>
                     <Image
                       src={Canada}
                       width={27.9}
@@ -178,12 +177,12 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className='lg:w-[315.5px] lg:h-[17.4px] lg:bg-transparent lg:flex lg:items-end justify-end'>
+              <div className='lg:w-[315.5px] lg:h-[17.4px] lg:bg-transparent lg:flex lg:items-end justify-end lg:mt-1px'>
                 <h2 className='lg:font-normal lg:text-[15.36px] lg:mr-2 lg:leading-[100%] 2xl:text-[17px]'>1 CAD=1,250.00NGN</h2>
               </div>
 
             </div>
-            <div className='lg:w-[170px] lg:h-[48.1px] lg:mt-4 lg:mr-8.5 lg:flex lg:justify-center lg:items-center
+            <div className='lg:w-[170px] lg:h-[48.1px] lg:mt-4  lg:mr-1 xl:mr-2 lg:flex lg:justify-center lg:items-center
                lg:rounded-[3px] lg:self-end 2xl:self-end 2xl:mr-3 lg:bg-[#0079C6]'>
               <h2 className='lg:font-medium lg:text-[21px] lg:leading-[100%]  2xl:text-[21px] lg:text-white '>Get Started</h2>
             </div>
@@ -265,7 +264,7 @@ const HomePage = () => {
           </div>
           { /* small screen ends */ } 
 
-        <div className='lg:w-[960px] lg:h-[490px] lg:mt-10  lg:flex lg:flex-row lg:justify-start lg:items-center lg:gap-10
+        <div className='lg:w-[970px]  lg:bg-tranparent lg:h-[430px] xl:h-[490px] lg:mt-0 xl:mt-10  lg:flex lg:flex-row lg:justify-start lg:items-center lg:gap-10
         w-full h-[840px] mt-8  bg-transparent flex flex-col justify-between items-center xl:w-[1208px]  2xl:w-[1500px]'>
 <div className="lg:w-[310px] lg:h-[297px] bg-transparent flex flex-col gap-4 ">
   {/* Top row */}
@@ -396,7 +395,7 @@ const HomePage = () => {
 
 {/* Contact Section Starts */ }
 <main className='lg:w-[1047px] lg:h-[339px] lg:bg-[#0079C63D] lg:flex lg:flex-col lg:items-center lg:justify-between
-lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D]  lg:mt-20 w-screen h-[840px] mt-4 flex flex-col justify-between items-center 2xl:text-[17px] xl:w-[1265px] xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px] '>
+lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] lg:mt-2 xl:mt-20 w-screen h-[840px] mt-4 flex flex-col justify-between items-center 2xl:text-[17px] xl:w-[1265px] xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px] '>
     <div className='lg:w-[970px]  xl:w-[1260px] 2xl:w-[1500px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg-p-0 xl:p-6  h-full bg-transparent'>
 <div className='lg:w-[228px] lg:h-[88px] lg:bg-transparent lg:mb-0 mb-8 bg-transparent w-[280px] h-[90px] flex flex-col justify-between'>
  <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>

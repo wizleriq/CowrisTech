@@ -17,15 +17,15 @@ const router = useRouter();
 </div>
     {/* // <section className="w-full bg-yellow-400 px-4 sm:px-2 lg:px-0"> */}
     <section className="lg:w-full max-w-full mx-auto lg:border-0 border-b-[#F6FDFF]
-      lg:h-[1000px] lg:bg-green-500 lg:flex lg:mt-0 mt-2 lg:flex-col lg:justify-center lg:items-center
+      lg:h-[1200px]  xl:h-[1000px] lg:bg-green-500 lg:flex lg:mt-0 mt-2 lg:flex-col lg:justify-center lg:items-center
       w-full h-[800px] bg-white lg:px-0 px-4 items-center sm:px-2">
       {/* Left box */}
-      <div className='lg:w-full max-w-full lg:flex lg:bg-red-300 lg:h-[1000px] h-[400px] '>
-        <div className="lg:w-full max-w-full lg:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex flex-col lg:items-center lg:justify-center ">
+      <div className='lg:w-full max-w-full lg:flex lg:bg-red-300  lg:h-[1200px] xlh-[1000px] h-[400px] '>
+        <div className="lg:w-full max-w-full lg:h-[1370px] xl:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex flex-col lg:items-center lg:justify-center ">
           <h2 className='lg:flex hidden lg:font-medium lg:text-[40px] lg:leading-[100%] text-[#0079C6] my-4'>AbroadEx</h2>
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
-         <div className="lg:w-full max-w-full lg:h-[890px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
+         <div className=" lg:w-[700px] xl:w-full max-w-full lg:h-[900px] xl:h-[890px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
           {/* Create Account Starts */}
           <div className='lg:w-[276px] lg:h-14 lg:bg-transparent flex flex-col lg:justify-between item-center lg:flex lg:-mt-13
           w-[279px] h-[43px] justify-left justify-between'>
@@ -347,7 +347,7 @@ const router = useRouter();
       </div>
 
       {/* Right box */}
-      <div className="lg:block hidden lg:w-full max-w-full lg:h-[1000px] lg:bg-[#ffffff] lg:flex lg:justify-center lg:items-center">
+      <div className=" lg:hidden hidden lg:w-full max-w-full lg:h-[1000px] lg:bg-[#ffffff] xl:flex lg:justify-center lg:items-center">
       <div className="lg:w-[442px] lg:h-[539px] max-w-full lg:bg-[#ffffff] lg:rounded-md">
        <Image
       src={Study}

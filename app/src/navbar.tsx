@@ -54,7 +54,7 @@ const [isOpen, setIsOpen] = useState(false)
             key={item}
             className="
               font-inria lg:font-semibold lg:text-[17.27px] 2xl:text-[21px]
-              transition-all duration-200
+              transition-all duration-200 
               hover:text-[#005b94] hover:underline underline-offset-4
             "
           >

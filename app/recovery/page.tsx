@@ -11,10 +11,10 @@ const Page = () => {
   <Nav />
   </div>
         <section className="lg:w-full max-w-full mx-auto lg:h-[900px] lg:bg-green-500 lg:flex lg:flex-col
-     lg:justify-center lg:items-center w-[393px] h-[720px] flex flex-col bg-white lg:px-0 px-4 items-center sm:px-2">
+     lg:justify-center lg:items-center xl:h-[900px] w-[393px] h-[720px] flex flex-col bg-white lg:px-0 px-4 items-center sm:px-2">
       {/* Left box */}
       <div className='w-full max-w-full flex bg-red-300 lg:h-[900px]'>
-          <div className="w-full max-w-full lg:h-[900px] lg:bg-[#ffffff] lg:px-0 lg:flex lg:items-center 
+          <div className="w-full max-w-full lg:h-[1366px]  xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff]  lg:px-0 lg:flex lg:items-center 
          lg:justify-center h-[500px] bg-[#ffffff] px-0 items-center sm:px-2">
         {/* <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center "> */}
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
@@ -132,7 +132,7 @@ w-[45px] h-[50px]'>
       </div>
 
       {/* Right box */}
-      <div className="hidden lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:flex lg:justify-center lg:items-center">
+      <div className="lg:hidden hidden lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] xl:flex lg:justify-center lg:items-center">
          <div className="lg:w-[442px] lg:h-[539px] max-w-full lg:bg-[#F6FDFF] lg:rounded-md">
        <Image
       src={Password}
