@@ -27,9 +27,11 @@ const [isOpen, setIsOpen] = useState(false)
           text-[#0079C6] w-full
         "
       >
-        <h2 className="font-inria lg:font-semibold lg-text-[24px] lg:leading-[100%] text-[20px] 2xl:text-[24px]">
+        <Link href="/">
+        <h2 className="font-inria font-semibold lg-text-[24px] lg:leading-[100%] text-[22px] 2xl:text-[24px]">
           CowrisJapa
         </h2>
+        </Link>
       </div>
       {/* MOBILE: MENU BUTTON */}
       <div className="flex items-center gap-2 lg:hidden">

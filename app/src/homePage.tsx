@@ -48,7 +48,7 @@ const HomePage = () => {
               Applying for study, work or permanent residency? We help you handle the most important steps -- all in one secure ecosystem.
             </h2>
           </div>
-          <div className='flex items-center mt-1 lg:mt-14'>
+          <div className='flex items-center mt-11 lg:mt-14'>
             <div className='w-[74px] h-[23.6px] flex justify-center items-center bg-[#0079C6] rounded-[3px] lg:w-36 lg:h-9 lg:bg-[#0079C6] lg:border lg:border-[#0079C6]'>
               <button className='text-white font-normal text-[11.02px] 2xl:text-[21px] leading-4 lg:text-[18.16px] lg:leading-[100%]'>
                 Get Started
@@ -64,7 +64,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="absolute z-10 lg:hidden block -top-[89px] -right-3 w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px] lg:h-[900px]">
+        <div className="absolute z-10 lg:hidden block -top-[83.5px] -right-3 w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px] lg:h-[900px]">
           <div className="w-full h-[260.82px] aspect-[3/7]">
             <Image src={Girl} alt="Profile Image" fill className="object-contain" />
           </div>
@@ -206,7 +206,7 @@ const HomePage = () => {
              lg:border-[#0079C6] lg:border-[1.33px]  lg:relative w-[275px] h-[41.2px] bg-transparent rounded-sm
              border-[#0079C6] border-[1.33px] relative focus:outline-none' />
                   <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[869.5px] lg:right-40
-                  w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1620.5px] right-17'>
+                  w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1623.5px] right-19'>
                     <Image
                       src={Nigeria}
                       width={27.9}
@@ -235,7 +235,7 @@ const HomePage = () => {
              border-[#0079C6] border-[1.33px] relative focus:outline-none' />
                   {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
                     <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] lg:right-40
-                     w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent offset absolute top-[1726px] right-17'>
+                     w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent offset absolute top-[1729.5px] right-19'>
                     <Image
                       src={Canada}
                       width={27.9}

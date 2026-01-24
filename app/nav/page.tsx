@@ -1,5 +1,6 @@
 import { Section } from 'lucide-react'
 import React from 'react'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -9,10 +10,11 @@ const page = () => {
           w-full lg:h-[29px] lg:bg-transparent flex justify-between items-center lg:text-[#0079C6] 
           text-[#0079C6]
         "
-      >
-        <h2 className="font-inria font-semibold eading-[100%] text-[22px]">
+      ><Link href='/'>
+        <h2 className="font-inria font-semibold Leading-[100%] text-[22px]">
           CowrisJapa
         </h2>
+        </Link>
       </div>
 
       {/* <div className='w-[71px] h-[25px] p-2 bg-[#0079C6] rounded-sm flex justify-center items-center text-center'> 
