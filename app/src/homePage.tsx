@@ -21,11 +21,11 @@ import selects from '@/app/src/data/SelectData'
 const HomePage = () => {
   return (
     <section className="relative w-full h-[3568px] lg:mx-auto lg:h-[3200px] flex flex-col items-center lg:px-0 xl:px-3 px-3 sm:px-2 lg:bg-transparent bg-[#F4FBFF]
-   xl:w-[1260px] 2xl:w-[1500px] lg:w-[970px] md:bg-red-500 sm:bg-green-400">
+   sm:h-[2800px] xl:w-[1260px] 2xl:w-[1500px] lg:w-[970px] sm:mx-auto sm:w-[700px]   ">
 
       {/* Hero Section */}
       <main
-        className="relative w-full h-[178px]  lg:w-[970px]  lg:h-[470px] xl:w-[1230px] xl:h-[470px] 2xl:w-[1520px] 2xl:h-[470px] flex lg:justify-between lg:items-center"
+        className="relative w-full h-[178px] sm:w-[700px] sm:h-[268px] lg:p-0 sm:px-1 sm:py-4 lg:w-[970px] lg:h-[470px] xl:w-[1230px] xl:h-[470px] 2xl:w-[1520px] 2xl:h-[470px] flex lg:justify-between lg:items-center"
         style={{
           backgroundImage: `url(${Travel.src})`,
           backgroundSize: "cover",
@@ -37,20 +37,27 @@ const HomePage = () => {
         <div className="lg:hidden block absolute inset-0 bg-[#F4FBFF]/90"></div>
 
         {/* Left Panel */}
-        <main className="relative z-10 w-[250px] h-[70.59px] lg:w-[592px] lg:h-[322px] flex flex-col px-4 pt-1.5 lg:px-2 lg:pt-0">
-          <div className='w-[205px] h-[70px] lg:w-[550px] lg:h-[110px]'>
-            <h2 className='text-[15.27px] leading-5 font-semibold text-[#0079C6] lg:text-[35px] lg:leading-11 '>
+        <main className="relative z-10 w-[250px] h-[70.59px] lg:w-[592px] lg:h-[322px] flex flex-col px-4 pt-1.5 lg:px-2 lg:pt-0
+        sm:h-[230px]">
+          <div className='w-[205px] h-[70px] lg:w-[550px] lg:h-[110px] 
+          sm:w-[230px] sm:h-[70px]'>
+            <h2 className='text-[15.27px] leading-5 font-semibold text-[#0079C6] lg:text-[35px] lg:leading-11
+            sm:text-[17.6px] sm:leading-5 sm:font-semibold sm:text-[#0079C6]'>
               Your All-In One Platform for Study, Work and Settlement In Canada
             </h2>
           </div>
-          <div className='w-[205px] mt-1 h-10 lg:w-[430px] lg:mt-10 2xl:w-[550px]'>
-            <h2 className='text-[12px] leading-[17px] font-normal lg:text-[17.27px] 2xl:text-[21px] lg:leading-[23px] lg:font-normal text-[#0079C6]'>
+          <div className='w-[205px] mt-1 h-10 lg:w-[430px] lg:mt-10 2xl:w-[550px]
+          sm:w-[230px] '>
+            <h2 className='text-[12px] leading-[17px] font-normal lg:text-[17.27px] 2xl:text-[21px] lg:leading-[23px] lg:font-normal text-[#0079C6]
+            sm:text-[14.6px] sm:leading-5 sm:font-normal sm:text-[#0079C6]'>
               Applying for study, work or permanent residency? We help you handle the most important steps -- all in one secure ecosystem.
             </h2>
           </div>
-          <div className='flex items-center mt-11 lg:mt-14'>
-            <div className='w-[74px] h-[23.6px] flex justify-center items-center bg-[#0079C6] rounded-[3px] lg:w-36 lg:h-9 lg:bg-[#0079C6] lg:border lg:border-[#0079C6]'>
-              <button className='text-white font-normal text-[11.02px] 2xl:text-[21px] leading-4 lg:text-[18.16px] lg:leading-[100%]'>
+          <div className='flex items-center mt-11 sm:mt-18 lg:mt-14'>
+            <div className='w-[74px] h-[23.6px] flex justify-center items-center bg-[#0079C6] rounded-[3px] lg:w-36 lg:h-9
+             lg:bg-[#0079C6] lg:border lg:border-[#0079C6] sm:w-33 sm:h-8
+             sm:bg-[#0079C6] sm:border sm:border-[#0079C6]'>
+              <button className='text-white font-normal sm:text-[14.6px] text-[11.02px] 2xl:text-[21px] leading-4 lg:text-[18.16px] lg:leading-[100%]'>
                 Get Started
               </button>
             </div>
@@ -58,13 +65,14 @@ const HomePage = () => {
         </main>
 
         {/* Right Panel */}
-        <div className="absolute z-10 lg:block hidden -top-[30px] lg:top-[-30px] -right-3 lg:right-10 w-[170px] sm:w-[200px] md:w-[280px] lg:w-[520px] lg:h-[500px]">
+        <div className="absolute z-10 lg:block sm:flex hidden -top-[30px] lg:top-[-30px] -right-3 lg:right-10 w-[170px] md:w-[280px] lg:w-[520px] lg:h-[500px]
+        sm:top-2 sm:right-10 sm:w-[280px] sm:h-[260px]">
           <div className="relative w-full h-[260.82px] lg:h-full">
-            <Image src={Youngman} alt="Profile Image" fill className="object-cover" />
+            <Image  src={Youngman} alt="Profile Image" fill className="object-cover " />
           </div>
         </div>
 
-        <div className="absolute z-10 lg:hidden block -top-[83.5px] -right-3 w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px] lg:h-[900px]">
+        <div className="absolute z-10 lg:hidden sm:hidden block -top-[83.5px] -right-3 w-[200px] sm:w-[250px] md:w-[320px] lg:w-[430px] lg:h-[900px]">
           <div className="w-full h-[260.82px] aspect-[3/7]">
             <Image src={Girl} alt="Profile Image" fill className="object-contain" />
           </div>
@@ -72,24 +80,28 @@ const HomePage = () => {
       </main>
 
       {/* Cards Section */}
-      <main className='flex flex-col justify-between items-center mt-4 w-[340px] h-[892px]  lg:h-[220px] xl:h-[240px] lg:flex-row lg:justify-between lg:items-center lg:mt-11
-      lg:w-[970px]  xl:w-[1208px] 2xl:w-[1500px]'>
+      <main className='flex flex-col justify-between items-center mt-4 w-[340px] h-[892px]  lg:h-[220px] xl:h-60 lg:flex-row lg:justify-between lg:items-center lg:mt-11
+      xl:w-[1208px] 2xl:w-[1500px]  sm:h-[460px] sm:flex-col sm:mt-9 sm:mb-11 lg:mb-0
+      sm:w-fit sm:justify-between sm:items-center lg:flex lg:flex-wrap sm:grid sm:grid-cols-2 sm:gap-2'>
         {cards.map((card) => (
-          <div key={card.id} className="2xl:w-[340px] 2xl:h-[235px] w-[340px] h-[199px] p-5 border border-[#9BD9F280] rounded-[5px] flex flex-col justify-between bg-white lg:w-[236px] lg:h-[209px] lg:shadow-lg lg:border lg:rounded-[5px] lg:flex-col lg:justify-between lg:p-5">
+          <div key={card.id} className="2xl:w-[340px] 2xl:h-[235px] sm:w-[337px] sm:h-[224px] w-[340px] h-[199px] p-5 border border-[#9BD9F280] rounded-[5px] flex flex-col justify-between bg-white lg:w-[236px] lg:h-[209px] lg:shadow-lg lg:border lg:rounded-[5px] lg:flex-col lg:justify-between lg:p-5">
             <div className='w-[60.27px] h-[60.27px] lg:w-[48.3px] lg:h-[48.3px]'>
               <img src={card.image} alt={card.heading} />
             </div>
-            <div className='mt-3.5 2xl:w-[300px] w-[270px] h-4 lg:w-[200px] lg:h-8 lg:-mt-4 2xl:mb-3 2xl:mt-[0.5px]'>
-              <h2 className='text-[#0079C6] text-[13px] lg:text-[13px] 2xl:leading-5 2xl:text-[21px] font-semibold lg:leading-[15px]'>{card.heading}</h2>
+            <div className='mt-3.5 sm:mt-1 2xl:w-[300px] w-[270px] h-4 lg:w-[200px] lg:h-8 lg:-mt-4 2xl:mb-3 2xl:mt-[0.5px]'>
+              <h2 className='text-[#0079C6] text-[13px] lg:text-[13px] 2xl:leading-5 2xl:text-[21px] font-semibold
+               lg:leading-[15px] sm:text-[17.6px] sm:leading-5 sm:font-semibold'>{card.heading}</h2>
             </div>
-            <div className='mt-2 w-[278px] h-[53.83px] lg:w-[200px] 2xl:w-60 lg:h-[41px] lg:-mt-3'>
-              <h2 className='text-[11px] leading-[15px] lg:text-[10.5px] 2xl:text-[15px] lg:leading-3.5 2xl:leading-3.5 font-normal text-black'>{card.text}</h2>
+            <div className='mt-2 sm:mt-7 w-[278px] h-[53.83px] lg:w-[200px] 2xl:w-60 lg:h-[41px] lg:-mt-3'>
+              <h2 className='text-[11px] leading-[15px] lg:text-[10.5px] 2xl:text-[15px] lg:leading-3.5 2xl:leading-3.5 font-normal
+               text-black sm:text-[13.6px] sm:leading-5 sm:font-medium'>{card.text}</h2>
             </div>
-            <div className='flex justify-between items-center mt-1 w-[63px] 2xl:w-[90px] h-[19px] lg:w-20 lg:h-[15px]'>
-              <div className='w-[60px] h-[19px] lg:w-[55px] 2xl:w-[120px] lg:h-[15px]'>
-                <h3 className='text-[#0079C6] text-[11px] font-light 2xl:text-[15px]'>{card.subtext}</h3>
+            <div className='flex justify-between items-center mt-1 sm:mt-3 lg:mt-1 sm:w-[100px] lg:w-[100px]  w-[63px] 2xl:w-[90px] h-[19px] lg:w-20 lg:h-[15px]'>
+              <div className='w-[60px] h-[19px] sm:w-[80px] lg:w-[55px] 2xl:w-[120px] lg:h-[15px]'>
+                <h3 className='text-[#0079C6] text-[11px] font-light lg:text-[12px] 2xl:text-[15px]
+                sm:text-[13px] sm:leading-5 sm:font-semibold'>{card.subtext}</h3>
               </div>
-              <div className='w-[11.2px] h-[11.2px] lg:w-[30px] lg:h-[9px] flex justify-center items-center 2xl:mt-[9px]'>
+              <div className='w-[11.2px] h-[11.2px]  sm:w-[30px] sm:h-[9px] lg:w-[30px] lg:h-[9px] flex justify-center items-center 2xl:mt-[9px]'>
                 <img src={card.symbol} alt={card.heading} />
               </div>
             </div>
@@ -97,10 +109,16 @@ const HomePage = () => {
         ))}
       </main>
 
-           <main className='lg:h-[890px] lg:flex lg:flex-col lg:justify-between lg:mt-8 mt-8 lg:bg-transparent bg-transparent lg:p-0 w-[340px] h-[1600px] flex flex-col lg:w-[960px] xl:w-[1208px]  xl:h-[800px] 2xl:w-[1500px] 2xl:h-[800px]  '>
+           <main className='lg:h-[890px] lg:flex lg:flex-col lg:justify-between lg:mt-8 mt-8 lg:bg-transparent bg-transparent lg:p-0 w-[340px] h-[1600px] 
+           flex flex-col lg:w-[960px] xl:w-[1208px]  xl:h-[800px] 2xl:w-[1500px] 2xl:h-[800px]
+           sm:h-[1600px] sm:flex sm:justify-center sm:items-center sm:mt-0 sm:p-0 
+           sm:w-full'>
         <div className='lg:w-[970px] lg:h-[430px] lg:flex lg:justify-between lg:flex-row lg:p-6 lg:items-center rounded-[3px] w-full h-[415px] p-5 flex flex-col justify-between
-        lg:bg-[#0079C6] bg-[#0079C6] xl:w-[1208px]  xl:h-[550px] 2xl:w-[1500px] 2xl:h-[650px] '>
-          <div className='lg:w-[520px] lg:h-80 lg:bg-transparent lg:flex lg:flex-col lg:justify-between bg-transparent h-[470px]'>
+        lg:bg-[#0079C6] bg-[#0079C6] xl:w-[1208px] xl:h-[550px] 2xl:w-[1500px] 2xl:h-[650px]
+        sm:w-full sm:h-[350px] sm:flex sm:justify-between sm:flex-row sm:p-6
+        sm:bg-[#0079C6]
+         '>
+          <div className='lg:w-[520px] sm:w-full lg:h-80 lg:bg-transparent lg:flex lg:flex-col lg:justify-between bg-transparent h-[470px]'>
             <div className='lg:w-[181px] lg:h-8 lg:bg-transparent w-[140px] h-8 bg-transparent'>
               <h2 className='lg:font-semibold lg:text-[22px] lg:leading-[31.69px] lg:items-center lg:text-white font-medium
               text-[18px] leading-[31.69px] items-center text-white 2xl:text-[21px]' >Why Choose Us?</h2>
@@ -126,8 +144,9 @@ const HomePage = () => {
               ))}
             </div>
           </div>
+
           <div className='lg:w-[385px] lg:p-6 hidden lg:h-[334px] lg:border lg:rounded-sm lg:border-[#0079C6] lg:flex lg:flex-col lg:items-center
-              lg:bg-[#FFFFFF]'>
+              lg:bg-[#FFFFFF] sm:w-[500px] sm:h-[350px] sm:flex-col sm:items-center'>
             <div className='lg:w-[315px] lg:h-[213px] lg:bg-transparent  lg:flex lg:flex-col lg:justify-between lg:mt-10 lg:text-[#000000]'>
               <div className='lg:w-[314px] lg:h-[66.5px] lg:rounded-sm lg:flex lg:flex-col lg:justify-between lg:bg-transparent'>
                 <div className='lg:w-[314px] lg:h-[13.82px] lg:font-light lg:text-[15.36px] lg:leading-[100%] lg:bg-transparent lg:flex
@@ -189,24 +208,29 @@ const HomePage = () => {
           </div>
         </div>
         { /* small screen starts */ } 
-        <div className='lg:w-[385px] lg:hidden flex lg:h-[334px] lg:border lg:rounded-sm lg:border-[#0079C6] lg:flex-col lg:items-center
-            bg-[#FFFFFF] lg:mt-0 lg:pb-0 pb-4  mt-8 w-[340px] h-[290.5px] rounded-sm border shadow-md border-[#9BD9F280] flex-col items-center'>
+        <div className='lg:w-[385px] lg:hidden sm:flex flex lg:h-[334px] lg:border lg:rounded-sm lg:border-[#0079C6] lg:flex-col lg:items-center
+            bg-[#FFFFFF] lg:mt-0 lg:pb-0 pb-4  mt-8 w-[340px] h-[290.5px] rounded-sm border shadow-md border-[#9BD9F280] flex-col items-center
+            sm:w-full sm:h-[350px]  sm:flex-col sm:items-center sm:rounded-sm sm:border sm:shadow-md sm:border-[#9BD9F280]'>
             <div className='lg:w-[315px] lg:h-[213px] lg:bg-transparent  lg:flex lg:flex-col lg:justify-between lg:mt-10 lg:text-[#000000]
-          w-[278px] h-[187.9px] flex flex-col justify-between mt-10 text-[#000000] bg-white'>
+          w-[278px] h-[187.9px] flex flex-col justify-between mt-10 text-[#000000] bg-white sm:w-[550px] sm:h-[200px]
+          sm:flex sm:flex-col sm:justify-between sm:mt-10 sm:text-[#000000]'>
               <div className='lg:w-[314px] lg:h-[66.5px] lg:rounded-sm lg:flex lg:flex-col lg:justify-between lg:bg-transparent
-              w-[275px] h-[53.4px] rounded-sm flex flex-col justify-between bg-transparent'>
+              w-[275px] h-[53.4px] rounded-sm flex flex-col justify-between bg-transparent
+              sm:w-[550px] sm:h-[57px] sm:rounded-sm sm:flex sm:flex-col sm:justify-between sm:bg-transparent'>
                 <div className='lg:w-[314px] lg:h-[13.82px] lg:font-light lg:text-[15.36px] lg:leading-[100%] lg:bg-transparent lg:flex
                  lg:items-center lg:justify-between lg:py-0 py-2 w-[275px] h-[12.1px] font-light text-[13.55px] leading-[100%] bg-transparent flex
-                 items-center justify-between'>
+                 items-center justify-between sm:w-[550px] sm:h-[15px]'>
                   <h2 className=''>You Send</h2>
                   <h2>Amount</h2>
                 </div>
                 <div>
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
              lg:border-[#0079C6] lg:border-[1.33px]  lg:relative w-[275px] h-[41.2px] bg-transparent rounded-sm
-             border-[#0079C6] border-[1.33px] relative focus:outline-none' />
+             border-[#0079C6] border-[1.33px] relative focus:outline-none sm:w-[550px] sm:h-12 sm:bg-transparent sm:rounded-sm
+             sm:border-[#0079C6] sm:border-[1.33px] sm:relative sm:focus:outline-none' />
                   <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[869.5px] lg:right-40
-                  w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1623.5px] right-19'>
+                  w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1623.5px] right-19
+                  sm:w-[77.9px] sm:h-[30.4px] sm:flex sm:justify-around sm:items-center sm:bg-transparent sm:absolute sm:top-[976.5px] sm:right-19'>
                     <Image
                       src={Nigeria}
                       width={27.9}
@@ -222,20 +246,23 @@ const HomePage = () => {
               </div>
 
               <div className='lg:w-[314px] lg:h-[66.5px] lg:rounded-sm lg:mt-10 lg:flex lg:flex-col lg:justify-between lg:bg-transparent
-               w-[275px] h-[53.4px] rounded-sm flex flex-col justify-between bg-transparent'>
+               w-[275px] h-[53.4px] rounded-sm flex flex-col justify-between bg-transparent sm:w-[550px] sm:h-[57px] sm:rounded-sm sm:flex sm:flex-col sm:justify-between sm:bg-transparent'>
                 <div className='lg:w-[314px] lg:h-[13.82px] lg:font-light lg:text-[15.36px] lg:leading-[100%] lg:bg-transparent lg:flex lg:items-center 
                 lg:justify-between  lg:py-0 py-2.5 w-[275px] h-[12.1px] font-light text-[13.55px] leading-[100%] bg-transparent flex
-                 items-center justify-between'>
+                 items-center justify-between  sm:w-[550px] sm:h-[15px]'>
                   <h2>Recipient Gets</h2>
                   <h2>Amount</h2>
                 </div>
                 <div>
                   <input type="text" className='lg:w-[314px] lg:h-[46.7px] lg:bg-transparent lg:rounded-sm
              lg:border-[#0079C6] lg:border-[1.33px]  lg:relative w-[275px] h-[41.2px] bg-transparent rounded-sm
-             border-[#0079C6] border-[1.33px] relative focus:outline-none' />
+             border-[#0079C6] border-[1.33px] relative focus:outline-none sm:w-[550px] sm:h-12 sm:bg-transparent sm:rounded-sm
+             sm:border-[#0079C6] sm:border-[1.33px] sm:relative sm:focus:outline-none' />
                   {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
                     <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] lg:right-40
-                     w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent offset absolute top-[1729.5px] right-19'>
+                     w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent offset absolute top-[1729.5px] right-19 sm:w-[77.9px] sm:h-[30.4px] 
+                     sm:flex sm:justify-around sm:items-center sm:bg-transparent sm:absolute sm:top-[1089.5px] sm:right-19'>
+
                     <Image
                       src={Canada}
                       width={27.9}
@@ -249,7 +276,8 @@ const HomePage = () => {
               </div>
               <div className='lg:w-[315.5px] lg:h-[17.4px] lg:bg-transparent lg:flex lg:items-end lg:justify-end
               w-[133px] h-[15.35px] -mt-8 mr-1 flex items-center
-               rounded-[3px] self-end bg-transparent'>
+               rounded-[3px] self-end bg-transparent sm:w-[133px] sm:h-[15.35px] sm:-mt-8 sm:-mr-3.5 sm:flex sm:items-center
+               sm:rounded-[3px] sm:self-end sm:bg-transparent '>
                 <h2 className='lg:font-normal lg:text-[15.36px] lg:mr-2 lg:leading-[100%]
                 font-normal text-[13.55px] leading-[100%] text-[#000000]'>1 CAD=1,250.00NGN</h2>
               </div>
@@ -257,64 +285,73 @@ const HomePage = () => {
             </div>
             <div className='lg:w-[170px] lg:h-[48.1px] lg:mt-4 lg:mr-8.5 lg:flex lg:justify-center lg:items-center
                lg:rounded-[3px] lg:self-end lg:bg-[#0079C6] lg:p-0 p-3 w-[100px] h-8 mt-4 mr-8.5 flex justify-center items-center
-               rounded-[3px] self-end bg-[#0079C6]  '>
+               rounded-[3px] self-end bg-[#0079C6] sm:w-[120px] sm:h-8 sm:mt-4 sm:mr-16.5 sm:sm:flex sm:justify-center sm:items-center
+               sm:rounded-[3px] sm:sm:self-end  '>
               <h2 className='lg:font-medium lg:text-[22.74px] lg:leading-[100%] text-white
-              font-medium text-[14px] leading-[100%]'>Get Started</h2>
+              font-medium text-[14px] leading-[100%]  sm:text-[17.6px] '>Get Started</h2>
             </div>
           </div>
           { /* small screen ends */ } 
 
-        <div className='lg:w-[970px]  lg:bg-tranparent lg:h-[430px] xl:h-[490px] lg:mt-0 xl:mt-10  lg:flex lg:flex-row lg:justify-start lg:items-center lg:gap-10
-        w-full h-[840px] mt-8  bg-transparent flex flex-col justify-between items-center xl:w-[1208px]  2xl:w-[1500px]'>
-<div className="lg:w-[310px] lg:h-[297px] bg-transparent flex flex-col gap-4 ">
+        <div className='lg:w-[970px]  lg:bg-tranparent lg:mb-0 lg:h-[430px] xl:h-[490px] lg:mt-0 xl:mt-10  lg:flex lg:flex-row lg:justify-start lg:items-center lg:gap-10
+        w-full h-[840px] mt-8  bg-transparent flex flex-col justify-between items-center xl:w-[1208px]  2xl:w-[1500px]
+        sm:w-full sm:h-[1000px] sm:mb-22 sm:mt-8 sm:flex sm:flex-col sm:justify-between sm:items-center'>
+<div className="lg:w-[310px] lg:h-[297px] lg:bg-transparent lg:flex lg:flex-col lg:gap-4  
+ sm:w-full w-full sm:h-[1000px] sm:flex sm:flex-col sm:gap-4 bg-transparent flex flex-col gap-4 ">
   {/* Top row */}
-  <div className="lg:w-[310px] lg:h-[145px] w-full bg-transparent flex justify-between">
+  <div className="lg:w-[310px] lg:h-[145px] lg:bg-transparent lg:flex lg:justify-between 
+  sm:w-full sm:h-[290px] sm:flex sm:justify-around w-full bg-transparent flex justify-between">
     <Image
       src={Lady}
       width={152}
       height={145}
       alt="Profile Image"
-      className="object-contain"
+      className="object-contain  sm:w-full sm:h-[290px] lg:h-[145px] lg:w-[152px] rounded-md "
     />
     <Image
       src={Four}
       width={152}
       height={145}
       alt="Profile Image"
-      className="object-contain"
+      className="object-contain  sm:w-full sm:h-[290px] lg:h-[145px] lg:w-[152px] rounded-md "
+      // className="object-contain"
     />
   </div>
 
   {/* Bottom row */}
-  <div className="lg:w-[310px] lg:h-[145px] w-full bg-transparent flex justify-between">
+  {/* <div className="lg:w-[310px] lg:h-[145px] w-full bg-transparent flex justify-between"> */}
+  <div className="lg:w-[310px] lg:h-[145px] lg:bg-transparent lg:flex lg:justify-between 
+  sm:w-full sm:h-[290px] sm:flex sm:justify-around w-full bg-transparent flex justify-between">
     <Image
       src={Secure}
       width={152}
       height={145}
       alt="Profile Image"
-      className="object-contain"
+      className="object-contain  sm:w-full sm:h-[290px] lg:h-[145px] lg:w-[152px] rounded-md"
+      // className="object-contain"
     />
     <Image
       src={Guy}
       width={152}
       height={145}
+      className=" object-fit sm:w-[570px] sm:mr-4 lg:mr-0 sm:h-[290px] lg:h-[145px] lg:w-[145px] rounded-md"
       alt="Profile Image"
     />
   </div>
 </div>
 
 {/* How does it work starts */}
- <div className='lg:w-[600px] lg:h-[390px] 2xl:h-[400px] lg:bg-transparent lg:flex  lg:mt-15 lg:p-3 lg:flex-col lg:justify-between mt-8 w-full h-[700px] bg-transparent
- 
+ <div className='lg:w-[600px] lg:h-[390px] 2xl:h-[400px] lg:bg-transparent lg:flex lg:mt-15 lg:p-3 lg:flex-col lg:justify-between mt-8 w-full h-[700px] bg-transparent
+ sm:mt-8 sm:w-full sm:h-[550px]
  '>
             <div className='lg:w-[181px] lg:h-8 lg:bg-transparent w-[154px] h-[31px] bg-transparent text-[#0079C6]'>
               <h2 className='lg:font-semibold lg:text-[22px] lg:leading-[31.69px] lg:items-center lg:text-[#0079C6]
-              font-semibold text-[21px] leading-[31.69px] items-center text-[#0079C6] 2xl:text-[21px] '>How It Works</h2>
+              font-semibold sm:text-[21px] text-[21px] leading-[31.69px] items-center text-[#0079C6] 2xl:text-[21px] '>How It Works</h2>
             </div>
 
             <div className='lg:w-[600px] lg:h-16 lg:bg-transparent lg:-mt-3 mt-2'>
               <h2 className='lg:font-semibold lg:text-[14px] lg:leading-[20.69px] lg:items-center lg:text-[#0079C6]
-              font-normal text-[14px] leading-[20.69px] items-center text-[#0079C6] 2xl:text-[17px]'>
+              font-normal text-[14px]  sm:text-[17px] leading-[20.69px] items-center text-[#0079C6] 2xl:text-[17px]'>
                 Paying your tuition or GIC from Nigeria to Canada doesn’t have to be complicated.Our platform was built to make international 
                 education payments fast, secure, and fully transparent — with a process so simple that anyone can 
                 complete it in minutes
@@ -330,22 +367,22 @@ const HomePage = () => {
                       alt="Profile Image"
                       className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-5 h-5 mt-1"
                     />
-                    <h2 className='lg:font-normal lg:text-[14px] text-[14px] text-[#0079C6]  2xl:leading-[18px] 2xl:text-[17px]'><span className='lg:font-semibold lg:text-[15px]
-                    font-semibold text-[14px] 2xl:leading-[18px] 2xl:text-[17px]'>Register & Complete KYC</span>— Create an account and verify your identity.</h2>
+                    <h2 className='lg:font-normal lg:text-[14px] lg:mr-0 sm:mr-[190px] sm:text-[15px] text-[14px] text-[#0079C6]  2xl:leading-[18px] 2xl:text-[17px]'><span className='lg:font-semibold lg:text-[15px]
+                    font-semibold text-[14px] 2xl:leading-[18px] sm:text-[14px] 2xl:text-[17px]'>Register & Complete KYC</span>— Create an account and verify your identity.</h2>
   </div>
  
  <div className='lg:w-[288px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between items-center
- flex w-full gap-3 bg-transparent text-[#0079C6] lg:mb-0 mb-2'>
+ flex w-full gap-3 bg-transparent text-[#0079C6] lg:mb-0 mb-2 '>
      <Image
                       src={Vector}
                       width={27.9}
                       height={27.9}
                       alt="Profile Image"
                       className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:mt-0 lg:items-center lg:text-[#0079C6]
-                      w-5 h-5 mt-2"
+                      w-5 h-5 sm:mt-1 mt-2"
                     />
-                    <h2 className='lg:font-normal lg:text-[14px]  2xl:leading-[18px] 2xl:text-[17px]'><span className='lg:font-semibold lg:text-[15px]
-                    font-semibold text-[14px]2xl:leading-[18px] 2xl:text-[17px]'>
+                    <h2 className='lg:font-normal lg:text-[14px] sm:text[14px] 2xl:leading-[18px] 2xl:text-[17px]'><span className='lg:font-semibold lg:text-[15px]
+                    font-semibold text-[14px]2xl:leading-[18px] sm:text-[14px] 2xl:text-[17px]'>
                       Choose Payment Type</span>— Tuition or GIC.</h2>
   </div> 
   <div className='lg:w-[630px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between items-center
@@ -355,9 +392,9 @@ const HomePage = () => {
                       width={27.9}
                       height={27.9}
                       alt="Profile Image"
-                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center lg:-mt-5 w-5 h-5 -mt-10"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center lg:-mt-5 sm:-mt-6 sm:mt-1 w-5 h-5 -mt-10"
                     />
-                    <h2 className='lg:font-normal lg:text-[14px]  2xl:leading-[18px] 2xl:text-[17px]'><span className='lg:font-semibold lg:text-[15px>'>
+                    <h2 className='lg:font-normal lg:text-[14px] sm:text-[14px] lg:font-semibold   2xl:leading-[18px] 2xl:text-[17px]'><span className=' sm:font-semibold sm:text-[15px] lg:font-semibold lg:text-[15px>'>
                       Enter Payment Details </span>— Select institution/bank, input amount in CAD, and view NGN equivalent.
                       </h2>
                       
@@ -369,9 +406,9 @@ const HomePage = () => {
                       width={27.9}
                       height={27.9}
                       alt="Profile Image"
-                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-5 h-5 -mt-5.5"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center lg:-mt-5.5 sm:mt-1 w-5 h-5 -mt-5.5"
                     />
-                    <h2 className='lg:font-normal lg:text-[14px]  2xl:leading-[18px] 2xl:text-[17px]'><span className='lg:font-semibold lg:text-[15px>'>
+                    <h2 className='lg:font-normal lg:text-[14px] sm:text-[14px] 2xl:leading-[18px] 2xl:text-[17px]'><span className='sm:font-semibold  lg:font-semibold lg:text-[15px>'>
                       Lock Your Rate & Pay Locally</span>— Accept the rate and transfer funds in Naira.</h2>            
   </div>
   <div className='lg:w-[507px] lg:h-10 lg:bg-transparent lg:flex lg:justify-between items-center
@@ -381,9 +418,9 @@ const HomePage = () => {
                       width={27.9}
                       height={27.9}
                       alt="Profile Image"
-                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-5 h-5 -mt-5.5"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center lg:-mt-5.5 sm:mt-1 w-5 h-5 -mt-5.5"
                     />
-                    <h2 className='lg:font-normal lg:text-[14px]  2xl:leading-[18px] 2xl:text-[17px]'><span className='lg:font-semibold lg:text-[15px>'>
+                    <h2 className='lg:font-normal lg:text-[14px]  sm:text-[14px] 2xl:leading-[18px] 2xl:text-[17px]'><span className='sm:font-semibold  lg:font-semibold lg:text-[15px>'>
                        Track Your Payment </span>— Get notified once the school or bank confirms receipt.</h2>            
   </div>
  
@@ -395,7 +432,8 @@ const HomePage = () => {
 
 {/* Contact Section Starts */ }
 <main className='lg:w-[1047px] lg:h-[339px] lg:bg-[#0079C63D] lg:flex lg:flex-col lg:items-center lg:justify-between
-lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] lg:mt-2 xl:mt-20 w-screen h-[840px] mt-4 flex flex-col justify-between items-center 2xl:text-[17px] xl:w-[1265px] xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px] '>
+lg:mb-0 lg:p-8 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt-2  xl:mt-20 w-screen h-[840px] mt-4 flex flex-col justify-between items-center 2xl:text-[17px]
+ xl:w-fit xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px]  sm:w-screen sm:h-[840px] sm:mt-4 sm:flex sm:flex-col sm:justify-between sm:items-center'>
     <div className='lg:w-[970px]  xl:w-[1260px] 2xl:w-[1500px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg-p-0 xl:p-6  h-full bg-transparent'>
 <div className='lg:w-[228px] lg:h-[88px] lg:bg-transparent lg:mb-0 mb-8 bg-transparent w-[280px] h-[90px] flex flex-col justify-between'>
  <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
@@ -427,7 +465,7 @@ lg:mb-0 lg:p-8 rounded-[5px] bg-[#0079C63D] lg:mt-2 xl:mt-20 w-screen h-[840px] 
 </div>
 
  <div className='lg:w-[210px] lg:h-[174px] 2xl:w-[238px]  lg:bg-transparent mb-8 bg-transparentw-[280px] h-[120px] '>
- <div className='lg:w-[120px] 2xl:w-[160px]  2xl:mb-7 lg:h-5 lg:bg-transparent'>
+ <div className='lg:w-[120px] 2xl:w-40 2xl:mb-7 lg:h-5 lg:bg-transparent'>
   <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
     Support & Contact
     </h2>
