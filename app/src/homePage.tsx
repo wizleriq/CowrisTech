@@ -433,7 +433,7 @@ const HomePage = () => {
 {/* Contact Section Starts */ }
 <main className='lg:w-[1047px] lg:h-[339px] lg:bg-[#0079C63D] lg:flex lg:flex-col lg:items-center lg:justify-between
 lg:mb-0 lg:p-8 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt-2  xl:mt-20 w-screen h-[840px] mt-4 flex flex-col justify-between items-center 2xl:text-[17px]
- xl:w-fit xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px]  sm:w-screen sm:h-[840px] sm:mt-4 sm:flex sm:flex-col sm:justify-between sm:items-center'>
+ xl:w-[1265px] xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px]  sm:w-screen sm:h-[840px] sm:mt-4 sm:flex sm:flex-col sm:justify-between sm:items-center'>
     <div className='lg:w-[970px]  xl:w-[1260px] 2xl:w-[1500px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg-p-0 xl:p-6  h-full bg-transparent'>
 <div className='lg:w-[228px] lg:h-[88px] lg:bg-transparent lg:mb-0 mb-8 bg-transparent w-[280px] h-[90px] flex flex-col justify-between'>
  <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
