@@ -21,7 +21,7 @@ import selects from '@/app/src/data/SelectData'
 const HomePage = () => {
   return (
     <section className="relative w-full h-[3568px] lg:mx-auto lg:h-[3200px] flex flex-col items-center lg:px-0 xl:px-3 px-3 sm:px-2 lg:bg-transparent bg-[#F4FBFF]
-   sm:h-[2800px] xl:w-[1260px] 2xl:w-[1500px] lg:w-[970px] sm:mx-auto sm:w-[700px]   ">
+ xl:w-[1260px] 2xl:w-[1500px] lg:w-[970px] sm:mx-auto sm:w-[700px] sm:h-[3100px] sm:bg-transparent ">
 
       {/* Hero Section */}
       <main
@@ -81,7 +81,7 @@ const HomePage = () => {
 
       {/* Cards Section */}
       <main className='flex flex-col justify-between items-center mt-4 w-[340px] h-[892px]  lg:h-[220px] xl:h-60 lg:flex-row lg:justify-between lg:items-center lg:mt-11
-      xl:w-[1208px] 2xl:w-[1500px]  sm:h-[460px] sm:flex-col sm:mt-9 sm:mb-11 lg:mb-0
+      xl:w-[1208px] 2xl:w-[1500px] sm:h-[460px] sm:flex-col sm:mt-9 sm:mb-34 lg:mb-0
       sm:w-fit sm:justify-between sm:items-center lg:flex lg:flex-wrap sm:grid sm:grid-cols-2 sm:gap-2'>
         {cards.map((card) => (
           <div key={card.id} className="2xl:w-[340px] 2xl:h-[235px] sm:w-[337px] sm:h-[224px] w-[340px] h-[199px] p-5 border border-[#9BD9F280] rounded-[5px] flex flex-col justify-between bg-white lg:w-[236px] lg:h-[209px] lg:shadow-lg lg:border lg:rounded-[5px] lg:flex-col lg:justify-between lg:p-5">
@@ -433,8 +433,9 @@ const HomePage = () => {
 {/* Contact Section Starts */ }
 <main className='lg:w-[1047px] lg:h-[339px] lg:bg-[#0079C63D] lg:flex lg:flex-col lg:items-center lg:justify-between
 lg:mb-0 lg:p-8 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt-2  xl:mt-20 w-screen h-[840px] mt-4 flex flex-col justify-between items-center 2xl:text-[17px]
- xl:w-[1265px] xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px]  sm:w-screen sm:h-[840px] sm:mt-4 sm:flex sm:flex-col sm:justify-between sm:items-center'>
-    <div className='lg:w-[970px]  xl:w-[1260px] 2xl:w-[1500px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg-p-0 xl:p-6  h-full bg-transparent'>
+ xl:w-[1265px] xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px]  sm:w-screen sm:h-[670px] sm:mt-4 '>
+    <div className='lg:w-[970px]  xl:w-[1260px] 2xl:w-[1500px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg-p-0 xl:p-6  h-full bg-transparent
+    sm:grid sm:grid-cols-2 sm:gap-6'>
 <div className='lg:w-[228px] lg:h-[88px] lg:bg-transparent lg:mb-0 mb-8 bg-transparent w-[280px] h-[90px] flex flex-col justify-between'>
  <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
   <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
