@@ -13,10 +13,11 @@ const Page = () => {
   </div>
     <section className="lg:w-full max-w-full mx-auto
       lg:h-[900px] xl:h-[900px] lg:bg-transparent lg:flex lg:flex-col lg:justify-center lg:items-center 
-      w-[393px] h-[720px] flex flex-col  lg:px-0 px-4 sm:px-2">
+      w-[393px] h-[720px] flex flex-col  lg:px-0 px-4 sm:px-12 sm:flex sm:justify-center
+     sm:items-center sm:bg-[#F6FDFF]  sm:h-[1345px] sm:w-[1000px]">
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex lg:h-[900px] h-[500px]'>
-         <div className="lg:w-full max-w-full lg:h-[1366px]  xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff] lg:px-0 lg:flex lg:items-center lg:justify-center ">
+         <div className="lg:w-full max-w-full lg:h-[1366px]  sm:w-[700px] lg:p-0 sm:p-8 sm:shadow-md sm:h-[400px] sm:bg-white xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff] lg:px-0 lg:flex lg:items-center lg:justify-center ">
         {/* <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center "> */}
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}

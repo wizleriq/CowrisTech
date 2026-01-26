@@ -17,18 +17,23 @@ const router = useRouter();
 </div>
     {/* // <section className="w-full bg-yellow-400 px-4 sm:px-2 lg:px-0"> */}
     <section className="lg:w-full max-w-full mx-auto lg:border-0 border-b-[#F6FDFF]
-      lg:h-[1200px]  xl:h-[1000px] lg:bg-green-500 lg:flex lg:mt-0 mt-2 lg:flex-col lg:justify-center lg:items-center
-      w-full h-[800px] bg-white lg:px-0 px-4 items-center sm:px-2">
+      lg:h-[1200px]  xl:h-[1000px] lg:bg-green-500 sm:bg-[#F6FDFF]  lg:flex lg:mt-0 mt-2 lg:flex-col lg:justify-center lg:items-center
+      w-full h-[800px] bg-white lg:px-0 px-4 items-center sm:px-12 sm:flex sm:justify-center
+     sm:items-center sm:h-[1337px] sm:w-[1000px]">
       {/* Left box */}
-      <div className='lg:w-full max-w-full lg:flex lg:bg-red-300  lg:h-[1200px] xlh-[1000px] h-[400px] '>
-        <div className="lg:w-full max-w-full lg:h-[1370px] xl:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex flex-col lg:items-center lg:justify-center ">
+      <div className='lg:w-full max-w-full lg:flex  sm:w-[700px] lg:p-0 sm:p-8 sm:shadow-md sm:h-[800px] lg:bg-red-300 sm:bg-white lg:h-[1200px] xl:h-[1000px] h-[400px] '>
+        <div className="lg:w-full max-w-full lg:h-[1370px] xl:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex flex-col lg:items-center lg:justify-center
+        ">
           <h2 className='lg:flex hidden lg:font-medium lg:text-[40px] lg:leading-[100%] text-[#0079C6] my-4'>AbroadEx</h2>
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
-         <div className=" lg:w-[700px] xl:w-full max-w-full lg:h-[900px] xl:h-[890px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
+         <div className=" lg:w-[700px] xl:w-full max-w-full lg:h-[900px] xl:h-[890px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center
+         
+         ">
           {/* Create Account Starts */}
           <div className='lg:w-[276px] lg:h-14 lg:bg-transparent flex flex-col lg:justify-between item-center lg:flex lg:-mt-13
-          w-[279px] h-[43px] justify-left justify-between'>
+          w-[279px] h-[43px] justify-left justify-between sm:flex sm:flex-col sm:justify-between sm:items-center sm:text-center
+          sm:mx-auto'>
             <div className='lg:w-[276px] lg-[36px] bg-transparent flex lg:justify-center '>
               <h2 className='lg:text-[28.66px] lg:font-medium lg:leading-[100%] text-[20px] font-medium leading-[100%]'>Create an account </h2>
            </div>
@@ -38,7 +43,7 @@ const router = useRouter();
            </div>
           </div>       
           {/* Student and Consultant Starts */}
-          <div className="lg:w-[340px] lg:h-14 mx-auto w-full h-[43px] flex justify-between items-center mt-5 lg:mt-2.5">
+          <div className="lg:w-[340px] sm:w-[320px] lg:h-14 mx-auto w-full h-[43px] flex justify-between items-center mt-5 lg:mt-2.5">
 
   {/* Student */}
 
@@ -96,22 +101,22 @@ const router = useRouter();
   </div>
   {/* First Name & Last Name */}
   <div className="flex flex-row justify-between lg:space-x-4 lg:mt-0 mt-3 bg-transparent ">
-    <div className="flex flex-col lg:w-[255px] w-[166px]">
+    <div className="flex flex-col lg:w-[255px] sm:w-[260px] w-[166px]">
       <label className="lg:mb-2 mb-1">First Name</label>
       <input
         type="text"
         name="first_name"
-        className="w-full lg:h-[38px] lg:px-3 lg:text-sm lg:rounded-md 
+        className="w-full lg:h-[38px] lg:w-full sm:w-[260px]lg:px-3 lg:text-sm lg:rounded-md 
         lg:border lg:border-[#AAB2CC] lg:outline-none h-[37px] px-3 text-sm border border-[#AAB2CC] rounded-sm"
         required
       />
     </div>
-    <div className="flex flex-col lg:w-[255px] w-[166px]">
+    <div className="flex flex-col lg:w-[255px] sm:w-[260px] w-[166px]">
       <label className="lg:mb-2 mb-1">Last Name</label>
       <input
         type="text"
         name="last_name"
-       className="w-full lg:h-[38px] lg:px-3 lg:text-sm lg:rounded-md 
+       className="w-full lg:h-[38px] lg:w-full sm:w-[260px] lg:px-3 lg:text-sm lg:rounded-md 
         lg:border lg:border-[#AAB2CC] lg:outline-none h-[37px] px-3 text-sm border border-[#AAB2CC] rounded-sm"
         required
       />
@@ -121,22 +126,22 @@ const router = useRouter();
 
   {/* Email & Phone */}
   <div className="flex flex-row justify-between lg:space-x-4 lg:mt-0 mt-3 bg-transparent">
-    <div className="flex flex-col lg:w-[255px] w-[166px]">
+    <div className="flex flex-col lg:w-[255px] sm:w-[260px] w-[166px]">
       <label className="lg:mb-2 mb-1">Email Address</label>
       <input
         type="email"
         name="email"
-       className="w-full lg:h-[38px] lg:px-3 lg:text-sm lg:rounded-md 
+       className="w-full lg:w-full sm:w-[260px] lg:h-[38px] lg:px-3 lg:text-sm lg:rounded-md 
         lg:border lg:border-[#AAB2CC] lg:outline-none h-[37px] px-3 text-sm border border-[#AAB2CC] rounded-sm"
         required
       />
     </div>
-     <div className="flex flex-col lg:w-[255px] w-[166px]">
+     <div className="flex flex-col lg:w-[255px] sm:w-[260px] w-[166px]">
       <label className="lg:mb-2 mb-1">Phone Number</label>
       <input
         type="text"
         name="phone"
-       className="w-full lg:h-[38px] lg:px-3 lg:text-sm lg:rounded-md 
+       className="w-full lg:w-full sm:w-[260px] lg:h-[38px] lg:px-3 lg:text-sm lg:rounded-md 
         lg:border lg:border-[#AAB2CC] lg:outline-none h-[37px] px-3 text-sm border border-[#AAB2CC] rounded-sm"
         required
       />

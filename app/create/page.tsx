@@ -11,17 +11,19 @@ const Page = () => {
   </div>
     <section className="lg:w-full max-w-full mx-auto
       lg:h-[900px] xl:h-[900px] lg:bg-transparent lg:flex lg:flex-col lg:justify-center lg:items-center 
-      w-[393px] h-[720px] flex flex-col  lg:px-0 px-4 sm:px-2">
+      w-[393px] h-[720px] flex flex-col  lg:px-0 px-4 sm:px-12 sm:flex sm:justify-center
+     sm:items-center sm:bg-[rgb(246,253,255)]  sm:h-[1345px] sm:w-[1000px]">
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex lg:h-[900px] h-[400px] lg:pt-0 pt-2.5'>
-         <div className="lg:w-full max-w-full lg:h-[1366px] xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff]  lg:px-0 lg:flex lg:items-center lg:justify-center ">
+         <div className="lg:w-full max-w-full lg:h-[1366px] sm:w-[570px] lg:p-0 sm:p-8 sm:shadow-md sm:h-[400px] sm:bg-white xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff]  lg:px-0 lg:flex lg:items-center lg:justify-center ">
         {/* <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center "> */}
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
         <div className="lg:w-[520px] max-w-full lg:h-[400px] lg:bg-[#ffffff] lg:shadow-md lg:p-16 flex flex-col justify-center items-center">
   
   {/* Create Account Starts */}
-  <div className="lg:w-[300px] flex flex-col justify-center items-center text-center mb-6 self-start">
+  <div className="lg:w-[300px] lg:flex lg:flex-col lg:justify-center lg:items-center lg:text-center lg:mb-6 lg:self-start
+  sm:flex  sm:mx-auto sm:flex-col sm:justify-center sm:items-center sm:text-center sm:mb-6 sm:self-start flex flex-col justify-center items-center text-center mb-6 self-start ">
     <h2 className="lg:text-[28.66px] lg:font-medium leading-[100%]">
       Create New Password
     </h2>

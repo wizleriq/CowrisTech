@@ -28,7 +28,7 @@ const [isOpen, setIsOpen] = useState(false)
         "
       >
         <Link href="/">
-        <h2 className="font-inria font-semibold lg-text-[24px] lg:leading-[100%] text-[22px] 2xl:text-[24px]">
+        <h2 className="font-inria font-semibold lg-text-[24px] lg:pr-0 sm:pr-[100px] lg:leading-[100%] text-[22px] 2xl:text-[24px]">
           CowrisJapa
         </h2>
         </Link>

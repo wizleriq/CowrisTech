@@ -13,21 +13,22 @@ const Page = () => {
   <Nav />
   </div>
     <section className="w-full max-w-full mx-auto
-      lg:h-[900px] xl:h-[900px] lg:bg-red-400 xl:bg-green-500 lg:flex lg:flex-col lg:justify-center lg:items-center
-     h-[600px] flex justify-center bg-white lg:px-0 px-4 items-center sm:px-2">
+      lg:h-[900px] lg:w-full xl:h-[900px] lg:bg-red-400 xl:bg-green-500 lg:flex lg:flex-col lg:justify-center lg:items-center
+     h-[600px] flex justify-center bg-white lg:px-0 px-4 items-center sm:px-12 sm:flex sm:justify-center
+     sm:items-center sm:bg-[#F6FDFF]  sm:h-[1345px] sm:w-[1000px]">
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex lg:h-[900px] h-[500px]'>
-        <div className="lg:w-full max-w-full lg:h-[1366px]  xl:h-[900px] lg:bg-[#F6FDFF] lg:px-0 lg:flex flex-col lg:items-center lg:justify-center ">
+        <div className="lg:w-full max-w-full lg:h-[1366px] xl:h-[900px] lg:bg-[#F6FDFF] lg:px-0 lg:flex flex-col lg:items-center lg:justify-center ">
           <h2 className='hidden lg:font-medium lg:text-[40px] lg:leading-[100%] text-[#0079C6] my-4'>AbroadEx</h2>
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
-         <div className="lg:w-[520px]  xl:w-[471px] max-w-full lg:h-[500px] xl:h-[500px] lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
+         <div className="lg:w-[520px]  xl:w-[471px] max-w-full lg:h-[500px] xl:h-[500px] sm:p-8 sm:shadow-md sm:bg-[#ffffff]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
           {/* lg:w-[700px] xl:w-full max-w-full lg:h-[900px] xl:h-[890px] */}
           {/* Create Account Starts */}
           <div className='lg:w-[276px] lg:h-14 flex-col justify-center items-center lg:flex lg:-mt-13
           w-full h-12 flex'>
-              <h2 className='lg:text-[28.66px] lg:font-medium lg:leading-[100%] lg:text-center lg:mt-0 lg:mb-0 -mb-1 mt-2  font-medium text-[20px] leading-[100%]'>Sign In</h2>
-            <h2 className='lg:text-[14px] lg:font-medium lg:leading-[100%] text-center mt-2 text-[#565656]'>Welcome back! Please enter your details</h2>
+              <h2 className='lg:text-[28.66px] sm:text-[21.6px] lg:font-medium lg:leading-[100%] lg:text-center lg:mt-0 lg:mb-0 -mb-1 mt-2  font-medium text-[20px] leading-[100%] '>Sign In</h2>
+            <h2 className='lg:text-[14px] sm:text-[14px] lg:font-medium lg:leading-[100%] text-center mt-2 text-[#565656]'>Welcome back! Please enter your details</h2>
           </div>
           {/* Student and Consultant Ends */}
 
@@ -158,7 +159,7 @@ const Page = () => {
   </Link>
 
    <div className='lg:hidden mx-auto w-full lg:mt-0 mt-4  flex items-center justify-center h-6'>
-    <h2 className='text-[12.6px]'>Experiencing an issue? Contact support<span className='text-[#0079C6]'>Sign Up</span></h2>
+    <h2 className='text-[12.6px]'>Experiencing an issue? Contact support</h2>
   </div>
 </form>     
         </div>

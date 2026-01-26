@@ -21,7 +21,7 @@ import selects from '@/app/src/data/SelectData'
 const HomePage = () => {
   return (
     <section className="relative w-full h-[3568px] lg:mx-auto lg:h-[3200px] flex flex-col items-center lg:px-0 xl:px-3 px-3 sm:px-2 lg:bg-transparent bg-[#F4FBFF]
- xl:w-[1260px] 2xl:w-[1500px] lg:w-[970px] sm:mx-auto sm:w-[700px] sm:h-[3200px] sm:bg-transparent ">
+ xl:w-[1260px] 2xl:w-[1500px] lg:w-[970px] sm:mx-auto sm:w-[700px] sm:h-[3100px] sm:bg-transparent ">
 
       {/* Hero Section */}
       <main
@@ -544,7 +544,7 @@ lg:mb-0 lg:p-8  sm:p-5 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt
   </div> 
   <div className='w-full lg:h-10 lg:w-[970px] lg:mt-12 xl:w-[1230px] 2xl:w-[1500px] lg:bg-transparent lg:mb-[60px] hidden lg:flex lg:flex-col lg:justify-between lg:p-0'>
  <div className="lg:h-px bg-[#0079C63D] w-full"></div>
- <div className='lg:w-[151px] 2xl:w-[160px] h-9 bg-transparent flex justify-between items-center'>
+ <div className='lg:w-[151px] 2xl:w-40 h-9 bg-transparent flex justify-between items-center'>
  <Image
                       src={C}
                       width={27.9}

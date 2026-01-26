@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 const page = () => {
   return (
-    <section className='lg:hidde w-full h-[40px] flex justify-between items-center p-4'>
+    <section className='lg:hidden lg:w-full lg:px-0 sm:fit h-10 flex justify-between items-center p-4 sm:px-12'>
         <div
         className="
           w-full lg:h-[29px] lg:bg-transparent flex justify-between items-center lg:text-[#0079C6] 
-          text-[#0079C6]
+          text-[#0079C6] 
         "
       ><Link href='/'>
         <h2 className="font-inria font-semibold Leading-[100%] text-[22px]">

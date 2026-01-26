@@ -12,9 +12,11 @@ const Page = () => {
   <Nav />
   </div>
     <section className="lg:w-full max-w-full mx-auto lg:h-[900px] xl:h-[900px] lg:bg-green-500 lg:flex lg:flex-col
-     lg:justify-center lg:items-center w-[393px] h-[720px] flex flex-col justify-center bg-white lg:px-0 px-4 items-center sm:px-2">
+     lg:justify-center lg:items-center w-[393px] h-[720px] flex flex-col justify-center bg-white lg:px-0 px-4 items-center
+     sm:px-12 sm:flex sm:justify-center
+     sm:items-center sm:bg-[rgb(246,253,255)]  sm:h-[1345px] sm:w-[1000px]">
 
-       <div className="lg:hidden w-[167PX] max-w-full h-[121px]  flex justify-center 
+       <div className="lg:hidden sm:hidden w-[167PX] max-w-full h-[121px]  flex justify-center 
        items-center mx-auto">
          <div className="lg:w-[442px] lg:h-[539px] max-w-full lg:bg-[#F6FDFF] lg:rounded-md">
        <Image
@@ -26,9 +28,10 @@ const Page = () => {
       </div>
 
       {/* Left box */}
-      <div className='w-full max-w-full flex lg:h-[900px]'>
-         <div className="w-full max-w-full lg:h-[1366px] xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff] lg:px-0 lg:flex lg:items-center 
-         lg:justify-center h-[500px] bg-[#ffffff] px-0 items-center sm:px-2">
+      <div className='lg:w-full w-full max-w-full sm:w-[570px] flex lg:h-[900px]'>
+         <div className="lg:w-full w-full max-w-full lg:h-[1366px] xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff] lg:px-0 lg:flex lg:items-center 
+         lg:justify-center h-[500px] bg-[#ffffff] px-0 items-center sm:px-2 
+         sm:w-[570px] lg:p-0 sm:p-8  sm:shadow-md sm:h-[400px] sm:bg-white sm:flex sm:justify-center sm:items-center">
          <div className="lg:w-[520px] max-w-full lg:h-[500px] lg:bg-[#ffffff] lg:shadow-lg lg:p-16 flex-col lg:flex justify-center lg:items-center">
           {/* Create Account Starts */}
           <div className='lg:w-[420px] lg:h-14 lg:bg-transparent lg:mx-0 mx-auto flex-col justify-center lg:items-start items-center self-start flex lg:-mt-13

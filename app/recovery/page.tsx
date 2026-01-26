@@ -11,11 +11,13 @@ const Page = () => {
   <Nav />
   </div>
         <section className="lg:w-full max-w-full mx-auto lg:h-[900px] lg:bg-green-500 lg:flex lg:flex-col
-     lg:justify-center lg:items-center xl:h-[900px] w-[393px] h-[720px] flex flex-col bg-white lg:px-0 px-4 items-center sm:px-2">
+     lg:justify-center lg:items-center xl:h-[900px] w-[393px] h-[720px] flex flex-col bg-white lg:px-0 px-4 items-center sm:px-12 sm:flex sm:justify-center
+     sm:items-center sm:bg-[rgb(246,253,255)]  sm:h-[1345px] sm:w-[1000px]">
       {/* Left box */}
-      <div className='w-full max-w-full flex bg-red-300 lg:h-[900px]'>
-          <div className="w-full max-w-full lg:h-[1366px]  xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff]  lg:px-0 lg:flex lg:items-center 
-         lg:justify-center h-[500px] bg-[#ffffff] px-0 items-center sm:px-2">
+      <div className='lg:w-full w-full sm:w-[570px]  max-w-full flex bg-white lg:h-[900px]'>
+          <div className="lg:w-full w-full max-w-full lg:h-[1366px]  xl:h-[900px] lg:bg-[#F6FDFF]  xl:bg-[#ffffff]  lg:px-0 lg:flex lg:items-center 
+         lg:justify-center h-[500px] bg-[#ffffff] px-0 items-center sm:bg-white sm:w-[570px] lg:p-0 sm:p-8 sm:shadow-md sm:h-[400px]
+         sm:flex sm:justify-center sm:items-center">
         {/* <div className="lg:w-full max-w-full lg:h-[900px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center "> */}
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] shadow-[0_12px_25px_rgba(0,0,0,0.2)] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
@@ -30,7 +32,7 @@ const Page = () => {
           
 
            {/* Form Starts */}
-           <div className='lg:flex lg:flex-col lg:justify-between lg:w-[400px] lg:h-[229px] lg:mt-5 mt-4'>
+           <div className='lg:flex lg:flex-col lg:justify-between lg:w-[400px] sm:w-[400px] lg:h-[229px] lg:mt-5 mt-4'>
             <div className='lg:w-[400px] lg:h-[145px] flex-col lg:flex justify-between'>               
                 <p className='lg:mb-0 mb-2'>Verification Code</p>
             {/* <div className='flex flex-row justify-between lg:w-[400px] lg:h-[50px] w-full h-[50px]'>
