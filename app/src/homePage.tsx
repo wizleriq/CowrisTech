@@ -21,7 +21,7 @@ import selects from '@/app/src/data/SelectData'
 const HomePage = () => {
   return (
     <section className="relative w-full h-[3568px] lg:mx-auto lg:h-[3200px] flex flex-col items-center lg:px-0 xl:px-3 px-3 sm:px-2 lg:bg-transparent bg-[#F4FBFF]
- xl:w-[1260px] 2xl:w-[1500px] lg:w-[970px] sm:mx-auto sm:w-[700px] sm:h-[3100px] sm:bg-transparent ">
+ xl:w-[1260px] 2xl:w-[1500px] lg:w-[970px] sm:mx-auto sm:w-[700px] sm:h-[3200px] sm:bg-transparent ">
 
       {/* Hero Section */}
       <main
@@ -432,7 +432,7 @@ const HomePage = () => {
 
 {/* Contact Section Starts */ }
 <main className='lg:w-[1047px] lg:h-[339px] lg:bg-[#0079C63D] lg:flex lg:flex-col lg:items-center lg:justify-between
-lg:mb-0 lg:p-8 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt-2  xl:mt-20 w-screen h-[840px] mt-4 flex flex-col justify-between items-center 2xl:text-[17px]
+lg:mb-0 lg:p-8  sm:p-5 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt-2  xl:mt-20 w-screen h-[840px] mt-4 flex flex-col justify-between items-center 2xl:text-[17px]
  xl:w-[1265px] xl:h-[380px] 2xl:w-[1580px] 2xl:h-[400px]  sm:w-screen sm:h-[670px] sm:mt-4 '>
     <div className='lg:w-[970px]  xl:w-[1260px] 2xl:w-[1500px] lg:h-[180px]  lg:bg-transparent lg:flex lg:justify-between lg-p-0 xl:p-6  h-full bg-transparent
     sm:grid sm:grid-cols-2 sm:gap-6'>
@@ -507,10 +507,11 @@ lg:mb-0 lg:p-8 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt-2  xl:m
     <h2>Instagram</h2>
     <h2>LinkedIn</h2>
     <h2>X (Twitter)</h2>
-    </div>
+    </div>    
 </div>
+
 {/* Small Screen */ }
-<div className='w-full lg:h-10  lg:bg-transparent lg:mb-[60px] lg:hidden block'>
+<div className='w-full lg:h-10  lg:bg-transparent lg:mb-[60px]  sm:hidden lg:hidden block'>
  <div className="lg:h-px h-px bg-[#0079C63D]  w-full lg xl:w-[1300px] 2xl:w-[1500px]"></div>
  <div className='lg:w-[151px] w-[156px] lg:p-0 px-0 py-4 bg-transparent flex justify-between items-center'>
  <Image
@@ -525,6 +526,21 @@ lg:mb-0 lg:p-8 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt-2  xl:m
  
   </div>
   {/* Small Screen Ends */ }
+  </div>
+
+  <div className='w-full lg:h-10 sm:w-[670px] sm:py-0 lg:bg-transparent lg:mb-[60px] hidden sm:flex  sm:flex-col lg:hidden'>
+ <div className="lg:h-px h-px bg-[#0079C63D] sm:w-[670px]  lg xl:w-[1300px] 2xl:w-[1500px]"></div>
+ <div className='lg:w-[151px] w-[156px] lg:p-0 px-0 py-4 bg-transparent flex justify-between items-center'>
+ <Image
+                      src={C}
+                      width={27.9}
+                      height={27.9}
+                      alt="Profile Image"
+                      className="lg:w-[17px] lg:h-[13.48px] lg:object-fill lg:flex lg:items-center w-[18.5px] h-[18.5px] mt-0"
+                    />
+  <h2 className='lg:flex lg:items-center'>2025  CowrisWaka</h2>
+ </div>
+ 
   </div> 
   <div className='w-full lg:h-10 lg:w-[970px] xl:w-[1230px] 2xl:w-[1500px] lg:bg-transparent lg:mb-[60px] hidden lg:flex lg:flex-col lg:justify-between lg:p-0'>
  <div className="lg:h-px bg-[#0079C63D] w-full"></div>
