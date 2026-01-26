@@ -230,7 +230,7 @@ const HomePage = () => {
              sm:border-[#0079C6] sm:border-[1.33px] sm:relative sm:focus:outline-none' />
                   <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[869.5px] lg:right-40
                   w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent absolute top-[1623.5px] right-19
-                  sm:w-[77.9px] sm:h-[30.4px] sm:flex sm:justify-around sm:items-center sm:bg-transparent sm:absolute sm:top-[976.5px] sm:right-19'>
+                  sm:w-[77.9px] sm:h-[30.4px] sm:flex sm:justify-around sm:items-center sm:bg-transparent sm:absolute sm:top-[1244.5px] sm:right-19'>
                     <Image
                       src={Nigeria}
                       width={27.9}
@@ -261,7 +261,7 @@ const HomePage = () => {
                   {/* <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[983.5px] lg:right-[65px]'> */}
                     <div className='lg:w-20 lg:h-[34px] lg:flex lg:justify-around lg:items-center lg:bg-transparent lg:absolute lg:top-[988.5px] lg:right-40
                      w-[77.9px] h-[30.4px] flex justify-around items-center bg-transparent offset absolute top-[1729.5px] right-19 sm:w-[77.9px] sm:h-[30.4px] 
-                     sm:flex sm:justify-around sm:items-center sm:bg-transparent sm:absolute sm:top-[1089.5px] sm:right-19'>
+                     sm:flex sm:justify-around sm:items-center sm:bg-transparent sm:absolute sm:top-[1356px] sm:right-19'>
 
                     <Image
                       src={Canada}
@@ -438,23 +438,23 @@ lg:mb-0 lg:p-8  sm:p-5 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt
     sm:grid sm:grid-cols-2 sm:gap-6'>
 <div className='lg:w-[228px] lg:h-[88px] lg:bg-transparent lg:mb-0 mb-8 bg-transparent w-[280px] h-[90px] flex flex-col justify-between'>
  <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
-  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
+  <h2 className='lg:font-semibold lg:text-[14px] sm:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
     About Us
     </h2>
     </div>
      <div className='lg:w-[228px] lg:h-[63px] lg:bg-transparent lg:mt-2'>
-      <h2 className='lg:font-normal lg:text-[13px] lg:leading-5 font-normal text-[14px] 2xl:text-[16px] leading-5'>We simplify cross-border tuition and GIC payments for international students and parents in Nigeria.</h2>
+      <h2 className='lg:font-normal lg:text-[13px] sm:text-[14px] lg:leading-5 font-normal text-[14px] 2xl:text-[16px] leading-5'>We simplify cross-border tuition and GIC payments for international students and parents in Nigeria.</h2>
     </div> 
  </div>
 
  <div className='lg:w-[134px] lg:h-[174px] 2xl:text-[17px] lg:bg-transparent mb-8 bg-transparent w-[280px] h-[150px] flex flex-col justify-between'>
  <div className='lg:w-[100px] lg:h-5 lg:bg-transparent'>
-  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
+  <h2 className='lg:font-semibold lg:text-[14px] sm:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
     Quick Links
     </h2>
     </div>
     <div className='lg:font-normal lg:text-[13px] 2xl:w-[238px] lg:mt-1.5 lf:flex lg:flex-col'>
-     <ul className="list-disc lg:ml-5 lg:space-y-1 font-normal lg:px-0 px-5 text-[14px] 2xl:text-[16px] leading-5">
+     <ul className="list-disc lg:ml-5 lg:space-y-1 font-normal lg:px-0 px-5 sm:text-[14px] lg:text-[14px] text-[14px] 2xl:text-[16px] leading-5">
     <li>Home</li>
     <li>How It Works</li>
     <li>Why Choose Us</li>
@@ -467,10 +467,10 @@ lg:mb-0 lg:p-8  sm:p-5 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt
 
  <div className='lg:w-[210px] lg:h-[174px] 2xl:w-[238px]  lg:bg-transparent mb-8 bg-transparentw-[280px] h-[120px] '>
  <div className='lg:w-[120px] 2xl:w-40 2xl:mb-7 lg:h-5 lg:bg-transparent'>
-  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
+  <h2 className='lg:font-semibold lg:text-[14px] sm:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
     Support & Contact
     </h2>
-    <h2 className='lg:font-normal lg:text-[13px] lg:mb-4 2xl:text-[16px]'>
+    <h2 className='lg:font-normal lg:text-[13px] sm:text-[13px] lg:mb-4 2xl:text-[16px]'>
     Need Help?
     </h2>
     </div>
@@ -483,12 +483,12 @@ lg:mb-0 lg:p-8  sm:p-5 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt
 
  <div className='lg:w-[170px] lg:h-[125px]  lg:bg-transparent mb-8 bg-transparent w-[280px] h-[110px] flex flex-col justify-between'>
  <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
-  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
+  <h2 className='lg:font-semibold lg:text-[14px] sm:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
     Legal
     </h2>
     </div>
     <div className='lg:font-normal lg:text-[13px] 2xl:w-[238px] lg:mt-1.5 lg:flex lg:flex-col font-normal text-[14px] leading-5'>
-     <ul className="list-disc lg:px-0 px-5 lg:ml-5 lg:space-y-1 2xl:text-[16px]">
+     <ul className="list-disc lg:px-0 px-5 lg:ml-5 sm:text-[14px] lg:text-[14px] lg:space-y-1 2xl:text-[16px]">
     <li>Terms & Conditions</li>
     <li>Privacy Policy</li>
     <li>Compliance & Security</li>
@@ -498,11 +498,11 @@ lg:mb-0 lg:p-8  sm:p-5 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt
 </div>
 <div className='lg:w-[228px] lg:h-[136px] lg:bg-transparent mb-8 bg-transparent h-[120px] '>
  <div className='lg:w-[100px] lg:h-5  lg:bg-transparent'>
-  <h2 className='lg:font-semibold lg:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
+  <h2 className='lg:font-semibold lg:text-[14px] sm:text-[14px] font-semibold text-[14px] 2xl:text-[17px]'>
     Social
     </h2>
     </div>
-    <div className='lg:font-normal lg:text-[13px] 2xl:text-[16px] lg:mt-1.5 lg:flex lg:flex-col'>
+    <div className='lg:font-normal lg:text-[14px] sm:text-[14px] 2xl:text-[16px] lg:mt-1.5 lg:flex lg:flex-col'>
     <h2>Stay Connected, Follow us for updates Facebook </h2>
     <h2>Instagram</h2>
     <h2>LinkedIn</h2>
@@ -542,7 +542,7 @@ lg:mb-0 lg:p-8  sm:p-5 p-5 rounded-[5px] bg-[#0079C63D]  sm:bg-[#0079C63D] lg:mt
  </div>
  
   </div> 
-  <div className='w-full lg:h-10 lg:w-[970px] xl:w-[1230px] 2xl:w-[1500px] lg:bg-transparent lg:mb-[60px] hidden lg:flex lg:flex-col lg:justify-between lg:p-0'>
+  <div className='w-full lg:h-10 lg:w-[970px] lg:mt-12 xl:w-[1230px] 2xl:w-[1500px] lg:bg-transparent lg:mb-[60px] hidden lg:flex lg:flex-col lg:justify-between lg:p-0'>
  <div className="lg:h-px bg-[#0079C63D] w-full"></div>
  <div className='lg:w-[151px] 2xl:w-[160px] h-9 bg-transparent flex justify-between items-center'>
  <Image
