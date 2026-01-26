@@ -20,13 +20,14 @@ const router = useRouter();
     {/* // <section className="w-full bg-yellow-400 px-4 sm:px-2 lg:px-0"> */}
     <section className="lg:w-full max-w-full mx-auto lg:border-0 border-b-[#F6FDFF]
       lg:h-[1000px] lg:bg-green-500 lg:flex lg:mt-0 mt-2 lg:flex-col lg:justify-center lg:items-center
-      w-full h-[800px] bg-white lg:px-0 px-4 items-center sm:px-2">
+      w-full h-[800px] bg-white lg:px-0 px-4 items-center  sm:px-12 sm:flex sm:justify-center
+     sm:items-center sm:h-[1337px] sm:w-[1000px]">
       {/* Left box */}
-      <div className='lg:w-full max-w-full lg:flex lg:bg-red-300 lg:h-[1000px] h-[400px] '>
-        <div className="lg:w-full max-w-full lg:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center ">
+      <div className='lg:w-full max-w-full lg:flex sm:w-[700px] lg:p-0 sm:p-8 sm:shadow-md sm:h-[800px] sm:bg-white  lg:bg-red-300 lg:h-[1000px] h-[400px] '>
+        <div className="lg:w-full lg:h-[1370px] max-w-full h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex lg:items-center lg:justify-center ">
              {/* <div className='lg:w-[194px] lg:h-[51px] lg:bg-amber-600 lg:mx-auto lg:mb-4 lg:flex lg:items-center lg:justify-center'>
         <h2 className='lg:text-[40px] lg:font-medium  lg:text-[#a2abb1] lg:flex lg:items-center lg:justify-center'>AbroadEx</h2></div> */}
-         <div className="lg:w-full max-w-full lg:h-[890px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
+         <div className="lg:w-[700px] max-w-full lg:h-[900px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
           {/* Create Account Starts */}
           <div className='lg:w-[276px] lg:h-14 lg:bg-transparent flex flex-col lg:justify-between item-center lg:flex lg:-mt-13
           w-[279px] h-[43px] justify-left justify-between'>
@@ -251,7 +252,7 @@ const router = useRouter();
       </div>
 
       {/* Right box */}
-      <div className="hidden lg:w-full max-w-full lg:h-[1000px] lg:bg-[#ffffff] lg:flex lg:justify-center lg:items-center">
+      <div className="hidden  lg:hidden lg:w-full max-w-full lg:h-[1000px] lg:bg-[#ffffff] xl:flex lg:justify-center lg:items-center">
       <div className="lg:w-[442px] lg:h-[539px] max-w-full lg:bg-[#ffffff] lg:rounded-md">
        <Image
       src={Study}
