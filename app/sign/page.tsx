@@ -19,7 +19,7 @@ const router = useRouter();
     <section className="lg:w-full max-w-full mx-auto lg:border-0 border-b-[#F6FDFF]
       lg:h-[1200px]  xl:h-[1000px] lg:bg-green-500 sm:bg-[#F6FDFF]  lg:flex lg:mt-0 mt-2 lg:flex-col lg:justify-center lg:items-center
       w-full h-[800px] bg-white lg:px-0 px-4 items-center sm:px-12 sm:flex sm:justify-center
-     sm:items-center sm:h-[1337px] sm:w-[1000px]">
+     sm:items-center sm:h-[1132px] sm:w-[1000px]">
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex  sm:w-[700px] lg:p-0 sm:p-8 sm:shadow-md sm:h-[800px] lg:bg-red-300 sm:bg-white lg:h-[1200px] xl:h-[1000px] h-[400px] '>
         <div className="lg:w-full max-w-full lg:h-[1370px] xl:h-[1000px] h-[300px] lg:bg-[#F6FDFF] lg:px-12 lg:flex flex-col lg:items-center lg:justify-center
