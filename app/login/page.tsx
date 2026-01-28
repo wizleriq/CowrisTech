@@ -15,7 +15,7 @@ const Page = () => {
     <section className="w-full max-w-full mx-auto
       lg:h-[900px] lg:w-full xl:h-[900px] lg:bg-red-400 xl:bg-green-500 lg:flex lg:flex-col lg:justify-center lg:items-center
      h-[600px] flex justify-center bg-white lg:px-0 px-4 items-center sm:px-12 sm:flex sm:justify-center
-     sm:items-center sm:bg-[#F6FDFF]  sm:h-[1345px] sm:w-[1000px]">
+     sm:items-center sm:bg-[#F6FDFF]  sm:h-[1140px] sm:w-[1000px]">
       {/* Left box */}
       <div className='lg:w-full max-w-full lg:flex lg:h-[900px] h-[500px]'>
         <div className="lg:w-full max-w-full lg:h-[1366px] xl:h-[900px] lg:bg-[#F6FDFF] lg:px-0 lg:flex flex-col lg:items-center lg:justify-center ">

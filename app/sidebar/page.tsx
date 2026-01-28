@@ -9,7 +9,8 @@ const Sidebar = ({ isCollapsed }: { isCollapsed: boolean }) => {
 
   return (
     <div
-      className={`lg:h-[1504px] xl:h-[1504px] 2xl:h-[1504px] flex flex-col bg-green-200 text-[#C0C3CD] p-4 transition-all duration-300 ${
+      className={`hidden lg:h-[1504px] xl:h-[1504px] 2xl:h-[1504px] sm:flex sm:flex-col lg:flex lg:flex-col xl:flex xl:flex-col 
+      2xl:flex 2xl:flex-col bg-white text-[#C0C3CD] p-4 transition-all duration-300 ${
         isCollapsed ? "w-20" : "w-64"
       }`}
     >
