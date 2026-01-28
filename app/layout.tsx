@@ -24,8 +24,17 @@ export default function RootLayout({
     <html lang="en">
      {/* <body className={`${inriaSerif.variable} antialiased`} > */}
      <body className={`${inriaSerif.className} antialiased`}>
+     
         {children}
       </body>
     </html>
   );
 }
+
+
+//  <html lang="en">
+//       <body className={inter.className}>
+//         {/* <Navbar /> */}
+//         <div className="lg:flex flex">
+//           <div className="lg:w-[298px] lg:h-[1024px] lg:gap-[24px] lg:border-t-[0px] lg-border-r-[0.5px] lg:border-b-[0px] lg:border-l-[0px] hidden md:block lg:block ">
+// <Sidebar />

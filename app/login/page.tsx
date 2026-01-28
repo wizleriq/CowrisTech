@@ -75,7 +75,8 @@ const Page = () => {
 </div>
 
   {/* Submit button */}
-  <div className="flex justify-center lg:mt-6  lg:w-[384px] lg:h-[40px]">
+  <Link href='/dashboard'>
+  <div className="flex justify-center lg:mt-6  lg:w-[384px] lg:h-[60px]">
     {/* <button
       type="submit"
       className="bg-[#0079C6] text-white lg:w-[384px] lg:h-[40px] lg:rounded-md lg:text-[20.12px] font-medium"
@@ -87,7 +88,9 @@ const Page = () => {
     >
       Sign In
     </button>
+   
   </div>
+   </Link>
 
   <div className='hidden lg:w-[384px]  lg:bg-transparent lg:h-3.5 lg:flex lg:flex-row lg:justify-between lg:text-center lg:items-center'>
     <div className='lg:w-[170px]  lg:h-px lg:bg-[#C0C3CD]'>

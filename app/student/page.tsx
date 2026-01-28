@@ -30,7 +30,8 @@ const router = useRouter();
          <div className="lg:w-[700px] max-w-full lg:h-[900px] h-[300px]  lg:bg-[#ffffff] lg:p-16 flex-col lg:flex lg:items-center">
           {/* Create Account Starts */}
           <div className='lg:w-[276px] lg:h-14 lg:bg-transparent flex flex-col lg:justify-between item-center lg:flex lg:-mt-13
-          w-[279px] h-[43px] justify-left justify-between'>
+          w-[279px] h-[43px] justify-left justify-between sm:flex sm:flex-col sm:justify-between sm:items-center sm:text-center
+          sm:mx-auto'>
             <div className='lg:w-[276px] lg-[36px] bg-transparent flex lg:justify-center '>
               <h2 className='lg:text-[28.66px] lg:font-medium lg:leading-[100%] text-[20px] font-medium leading-[100%]'>Create an account </h2>
            </div>
